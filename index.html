@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brian Gray. Nerd Rock.</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/overcast/jquery-ui.css">
+		<link rel="stylesheet" href="/css/bg.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+		<script src="/js/jquery.jplayer.min.js"></script>
+		<script src="/js/vexflow.min.js"></script>
+		<script src="/js/underscore.min.js"></script>
+		<script src="/js/tabdiv.min.js"></script>
+		<script src="/js/bandcamp.js"></script>
+		<script src="/js/track-info.js"></script>
+		<script src="/js/bg.js"></script>
+		<script>
+$(function() {
+	if (new Bandcamp().getBandcampData(buildAlbums)) {
+		$('.bg-err').removeClass('bg-hide');
+	}
+});
+</script>
+	</head>
+	<body id="bg-body" class="ui-widget-header">
+		<div id="bg-header">
+			<div  id="bg-err" class="bg-hide ui-state-error ui-corner-all" title="Bandcamp failed to respond. Data in the music pane has been pulled from cache and may be stale."><span class="ui-icon ui-icon-alert"></span></div>
+			<span>Brian Gray. Nerd Rock.</span>
+		</div>
+		<div id="bg-shadow-box" class="bg-top-level-tabs">
+			<ul class="bg-vertical-text">
+				<li><a href="#bg-shadow-blog">News</a></li>
+				<li><a href="#bg-shadow-about">About Me</a></li>
+				<li><a href="#bg-shadow-music">My Music</a></li>
+			</ul>
+		</div>
+		<div id="bg-top-level-tabs" class="bg-top-level-tabs">
+			<ul class="bg-vertical-text">
+				<li><a href="#bg-blog">News</a></li>
+				<li><a href="#bg-about">About Me</a></li>
+				<li><a href="#bg-music">My Music</a></li>
+			</ul>
+			<div id="bg-contents">
+				<div id="bg-blog"><iframe src="blog"></iframe></div>
+				<div id="bg-about">What's there to say about me? I write music. I sing, I play guitar, piano, percussion. I have my computer play other things I don't have time to learn. I guess what it comes down to is that I as a person can be summed up in three simple words.</div>
+				<div id="bg-music"></div>
+			</div>
+		</div>
+		<div id="bg-footer" class="ui-widget-header">
+			<span id="bg-footer-content">
+				<a href="http://creativecommons.org/licenses/by-nc/3.0/us/" rel="nofollow"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc/3.0/us/80x15.png" style="border-width:0pt" /></a>
+				All music is licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/us/" rel="nofollow">Creative Commons Attribution-Noncommercial 3.0 United States License</a>
+			</span>
+		</div>
+	</body>
+</html>
