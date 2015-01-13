@@ -38,6 +38,7 @@ class WordpressHandler(ProxyHandler):
 		html = html.replace('</head>', '<link rel="stylesheet" href="/css/bg.css"></link></head>')
 		html = html.replace('https://briangraymusic.wordpress.com', '/blog')
 		html = html.replace('https:\/\/briangraymusic.wordpress.com\/', '/blog')
+		html = html.replace('href="/', 'href="/blog/')
 		return html
 
 class BandcampHandler(ProxyHandler):
@@ -61,6 +62,19 @@ class BandcampAPIHandler(ProxyHandler):
 		json = json.replace('"discography":', '"netError":true,"discography":')
 		return json
 
+class GitHubHandler(ProxyHandler):
+	def method(self):
+		return 'github';
+	def baseUrl(self):
+		return 'https://github.com';
+	def successFilter(self, html):
+		html = html.replace('</head>', '<link rel="stylesheet" href="/css/bg.css"></link></head>')
+		html = html.replace('https://github.com', '/github')
+		html = html.replace('https:\/\/github.com\/', '/github')
+		html = html.replace('href="/', 'href="/github/')
+		return html
+
 wordpress = webapp2.WSGIApplication([('/blog.*', WordpressHandler)], debug=True)
 bandcampAPI = webapp2.WSGIApplication([('/bcapi.*', BandcampAPIHandler)], debug=True)
 bandcamp = webapp2.WSGIApplication([('/bc.*', BandcampHandler)], debug=True)
+github = webapp2.WSGIApplication([('/github.*', GitHubHandler)], debug=True)

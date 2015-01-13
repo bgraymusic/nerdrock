@@ -133,7 +133,7 @@ function buildAlbumAccordionBody(body, track) {
 	if (info && info.notes)
 		body.append($('<div></div>').addClass('bg-track-notes').attr('id', track.track_id + 'notes').html(trackInfo[track.track_id].notes));
 	else
-		body.append($('<div></div>').attr('id', track.track_id + 'notes'));
+		body.append($('<div></div>').attr('id', track.track_id + 'notes').html(track.about));
 
 	if (info && info.tab) {
 		tabs.append($('<li></li').append($('<a></a>').attr('href', '#' + track.track_id + 'tab').text('Tablature')));
@@ -202,7 +202,7 @@ function registerJQueryUI() {
 	});
 	$('#bg-contents .bg-track-volume-slider')
 		.slider({
-			range: 'min', min: 0, max: 100, value: 80, animate: 'fast',
+			range: 'min', min: 0, max: 100, value: 100, animate: 'fast',
 			slide: function(event, ui) {
 				var player = $(this).parent().parent().parent().data('player');
 				player.jPlayer('volume', ui.value/100);
@@ -222,6 +222,8 @@ function registerJQueryUI() {
 		event.stopPropagation();
 	});
 	$('#bg-contents .bg-accordion-body').tabs();
+
+	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
 
 	$(document).tooltip();
 

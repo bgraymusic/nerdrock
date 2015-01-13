@@ -1,6 +1,8 @@
 ::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: aliceblue; border-radius: 8px; }
 ::-webkit-scrollbar-thumb { border-radius: 8px; background-color: #599fcf; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
+
+
 #bg-body {
 	position: fixed; width: 100%; height: 100%;
 	margin: 0; box-shadow: 0 0 1em 0px black inset; border: none; background: #dddddd;
@@ -25,6 +27,7 @@
 	display: none;
 }
 
+
 #bg-body>#bg-shadow-box>ul {
 	margin: 0px; padding: 0px;
 	background: rgba(0,0,0,0.55); z-index: -1; box-shadow: 0 0 1em 1px black;
@@ -34,7 +37,7 @@
 	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
 }
 #bg-body>.bg-top-level-tabs>ul {
-	position: absolute; top: 20em; left: 3em; z-index: 1; height: 1.5em; border: 0;
+	position: absolute; top: 30em; left: 3em; z-index: 1; height: 1.5em; border: 0;
 	font-size: medium; background: none; padding: 0;
 }
 #bg-body>.bg-top-level-tabs>ul>li.ui-state-default {
@@ -44,19 +47,16 @@
 #bg-body>.bg-top-level-tabs>ul>li.ui-state-active { border-bottom: none; }
 #bg-body>.bg-top-level-tabs>ul>li>a { padding: 0.1em 0.5em 0em 0.5em; outline-style: none; vertical-align: bottom; }
 #bg-body>.bg-top-level-tabs>ul {
-	-webkit-transform-origin: 0 2em; -moz-transform-origin: 0 2em;
-	-ms-transform-origin: 0 2em; -o-transform-origin: 0 2em; transform-origin: 0 2em;
-
-	-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);
-/*
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-	-webkit-transform:  matrix(-0.00000000, -1.00000000, 1.00000000, -0.00000000, 0, 0);
-	-moz-transform:  matrix(-0.00000000, -1.00000000, 1.00000000, -0.00000000, -8.5em, -5em);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.00000000, M12=1.00000000, M21=-1.00000000, M22=-0.00000000,sizingMethod='auto expand')";
-	-o-transform:  matrix(-0.00000000, -1.00000000, 1.00000000, -0.00000000, 0, 0);
-*/
+	-webkit-transform-origin: 0 2em;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform-origin: 0 2em;
+	-moz-transform: rotate(-90deg);
+	-ms-transform-origin: 0 2em;
+	-ms-transform: rotate(-90deg);
+	-o-transform-origin: 0 2em;
+	-o-transform: rotate(-90deg);
+	transform-origin: 0 2em;
+	transform: rotate(-90deg);
 	filter: progid:DXImageTransform.Microsoft.Matrix(M11=-0.00000000, M12=1.00000000, M21=-1.00000000, M22=-0.00000000,sizingMethod='auto expand');
 	top: 9em\9;
 	left: 1em\9;
@@ -65,11 +65,12 @@
 
 #bg-contents {
 	display: block; position: fixed; top: 5em; right: 1em; bottom: 1.5em; left: 2.5em;
-	padding: 0.5em; border-radius: 8px; overflow-y: auto; border: 1px solid black;
+	padding: 0.5em; border-radius: 8px; overflow-x: hidden; overflow-y: auto; border: 1px solid black;
 	background-color: white;
 	box-shadow: 0 0 1em 0 black; font-size: medium;
 }
 #bg-contents>div { padding: 0; }
+#bg-contents>table { padding: 0; }
 
 
 #bg-music .bg-album { display: table; width: 100%; }
@@ -162,6 +163,7 @@
 	border: 0;
 }
 
+
 #bg-blog { width: 100%; height: 100% }
 #bg-blog iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 body.blog,body.single,body.archive { background-color: white; }
@@ -175,6 +177,20 @@ body.blog.home #footer,body.single #footer,body.archive #footer { display: none;
 body.blog #wpstats,body.single #wpstats,body.archive #wpstats { display: none; }
 body.blog #wpstats2,body.single #wpstats2,body.archive #wpstats2 { display: none; }
 body.blog a:link,body.single a:link,body.archive a:link { color: #3383BB; }
+
+
+#bg-social { position: absolute; width: 100%; height: 98%; border-collapse: collapse; }
+#bg-social tbody { position: absolute; width: 100%; height: 100% }
+#bg-social tr { position: absolute; width: 100%; height: 100% }
+#bg-social td { position: absolute; height: 590px; padding: 0 }
+#bg-social iframe { position: absolute; width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
+
+#bg-social #bg-facebook { left: 0; right: 36% }
+#bg-social #bg-twitter { left: 65%; right: 2% }
+
+
+#bg-github { width: 100%; height: 100% }
+#bg-github iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 
 
 #bg-footer {

@@ -32,6 +32,9 @@ handlers:
 - url: /bc.*
   script: nerdrock.bandcamp
 
+- url: /github.*
+  script: nerdrock.github
+
 libraries:
 - name: webapp2
   version: "2.5.2"

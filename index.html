@@ -11,6 +11,7 @@
 		<script src="/js/vexflow.min.js"></script>
 		<script src="/js/underscore.min.js"></script>
 		<script src="/js/tabdiv.min.js"></script>
+		<script src="/js/repo.min.js"></script>
 		<script src="/js/bandcamp.js"></script>
 		<script src="/js/track-info.js"></script>
 		<script src="/js/bg.js"></script>
@@ -23,6 +24,17 @@ $(function() {
 </script>
 	</head>
 	<body id="bg-body" class="ui-widget-header">
+		<!-- Facebook JS API -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Start page content -->
 		<div id="bg-header">
 			<div  id="bg-err" class="bg-hide ui-state-error ui-corner-all" title="Bandcamp failed to respond. Data in the music pane has been pulled from cache and may be stale."><span class="ui-icon ui-icon-alert"></span></div>
 			<span>Brian Gray. Nerd Rock.</span>
@@ -32,6 +44,8 @@ $(function() {
 				<li><a href="#bg-shadow-blog">News</a></li>
 				<li><a href="#bg-shadow-about">About Me</a></li>
 				<li><a href="#bg-shadow-music">My Music</a></li>
+				<li><a href="#bg-shadow-social">Social Media</a></li>
+				<li><a href="#bg-shadow-github">GitHub</a></li>
 			</ul>
 		</div>
 		<div id="bg-top-level-tabs" class="bg-top-level-tabs">
@@ -39,11 +53,22 @@ $(function() {
 				<li><a href="#bg-blog">News</a></li>
 				<li><a href="#bg-about">About Me</a></li>
 				<li><a href="#bg-music">My Music</a></li>
+				<li><a href="#bg-social">Social Media</a></li>
+				<li><a href="#bg-github">GitHub</a></li>
 			</ul>
 			<div id="bg-contents">
+<!--
 				<div id="bg-blog"><iframe src="blog"></iframe></div>
+-->
+				<div id="bg-blog"><iframe src="https://briangraymusic.wordpress.com/"></iframe></div>
 				<div id="bg-about">What's there to say about me? I write music. I sing, I play guitar, piano, percussion. I have my computer play other things I don't have time to learn. I guess what it comes down to is that I as a person can be summed up in three simple words.</div>
 				<div id="bg-music"></div>
+				<table id="bg-social"><tr>
+					<td id="bg-facebook"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FBrian-Gray%2F128630780517046&amp;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true" allowTransparency="true"></iframe></td>
+					<td id="bg-twitter"><a class="twitter-timeline" href="https://twitter.com/BrianGrayMusic" data-widget-id="555018606363561985">Tweets by @BrianGrayMusic</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
+				</table>
+				<div id="bg-github">How meta is this? Feel free to clone the <a href="https://github.com/bgraymusic/nerdrock">original repo</a>, or just browse by clicking "nerdrock" below.</div>
 			</div>
 		</div>
 		<div id="bg-footer" class="ui-widget-header">
