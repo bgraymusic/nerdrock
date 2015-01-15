@@ -37,7 +37,7 @@
 	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
 }
 #bg-body>.bg-top-level-tabs>ul {
-	position: absolute; top: 30em; left: 3em; z-index: 1; height: 1.5em; border: 0;
+	position: absolute; top: 24em; left: 3em; z-index: 1; height: 1.5em; border: 0;
 	font-size: medium; background: none; padding: 0;
 }
 #bg-body>.bg-top-level-tabs>ul>li.ui-state-default {
@@ -166,6 +166,7 @@
 
 #bg-blog { width: 100%; height: 100% }
 #bg-blog iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
+/*
 body.blog,body.single,body.archive { background-color: white; }
 body.blog #header,body.single #header,body.archive #header { display: none; }
 body.blog #wrapper,body.single #wrapper,body.archive #wrapper {
@@ -177,6 +178,7 @@ body.blog.home #footer,body.single #footer,body.archive #footer { display: none;
 body.blog #wpstats,body.single #wpstats,body.archive #wpstats { display: none; }
 body.blog #wpstats2,body.single #wpstats2,body.archive #wpstats2 { display: none; }
 body.blog a:link,body.single a:link,body.archive a:link { color: #3383BB; }
+*/
 
 
 #bg-social { position: absolute; width: 100%; height: 98%; border-collapse: collapse; }
@@ -187,6 +189,10 @@ body.blog a:link,body.single a:link,body.archive a:link { color: #3383BB; }
 
 #bg-social #bg-facebook { left: 0; right: 36% }
 #bg-social #bg-twitter { left: 65%; right: 2% }
+
+
+#bg-begging { width: 100%; height: 100% }
+#bg-begging iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 
 
 #bg-github { width: 100%; height: 100% }
