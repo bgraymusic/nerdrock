@@ -84,6 +84,7 @@ function Bandcamp() {
 }
 
 //Bandcamp.apiURL = 'http://api.bandcamp.com';
+Bandcamp.URL = 'http://briangray.bandcamp.com';
 Bandcamp.apiURL = '/bcapi';
 Bandcamp.apiKey = 'throtaudvinroftignmarkreina';
 Bandcamp.bandId = '230945364'; // probably permanent

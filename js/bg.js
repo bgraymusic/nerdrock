@@ -13,7 +13,7 @@ function buildAlbums(discography) {
 		albumDiv.append(albumRow);
 		$('#bg-music').append(albumDiv);
 	}
-	$('#bg-music').append($('<div id="bg-buy-dialog"></div>'));
+//	$('#bg-music').append($('<div id="bg-buy-dialog"></div>'));
 	registerJQueryUI();
 }
 
@@ -89,12 +89,13 @@ function buildTrackControls(controls, track) {
 	buildTrackVolume(volumeTable, track);
 	controls.append(volume.append(volumeTable));
 
-/* If you can "buy" at $0, does it make sense to have a separate download button?
+// If you can "buy" at $0, does it make sense to have a separate download button?
+// Maybe, if buying opens another page but downloading can be done directly
+/*
 	controls.append($('<button></button>')
 		.addClass('bg-track-download-button ui-icon ui-icon-arrowthickstop-1-s'));
 */
-
-	controls.append($('<button></button>')
+	controls.append($('<a title="Buy ' + track.title + ' on BandCamp.com" href="' + Bandcamp.URL + track.url + '" target="_blank"></a>')
 		.addClass('bg-track-buy-button ui-icon ui-icon-cart'));
 }
 
@@ -213,12 +214,14 @@ function registerJQueryUI() {
 		.button().click(function(event) { event.stopPropagation(); });
 */
 	$('#bg-contents .bg-track-buy-button').button().click(function(event) {
+/*
 		var dialog = $('#bg-buy-dialog');
 		dialog.empty();
 		dialog.append($('<iframe src="/bc' + $(this).parent().data('track').url + '?action=buy"></iframe>'));
 		dialog.dialog('option', 'title', 'Buy ' + $(this).parent().data('track').title);
 		dialog.dialog('option', 'position', { my: 'right top', at: 'left top', of: $(this) });
 		dialog.dialog('open');
+*/
 		event.stopPropagation();
 	});
 	$('#bg-contents .bg-accordion-body').tabs();
