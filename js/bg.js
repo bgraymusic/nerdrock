@@ -95,7 +95,7 @@ function buildTrackControls(controls, track) {
 	controls.append($('<button></button>')
 		.addClass('bg-track-download-button ui-icon ui-icon-arrowthickstop-1-s'));
 */
-	controls.append($('<a title="Buy ' + track.title + ' on BandCamp.com" href="' + Bandcamp.URL + track.url + '" target="_blank"></a>')
+	controls.append($('<a title="Buy "' + track.title + '" on BandCamp.com" href="' + Bandcamp.URL + track.url + '" target="_blank"></a>')
 		.addClass('bg-track-buy-button ui-icon ui-icon-cart'));
 }
 
