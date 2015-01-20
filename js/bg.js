@@ -77,6 +77,7 @@ function buildTrackControls(controls, track) {
 			setPlayButton(playButton, true);
 			var slider = $(this).data('controls').find('.bg-track-shuttle-slider');
 			slider.slider('value', 0);
+			slider.prev().text($.jPlayer.convertTime(0));
 		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
 	}).data('controls', controls);
