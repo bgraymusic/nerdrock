@@ -15,6 +15,7 @@ function buildAlbums(discography) {
 	}
 //	$('#bg-music').append($('<div id="bg-buy-dialog"></div>'));
 	registerJQueryUI();
+	navigateUI();
 }
 
 function buildAlbumDiv(albumRow, album) {
@@ -48,10 +49,15 @@ function buildAlbumAccordion(albumAccordion, album) {
 }
 
 function buildAlbumAccordionHeader(header, track) {
+	header.attr('song', mashTitle(track.title));
 	var trackControls = $('<div></div>').addClass('bg-track-controls');
 	buildTrackControls(trackControls, track);
 	header.append(trackControls);
 	header.append($('<div></div>').addClass('bg-track-name').text(track.title));
+}
+
+function mashTitle(title) {
+	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_`~()]/g,"").replace(/\s+/g, "");
 }
 
 function buildTrackControls(controls, track) {
@@ -234,6 +240,22 @@ function registerJQueryUI() {
 		Vex.Flow.TabDiv.start();
 	} catch(e) {
 //		window.alert('Error starting up VexFlow.');
+	}
+}
+
+function navigateUI() {
+	if ($.url().param('toptab')) {
+		$('#bg-top-level-tabs').tabs('option', 'active', $.url().param('toptab'));
+	}
+	if ($.url().param('song')) {
+		$('.bg-album-accordion').each(function() {
+			var header = $(this).find('.bg-accordion-header[song=' + mashTitle($.url().param('song')) + ']');
+			var index = $(this).find('.bg-accordion-header').index(header);
+			if (index >= 0) {
+				$(this).accordion('option', 'active', index);
+				$('#bg-contents').animate({ scrollTop: header.position().top }, 1000);
+			}
+		});
 	}
 }
 
