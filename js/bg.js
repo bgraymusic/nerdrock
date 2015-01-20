@@ -254,6 +254,9 @@ function navigateUI() {
 			if (index >= 0) {
 				$(this).accordion('option', 'active', index);
 				$('#bg-contents').animate({ scrollTop: header.position().top }, 1000);
+				if ($.url().param('songtab')) {
+					header.next().tabs('option', 'active', $.url().param('songtab'));
+				}
 			}
 		});
 	}
