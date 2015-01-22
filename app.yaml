@@ -13,6 +13,10 @@ handlers:
   static_files: index.html
   upload: index\.html
 
+- url: /redirect
+  static_files: redirect.html
+  upload: redirect\.html
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico

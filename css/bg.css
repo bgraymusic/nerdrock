@@ -29,7 +29,7 @@
 	height: 18px;
 }
 #bg-header #bg-err .ui-icon-alert { background-position: 1px -143px; }
-//#bg-header #bg-err.bg-hide { display: none; }
+#bg-header div.bg-hide { display: none; }
 
 
 #bg-body>#bg-shadow-box>ul {
