@@ -10,22 +10,26 @@
 
 
 #bg-header {
-//	display: none;
-	display: block;
-	position: fixed; width: 100%;
-	font-size: 40px; font-weight: bold; text-align: center; padding-top: 0.4em;
+/*	display: block; position: fixed; width: 100%; */
+	font-size: 40px; font-weight: bold; text-align: center; padding: 0.4em;
 	letter-spacing: 0.1em; text-shadow: 0 0 0.5em aliceblue;
 //	-webkit-text-stroke: 1px black;
 }
+#bg-header div { margin-right: 0.1em; float: right; }
+#bg-header #bg-prefs-button {
+	width: 20px;
+	height: 20px;
+	outline-style: none;
+	background-position: -191px -111px;
+}
+#bg-header #bg-prefs-button .ui-button-text { padding: 0; margin: 0; }
 #bg-header #bg-err {
-	float: right;
-	margin-right: 0.5em;
-	width: 16px;
-	height: 16px;
+	margin-top: 1px;
+	width: 18px;
+	height: 18px;
 }
-#bg-header #bg-err.bg-hide {
-	display: none;
-}
+#bg-header #bg-err .ui-icon-alert { background-position: 1px -143px; }
+//#bg-header #bg-err.bg-hide { display: none; }
 
 
 #bg-body>#bg-shadow-box>ul {
