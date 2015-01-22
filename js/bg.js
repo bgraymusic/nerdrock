@@ -15,7 +15,7 @@ function buildAlbums(discography) {
 	}
 //	$('#bg-music').append($('<div id="bg-buy-dialog"></div>'));
 	registerJQueryUI();
-	navigateUI();
+	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab') });
 }
 
 function buildAlbumDiv(albumRow, album) {
@@ -83,8 +83,7 @@ function buildTrackControls(controls, track) {
 	}).data('controls', controls);
 	controls.data('player', player);
 
-	controls.append($('<button></button>')
-		.addClass('bg-track-play-pause-button ui-icon ui-icon-play'));
+	controls.append($('<button></button>').addClass('bg-track-play-pause-button ui-icon ui-icon-play'));
 
 	var shuttle = $('<div></div>').addClass('bg-track-shuttle');
 	var shuttleTable = $('<div></div>').addClass('bg-track-shuttle-table');
@@ -98,10 +97,7 @@ function buildTrackControls(controls, track) {
 
 // If you can "buy" at $0, does it make sense to have a separate download button?
 // Maybe, if buying opens another page but downloading can be done directly
-/*
-	controls.append($('<button></button>')
-		.addClass('bg-track-download-button ui-icon ui-icon-arrowthickstop-1-s'));
-*/
+// controls.append($('<button></button>').addClass('bg-track-download-button ui-icon ui-icon-arrowthickstop-1-s'));
 	controls.append($('<a title="Buy "' + track.title + '" on BandCamp.com" href="' + Bandcamp.URL + track.url + '" target="_blank"></a>')
 		.addClass('bg-track-buy-button ui-icon ui-icon-cart'));
 }
@@ -156,6 +152,8 @@ function buildAlbumAccordionBody(body, track) {
 }
 
 function registerJQueryUI() {
+	$('#bg-prefs-button').button();
+
 	$('.bg-top-level-tabs').tabs();
 	var accordions = $('.bg-album-accordion').accordion({
 		collapsible: true, active: false, heightStyle: 'content',
@@ -166,16 +164,8 @@ function registerJQueryUI() {
 			});
 		}
 	});
-	$('#bg-buy-dialog').dialog({
-		autoOpen: false,
-		height: 300,
-		width: 350,
-		modal: true,
-		appendTo: '#bg-top-level-tabs',
-		draggable: false
-	});
-	$('.ui-dialog-titlebar-close').tooltip({ disabled: true });
-	$('#bg-contents .bg-track-play-pause-button').button().click(function(event) {
+
+$('#bg-contents .bg-track-play-pause-button').button().click(function(event) {
 		event.stopPropagation();
 		if ($(this).hasClass('ui-icon-play')) {
 			$(this).parent().data('player').jPlayer('pauseOthers');
@@ -220,17 +210,7 @@ function registerJQueryUI() {
 	$('#bg-contents .bg-track-download-button')
 		.button().click(function(event) { event.stopPropagation(); });
 */
-	$('#bg-contents .bg-track-buy-button').button().click(function(event) {
-/*
-		var dialog = $('#bg-buy-dialog');
-		dialog.empty();
-		dialog.append($('<iframe src="/bc' + $(this).parent().data('track').url + '?action=buy"></iframe>'));
-		dialog.dialog('option', 'title', 'Buy ' + $(this).parent().data('track').title);
-		dialog.dialog('option', 'position', { my: 'right top', at: 'left top', of: $(this) });
-		dialog.dialog('open');
-*/
-		event.stopPropagation();
-	});
+	$('#bg-contents .bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
 	$('#bg-contents .bg-accordion-body').tabs();
 
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
@@ -244,19 +224,20 @@ function registerJQueryUI() {
 	}
 }
 
-function navigateUI() {
-	if ($.url().param('toptab')) {
-		$('#bg-top-level-tabs').tabs('option', 'active', $.url().param('toptab'));
+// params: toptab(0-n), song(title), songtab(0-n)
+function navigate(params) {
+	if (params['toptab']) {
+		$('#bg-top-level-tabs').tabs('option', 'active', params['toptab']);
 	}
-	if ($.url().param('song')) {
+	if (params['song']) {
 		$('.bg-album-accordion').each(function() {
-			var header = $(this).find('.bg-accordion-header[song=' + mashTitle($.url().param('song')) + ']');
+			var header = $(this).find('.bg-accordion-header[song=' + mashTitle(params['song']) + ']');
 			var index = $(this).find('.bg-accordion-header').index(header);
 			if (index >= 0) {
 				$(this).accordion('option', 'active', index);
 				$('#bg-contents').animate({ scrollTop: header.position().top }, 1000);
-				if ($.url().param('songtab')) {
-					header.next().tabs('option', 'active', $.url().param('songtab'));
+				if (params['songtab']) {
+					header.next().tabs('option', 'active', params['songtab']);
 				}
 			}
 		});
