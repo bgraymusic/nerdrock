@@ -307,32 +307,32 @@ That\'s it, enough, wake up, it\'s just a dream.',
 	},
 	// Man Crush
 	1607912260: {
-		lyrics: '\
-[Verse 1]\n\
-You\'re everything I want to be. You\'re everyone I want to be with me.\n\
-Whenever I exist, that\'s the perfect time to think of you and me.\n\
-I\'ll be the Abed to your Troy. I\'m the Belushi to your Akroyd.\n\
-Caught in a mad bromance, just the two of us and some beer and TV.\n\
-I\'ll find a way to make you see\n\
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CYou\'re \u200Ceve\u200Cry\u200Cthing \u200CI \u200Cwant \u200Cto \u200Cbe.\u200C \
+\u200CYou\'re \u200Ceve\u200Cry\u200Cone \u200CI \u200Cwant \u200Cto \u200Cbe \u200Cwith \u200Cme.\u200C\n\
+\u200CWhen\u200Ce\u200Cver \u200CI \u200Cex\u200Cist, \u200Cthat\'s \u200Cthe \u200Cper\u200Cfect \u200Ctime \
+\u200Cto \u200Cthink \u200Cof \u200Cyou \u200Cand \u200Cme.\u200C\n\
+\u200CI\'ll \u200Cbe \u200Cthe \u200CA\u200Cbed \u200Cto \u200Cyour \u200CTroy. \
+\u200CI\'m \u200Cthe \u200CBe\u200Clu\u200Cshi \u200Cto \u200Cyour \u200CAk\u200Croyd.\u200C\n\
+\u200CCaught \u200Cin \u200Ca \u200Cmad \u200Cbro\u200Cmance, \u200Cjust \u200Cthe \u200Ctwo \u200Cof \u200Cus \
+\u200Cand \u200Csome \u200Cbeer \u200Cand \u200CT\u200CV.\u200C\n\
+\u200CI\'ll \u200Cfind \u200Ca \u200Cway \u200Cto \u200Cmake \u200Cyou \u200Csee\u200C\n\
 \n\
-[Chorus 1]\n\
-That if I were gay, I would be gay for you.\n\
-I hope that doesn\'t make you feel uncomfortable.\n\
-If you were a girl, I\'d be all over that,\n\
-But here\'s the world we live in, and here\'s my song for you, my man crush.\n\
+\u200C[Chorus]\n\
+\u200CThat \u200Cif \u200CI \u200Cwere \u200Cgay, \u200CI \u200Cwould \u200Cbe \u200Cgay \u200Cfor \u200Cyou.\u200C\n\
+\u200CI \u200Chope \u200Cthat \u200Cdoes\u200Cn\'t \u200Cmake \u200Cyou \u200Cfeel \u200Cun\u200Ccom\u200Cfort\u200Cable.\u200C\n\
+\u200CIf \u200Cyou \u200Cwere \u200Ca \u200Cgirl, \u200CI\'d \u200Cbe \u200Call \u200Co\u200Cver \u200Cthat,\u200C\n\
+\u200CBut \u200Chere\'s \u200Cthe \u200Cworld \u200Cwe \u200Clive \u200Cin, \u200Cand \u200Chere\'s \u200Cmy \u200Csong \u200Cfor \u200Cyou, \u200Cmy \u200Cman \u200Ccrush.\u200C\n\
 \n\
-[Verse 2]\n\
-Aren\'t all the good times just a blur? I climbed your fence, and snapped a picture.\n\
-Your people helped me leave; maybe I can send a copy to you.\n\
-You know that I\'m your biggest fan. I\'m here for you, because I love you man.\n\
-Come get your man-hug here, like where you slap my back, and I slap yours too.\n\
-We\'ve got mantivities to do.\n\
+\u200C[Verse 2]\n\
+\u200CAren\'t \u200Call \u200Cthe \u200Cgood \u200Ctimes \u200Cjust \u200Ca \u200Cblur?\u200C \u200CI \u200Cclimbed \u200Cyour \u200Cfence, \u200Cand \u200Csnapped \u200Ca \u200Cpic\u200Cture.\u200C\n\
+\u200CYour \u200Cpeo\u200Cple \u200Chelped \u200Cme \u200Cleave; \u200Cmay\u200Cbe \u200CI \u200Ccan \u200Csend \u200Ca \u200Cco\u200Cpy \u200Cto \u200Cyou.\u200C\n\
+\u200CYou \u200Cknow \u200Cthat \u200CI\'m \u200Cyour \u200Cbig\u200Cgest \u200Cfan.\u200C \u200CI\'m \u200Chere \u200Cfor \u200Cyou, \u200Cbe\u200Ccause \u200CI \u200Clove \u200Cyou \u200Cman.\u200C\n\
+\u200CCome \u200Cget \u200Cyour \u200Cman-\u200Chug \u200Chere, \u200Clike \u200Cwhere \u200Cyou \u200Cslap \u200Cmy \u200Cback, \u200Cand \u200CI \u200Cslap \u200Cyours \u200Ctoo.\u200C\n\
+\u200CWe\'ve \u200Cgot \u200Cman\u200Cti\u200Cvi\u200Cties \u200Cto \u200Cdo.\u200C\n\
 \n\
-[Chorus 2]\n\
-And if I were gay, I would be gay for you.\n\
-I\'m sensing maybe that makes you uncomfortable.\n\
-If you were a girl, then you could be my girl,\n\
-But since you\'re not a girl, I think it\'s time to be my man crush.\n\
+\u200C[Chorus]\n\
 \n\
 [Bridge]\n\
 Please, don\'t turn out to be a jerk ball.\n\
@@ -344,11 +344,26 @@ I know we\'ll be forever bros. We\'re mac and cheese. We\'re double rainbows.\n\
 You can\'t believe how much goes into working out your traveling plans.\n\
 I\'ve got my ticket in my hands.\n\
 \n\
-[Chorus 3]\n\
-And if I were gay, I would be gay for you.\n\
-Why does it seem to make you so uncomfortable to hear that\n\
-If you were a girl, I\'d be all up in that\n\
-But as you have no "that" all up in which to be, you\'re my man crush.',
+[Chorus]',
+		timing: [
+// Verse 1
+0, 0.1,
+0.1, 0.5, 0.7, 1.0, 1.6, 2.2, 2.6, 2.8, 4.3,
+6.6, 7.0, 7.2, 7.5, 8.1, 8.7, 9.1, 9.3, 9.5, 9.7, 11.2,
+
+
+// Chorus
+
+// Verse 2
+
+// Chorus
+
+// Bridge
+
+// Verse 3
+
+// Chorus
+		],
 		notes: 'George: I\'ve nothing to say </div><div>Dot: You have many things </div><div>George: Well, nothing that\'s not been said </div><div>Dot: Said by you though? </div><div><br /></div><div>Ok, so the basic concept isn\'t entirely novel, but then it\'s a love song. How many love songs out there are truly original? This is my take on a platonic man-love song. Some stalking, a bit of how we objectify celebrities, and a whole bunch of poking fun at the whole "bromance" thing, like we need a name for guys who are good friends. A lot of the other bromantic songs seem to bang on the gay aspect pretty directly, and I wasn\'t really with that, as either hinting at or denying a gay angle isn\'t what this song is about. It seemed appropriate to attempt a kind of drive-by lampshading and then let it go. Of course, that happens at the beginning of the chorus, so I hit the subjunctive 3 times. Too much? </div><div><br /></div><div>The rhyme scheme is interesting in how it came about. I\'m very much against the idea that a word rhymes with itself. Most of that is because it doesn\'t. And yet, I had "me" and "me" in the first verse in an AAXA BBXBB pattern. No problem, I\'ll just redefine the rhyme scheme to use AAXB CCXBB. Now the first and second "me"s are not rhyming with each other. One is an A, one is a B, and it\'s just a coincidence they\'re both in the same rhyming family. So there. I compensated by going the rest of the song (that is, choruses and bridge) without rhyming at all, a practice with which I\'m becoming increasingly comfortable. </div><div><br /></div><div>The music has some obvious influences: Elton John, Billy Joel, Ben Folds, Alicia Keys...basically anyone who uses a lot of piano in popular music. Also felt some Sondheim happening, but then I can\'t really play anything with a bunch of Imaj7 and IVmaj7 without hearing "Pretty Women". Bonus shout out to No More Kings\' "About Schroeder" for the III7 to IV resolution. My instinct was to go to vi (treating the III7 as a V7/vi), but I liked the sound so I stole it. </div><div><br /></div><div>Ouch. That "different than" really is big fat in there, isn\'t it? Bad Brian. Your an idiot, and you should of known better.'
 	},
 	// Before You Go
@@ -520,7 +535,7 @@ To us norms: lay your conscience bare, and rage against the ticking of the clock
 Hearts and brains… we\'ve got lots to share. It\'s only fair. Walkers gonna walk.\n\
 \n\
 Walkers gonna walk. Walkers gonna walk. Everybody walk!',
-		notes: '“If you can\'t run then walk, if you can\'t walk then crawl, if you can\'t crawl then just kind of squirm and gargle, but whatever you do you have to keep disobeying the laws of thermodynamics.”<div><br /></div><div> - Anonymous</div><div><br /></div><div>I like the idea of recording a "live" song, but it may be a year or two until I\'m actually packing a stadium, so I may have jumped the gun a bit.</div><div><br /></div><div>I was really pretty stuck trying to come up with a protest song. This may be the latest in the week I\'ve ever gone without any hint of a solid idea. Then I remembered the Zombie Walk for Hunger last year. Zombie walks are usually done for fun or performance art, but on this occasion they did it to protest hunger and raise awareness and donations to the cause. I really liked the metaphor. Taken directly, who is more hungry than a zombie? And on the ironic flip side, it casts a light on the inhumanity with which we tend to view the hungry, so as to justify ignoring them. By taking something inhuman (and hungry) like zombies and protesting for their human treatment, it makes giving to the human needy seem more possible. <span style="line-height:1.25;font-size:10pt">All kinds of parallels, like their lack of a voice, groping for a way out, etc.</span></div><div><span style="line-height:1.25;font-size:10pt"><br /></span></div><div><span style="line-height:1.25;font-size:10pt">I thought it was an awesome metaphor, so decided to write a song that could work on both levels. Either it\'s a literal zombie rights song (at a benefit concert in the town of Woodbury from The Walking Dead), or a protest to raise hunger awareness at a Zombie Walk. For this reason I intentionally used an outdoor setting (long city-street reverb, crowd noise) to support both ideas.</span></div><div><br /></div><div>I think the 9/8 time gives the whole song a kind of lurching, unsteady feel that fits with the concept, especially with the rhythm pattern of 2\'s for the first 2 triplets and 3\'s on the third. You almost expect it to be in common time and then find an extra 8th note at the end.</div><div><br /></div><div>The overall structure was uncomfortable to me, being used to verse/chorus/bridge. But I wanted a lot of energy right at the beginning, so I started with a high, loud note and ended the first stanza with the hook. I felt a thematic repeat at that point would be tolerable, then a different movement was in order before returning, completing an AABA block. I could have done a second bridge after that, but decided that in a live concert setting an instrumental solo (over the bridge chords) would go over better, then return to the main theme to end it. Overall, almost like the structure in <a href="https://sites.google.com/site/briangraymusic/songs/one-of-us" target="_blank">One of Us</a>, but I hope done in a manner that gets less repetitive.</div><div><br /></div><div>It seems in every song I do there\'s one little word or phrase that I really like. Typically it\'s some kind of double-meaning, and I know what it is in this song: "dispossessed." In addition to the actual meaning of "physically or spiritually homeless or deprived of security", it occurred to me that when a person is "possessed", they have a second consciousness in them. So what\'s the opposite? Having the first consciousness removed of course! So zombies are "dispossessed". Heh.'
+		notes: '“If you can\'t run then walk, if you can\'t walk then crawl, if you can\'t crawl then just kind of squirm and gargle, but whatever you do you have to keep disobeying the laws of thermodynamics.”<div><br /></div><div> - Anonymous</div><div><br /></div><div>I like the idea of recording a "live" song, but it may be a year or two until I\'m actually packing a stadium, so I may have jumped the gun a bit.</div><div><br /></div><div>I was really pretty stuck trying to come up with a protest song. This may be the latest in the week I\'ve ever gone without any hint of a solid idea. Then I remembered the Zombie Walk for Hunger last year. Zombie walks are usually done for fun or performance art, but on this occasion they did it to protest hunger and raise awareness and donations to the cause. I really liked the metaphor. Taken directly, who is more hungry than a zombie? And on the ironic flip side, it casts a light on the inhumanity with which we tend to view the hungry, so as to justify ignoring them. By taking something inhuman (and hungry) like zombies and protesting for their human treatment, it makes giving to the human needy seem more possible. <span style="line-height:1.25;font-size:10pt">All kinds of parallels, like their lack of a voice, groping for a way out, etc.</span></div><div><span style="line-height:1.25;font-size:10pt"><br /></span></div><div><span style="line-height:1.25;font-size:10pt">I thought it was an awesome metaphor, so decided to write a song that could work on both levels. Either it\'s a literal zombie rights song (at a benefit concert in the town of Woodbury from The Walking Dead), or a protest to raise hunger awareness at a Zombie Walk. For this reason I intentionally used an outdoor setting (long city-street reverb, crowd noise) to support both ideas.</span></div><div><br /></div><div>I think the 9/8 time gives the whole song a kind of lurching, unsteady feel that fits with the concept, especially with the rhythm pattern of 2\'s for the first 2 triplets and 3\'s on the third. You almost expect it to be in common time and then find an extra 8th note at the end.</div><div><br /></div><div>The overall structure was uncomfortable to me, being used to verse/chorus/bridge. But I wanted a lot of energy right at the beginning, so I started with a high, loud note and ended the first stanza with the hook. I felt a thematic repeat at that point would be tolerable, then a different movement was in order before returning, completing an AABA block. I could have done a second bridge after that, but decided that in a live concert setting an instrumental solo (over the bridge chords) would go over better, then return to the main theme to end it. Overall, almost like the structure in <a href="#" onclick="navigate({toptab:1,song:\'one-of-us\'});return false">One of Us</a>, but I hope done in a manner that gets less repetitive.</div><div><br /></div><div>It seems in every song I do there\'s one little word or phrase that I really like. Typically it\'s some kind of double-meaning, and I know what it is in this song: "dispossessed." In addition to the actual meaning of "physically or spiritually homeless or deprived of security", it occurred to me that when a person is "possessed", they have a second consciousness in them. So what\'s the opposite? Having the first consciousness removed of course! So zombies are "dispossessed". Heh.'
 	},
 	// Grind
 	1977892694: {
