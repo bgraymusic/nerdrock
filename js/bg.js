@@ -1,6 +1,3 @@
-// 3:35 = 215 seconds
-var songLength = 215;
-
 function buildAlbums(discography) {
 	for (var i = discography.length; i > 0; --i) {
 		var album = discography[i-1];
@@ -13,7 +10,6 @@ function buildAlbums(discography) {
 		albumDiv.append(albumRow);
 		$('#bg-music').append(albumDiv);
 	}
-//	$('#bg-music').append($('<div id="bg-buy-dialog"></div>'));
 	registerJQueryUI();
 	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab') });
 }
@@ -206,10 +202,6 @@ $('#bg-contents .bg-track-play-pause-button').button().click(function(event) {
 				player.jPlayer('volume', ui.value/100);
 			}
 		});
-/*
-	$('#bg-contents .bg-track-download-button')
-		.button().click(function(event) { event.stopPropagation(); });
-*/
 	$('#bg-contents .bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
 	$('#bg-contents .bg-accordion-body').tabs();
 
