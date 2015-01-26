@@ -1,3 +1,5 @@
+var blogroot = 'https://briangraymusic.wordpress.com';
+
 function buildAlbums(discography) {
 	for (var i = discography.length; i > 0; --i) {
 		var album = discography[i-1];
@@ -11,7 +13,8 @@ function buildAlbums(discography) {
 		$('#bg-music').append(albumDiv);
 	}
 	registerJQueryUI();
-	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab') });
+	var startBlog = $.url().param('blog') ? $.url().param('blog') : blogroot;
+	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab'), blog: startBlog });
 }
 
 function buildAlbumDiv(albumRow, album) {
@@ -216,7 +219,7 @@ $('#bg-contents .bg-track-play-pause-button').button().click(function(event) {
 	}
 }
 
-// params: toptab(0-n), song(title), songtab(0-n)
+// params: toptab(0-n), song(title), songtab(0-n), blog(relative path off blogroot)
 function navigate(params) {
 	if (params['toptab']) {
 		$('#bg-top-level-tabs').tabs('option', 'active', params['toptab']);
@@ -233,6 +236,9 @@ function navigate(params) {
 				}
 			}
 		});
+	}
+	if (params['blog']) {
+		$('#bg-blogframe').attr('src', blogroot + params['blog'])
 	}
 }
 
