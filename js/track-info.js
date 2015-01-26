@@ -311,58 +311,91 @@ That\'s it, enough, wake up, it\'s just a dream.',
 \u200C[Verse 1]\n\
 \u200CYou\'re \u200Ceve\u200Cry\u200Cthing \u200CI \u200Cwant \u200Cto \u200Cbe.\u200C \
 \u200CYou\'re \u200Ceve\u200Cry\u200Cone \u200CI \u200Cwant \u200Cto \u200Cbe \u200Cwith \u200Cme.\u200C\n\
-\u200CWhen\u200Ce\u200Cver \u200CI \u200Cex\u200Cist, \u200Cthat\'s \u200Cthe \u200Cper\u200Cfect \u200Ctime \
+\u200CWhen\u200Ce\u200Cver \u200CI \u200Cex\u200Cist,\u200C \u200Cthat\'s \u200Cthe \u200Cper\u200Cfect \u200Ctime \
 \u200Cto \u200Cthink \u200Cof \u200Cyou \u200Cand \u200Cme.\u200C\n\
-\u200CI\'ll \u200Cbe \u200Cthe \u200CA\u200Cbed \u200Cto \u200Cyour \u200CTroy. \
+\u200CI\'ll \u200Cbe \u200Cthe \u200CA\u200Cbed \u200Cto \u200Cyour \u200CTroy.\u200C \
 \u200CI\'m \u200Cthe \u200CBe\u200Clu\u200Cshi \u200Cto \u200Cyour \u200CAk\u200Croyd.\u200C\n\
 \u200CCaught \u200Cin \u200Ca \u200Cmad \u200Cbro\u200Cmance, \u200Cjust \u200Cthe \u200Ctwo \u200Cof \u200Cus \
 \u200Cand \u200Csome \u200Cbeer \u200Cand \u200CT\u200CV.\u200C\n\
 \u200CI\'ll \u200Cfind \u200Ca \u200Cway \u200Cto \u200Cmake \u200Cyou \u200Csee\u200C\n\
 \n\
 \u200C[Chorus]\n\
-\u200CThat \u200Cif \u200CI \u200Cwere \u200Cgay, \u200CI \u200Cwould \u200Cbe \u200Cgay \u200Cfor \u200Cyou.\u200C\n\
-\u200CI \u200Chope \u200Cthat \u200Cdoes\u200Cn\'t \u200Cmake \u200Cyou \u200Cfeel \u200Cun\u200Ccom\u200Cfort\u200Cable.\u200C\n\
-\u200CIf \u200Cyou \u200Cwere \u200Ca \u200Cgirl, \u200CI\'d \u200Cbe \u200Call \u200Co\u200Cver \u200Cthat,\u200C\n\
-\u200CBut \u200Chere\'s \u200Cthe \u200Cworld \u200Cwe \u200Clive \u200Cin, \u200Cand \u200Chere\'s \u200Cmy \u200Csong \u200Cfor \u200Cyou, \u200Cmy \u200Cman \u200Ccrush.\u200C\n\
+\u200CThat \u200Cif \u200CI \u200Cwere \u200Cgay,\u200C \
+\u200CI \u200Cwould \u200Cbe \u200Cgay \u200Cfor \u200Cyou.\u200C\n\
+\u200CI \u200Chope \u200Cthat \u200Cdoes\u200Cn\'t \u200Cmake \u200Cyou \
+\u200Cfeel \u200Cun\u200Ccom\u200Cfort\u200Cable.\u200C\n\
+\u200CIf \u200Cyou \u200Cwere \u200Ca \u200Cgirl,\u200C \
+\u200CI\'d \u200Cbe \u200Call \u200Co\u200Cver \u200Cthat,\u200C\n\
+\u200CBut \u200Chere\'s \u200Cthe \u200Cworld \u200Cwe \u200Clive \u200Cin, \
+\u200Cand \u200Chere\'s \u200Cmy \u200Csong \u200Cfor \u200Cyou, \u200Cmy \u200Cman \u200Ccrush.\u200C\n\
 \n\
 \u200C[Verse 2]\n\
-\u200CAren\'t \u200Call \u200Cthe \u200Cgood \u200Ctimes \u200Cjust \u200Ca \u200Cblur?\u200C \u200CI \u200Cclimbed \u200Cyour \u200Cfence, \u200Cand \u200Csnapped \u200Ca \u200Cpic\u200Cture.\u200C\n\
-\u200CYour \u200Cpeo\u200Cple \u200Chelped \u200Cme \u200Cleave; \u200Cmay\u200Cbe \u200CI \u200Ccan \u200Csend \u200Ca \u200Cco\u200Cpy \u200Cto \u200Cyou.\u200C\n\
-\u200CYou \u200Cknow \u200Cthat \u200CI\'m \u200Cyour \u200Cbig\u200Cgest \u200Cfan.\u200C \u200CI\'m \u200Chere \u200Cfor \u200Cyou, \u200Cbe\u200Ccause \u200CI \u200Clove \u200Cyou \u200Cman.\u200C\n\
-\u200CCome \u200Cget \u200Cyour \u200Cman-\u200Chug \u200Chere, \u200Clike \u200Cwhere \u200Cyou \u200Cslap \u200Cmy \u200Cback, \u200Cand \u200CI \u200Cslap \u200Cyours \u200Ctoo.\u200C\n\
+\u200CAren\'t \u200Call \u200Cthe \u200Cgood \u200Ctimes \u200Cjust \u200Ca \u200Cblur?\u200C \
+\u200CI \u200Cclimbed \u200Cyour \u200Cfence, \u200Cand \u200Csnapped \u200Ca \u200Cpic\u200Cture.\u200C\n\
+\u200CYour \u200Cpeo\u200Cple \u200Chelped \u200Cme \u200Cleave; \
+\u200Cmay\u200Cbe \u200CI \u200Ccan \u200Csend \u200Ca \u200Cco\u200Cpy \u200Cto \u200Cyou.\u200C\n\
+\u200CYou \u200Cknow \u200Cthat \u200CI\'m \u200Cyour \u200Cbig\u200Cgest \u200Cfan.\u200C \
+\u200CI\'m \u200Chere \u200Cfor \u200Cyou, \u200Cbe\u200Ccause \u200CI \u200Clove \u200Cyou \u200Cman.\u200C\n\
+\u200CCome \u200Cget \u200Cyour \u200Cman-\u200Chug \u200Chere, \
+\u200Clike \u200Cwhere \u200Cyou \u200Cslap \u200Cmy \u200Cback, \u200Cand \u200CI \u200Cslap \u200Cyours \u200Ctoo.\u200C\n\
 \u200CWe\'ve \u200Cgot \u200Cman\u200Cti\u200Cvi\u200Cties \u200Cto \u200Cdo.\u200C\n\
 \n\
-\u200C[Chorus]\n\
+\u200C[Chorus]\u200C\n\
 \n\
-[Bridge]\n\
-Please, don\'t turn out to be a jerk ball.\n\
-Please, don\'t have politics that are different than mine.\n\
-Please, don\'t do anything new; I like you just the way you are.\n\
+\u200C[Bridge]\n\
+\u200CPlease, \u200Cdon\'t \u200Cturn \u200Cout \u200Cto \u200Cbe \u200Ca \u200Cjerk \u200Cball.\u200C\n\
+\u200CPlease, \u200Cdon\'t \u200Chave \u200Cpo\u200Cli\u200Ctics \u200Cthat \u200Care \u200Cdif\u200Cferent \u200Cthan \u200Cmine.\u200C\n\
+\u200CPlease, \u200Cdon\'t \u200Cdo \u200Ca\u200Cny\u200Cthing \u200Cnew; \u200CI \u200Clike \u200Cyou \u200Cjust \u200Cthe \u200Cway \u200Cyou \u200Care.\u200C\n\
 \n\
-[Verse 3]\n\
-I know we\'ll be forever bros. We\'re mac and cheese. We\'re double rainbows.\n\
-You can\'t believe how much goes into working out your traveling plans.\n\
-I\'ve got my ticket in my hands.\n\
+\u200C[Verse 3]\n\
+\u200CI \u200Cknow \u200Cwe\'ll \u200Cbe \u200Cfor\u200Ce\u200Cver \u200Cbros.\u200C \
+\u200CWe\'re \u200Cmac \u200Cand \u200Ccheese. \u200CWe\'re \u200Cdou\u200Cble \u200Crain\u200Cbows.\u200C\n\
+\u200CYou \u200Ccan\'t \u200Cbe\u200Clieve \u200Chow \u200Cmuch \
+\u200Cgoes \u200Cin\u200Cto \u200Cwor\u200Cking \u200Cout \u200Cyour \u200Ctra\u200Cve\u200Cling \u200Cplans.\u200C\n\
+\u200CI\'ve \u200Cgot \u200Cmy \u200Ctic\u200Cket \u200Cin \u200Cmy \u200Chands.\u200C\n\
 \n\
-[Chorus]',
+\u200C[Chorus]\u200C',
 		timing: [
 // Verse 1
 0, 0.1,
-0.1, 0.5, 0.7, 1.0, 1.6, 2.2, 2.6, 2.8, 4.3,
-6.6, 7.0, 7.2, 7.5, 8.1, 8.7, 9.1, 9.3, 9.5, 9.7, 11.2,
-
+0.1, 0.5, 0.7, 1.0, 1.6, 2.2, 2.6, 2.8, 4, 6.6, 7.0, 7.2, 7.5, 8.1, 8.7, 9.1, 9.3, 9.5, 9.7, 11.6,
+13.2, 13.6, 14, 14.4, 15, 15.6, 16.4, 16.8, 17.2, 17.4, 17.8, 18, 18.8, 19, 19.4, 19.6, 20, 20.4, 22,
+22.8, 23.2, 23.6, 23.8, 24.2, 24.8, 25, 25.6, 27.2, 29.4, 29.8, 30.2, 30.4, 30.8, 31.4, 31.6, 32, 32.4, 34,
+35.8, 36.2, 36.6, 37, 37.6, 38.2, 39.4, 39.8, 40, 40.4, 40.6, 41, 41.4, 41.8, 42.2, 42.6, 43, 44.4,
+45.6, 46, 46.4, 46.6, 47.2, 47.4, 47.8, 48.4, 50,
 
 // Chorus
+50,
+50.6, 50.8, 51, 51.2, 51.6, 53.2, 54, 54.2, 54.4, 54.8, 55.2, 55.4, 56.4,
+57.6, 58, 58.4, 58.8, 59, 59.4, 59.8, 60.4, 60.8, 61.2, 61.6, 61.8, 63.2,
+63.8, 64, 64.2, 64.4, 64.6, 66.4, 67.2, 67.4, 67.6, 68, 68.6, 69.2, 70.6,
+70.6, 71, 71.4, 71.6, 72, 72.4, 72.8, 73.4, 73.6, 74, 74.4, 74.8, 75, 75.6, 76, 76.6, 78,
 
 // Verse 2
+79,
+81.2, 81.6, 82, 82.2, 82.6, 83.2, 83.6, 83.8, 85.6, 87.6, 88, 88.4, 88.8, 89.4, 89.6, 90, 90.2, 90.6, 91.4,
+94.2, 94.6, 95, 95.4, 96, 96.6, 97.8, 98.2, 98.4, 99, 99.4, 99.8, 100.2, 100.6, 101, 101.4, 103.4,
+103.8, 104.2, 104.6, 104.8, 105.4, 106, 106.2, 106.6, 107.4, 110.4, 110.8, 111.2, 111.4, 112, 112.4, 112.6, 113, 113.4, 113.6, 114.6,
+116.8, 117.2, 117.6, 118, 118.6, 119.2, 120, 120.6, 121, 121.2, 121.6, 122, 122.6, 122.8, 123.2, 123.6, 124, 126,
+126.6, 127, 127.4, 127.8, 128, 128.2, 129, 129.2, 131,
 
 // Chorus
+131, 160,
 
 // Bridge
+160,
+161.7, 162.7, 163.1, 163.5, 163.9, 164.1, 164.7, 164.9, 165.3, 166.3,
+168.2, 169.2, 169.6, 170, 170.2, 170.4, 171.2, 171.4, 171.6, 172, 172.4, 172.8, 173.6,
+174.7, 175.7, 176.1, 176.5, 176.7, 176.9, 177.7, 178.5, 178.9, 179.3, 179.7, 180.1, 180.3, 180.7, 181.1, 182.9,
 
 // Verse 3
+183.8,
+185, 185.4, 185.8, 186.2, 186.8, 187.2, 187.4, 187.8, 189.4, 191.5, 191.9, 192.1, 192.5, 193.1, 193.5, 193.7, 194.1, 194.5, 196.3,
+198, 198.4, 198.8, 199.2, 199.8, 200.4, 201.2, 201.6, 202, 202.4, 202.8, 203, 203.6, 204, 204.4, 204.8, 205.2, 207.2,
+207.6, 208, 208.4, 208.8, 209, 209.2, 209.8, 210.2, 212,
 
 // Chorus
+212, 242
 		],
 		notes: 'George: I\'ve nothing to say </div><div>Dot: You have many things </div><div>George: Well, nothing that\'s not been said </div><div>Dot: Said by you though? </div><div><br /></div><div>Ok, so the basic concept isn\'t entirely novel, but then it\'s a love song. How many love songs out there are truly original? This is my take on a platonic man-love song. Some stalking, a bit of how we objectify celebrities, and a whole bunch of poking fun at the whole "bromance" thing, like we need a name for guys who are good friends. A lot of the other bromantic songs seem to bang on the gay aspect pretty directly, and I wasn\'t really with that, as either hinting at or denying a gay angle isn\'t what this song is about. It seemed appropriate to attempt a kind of drive-by lampshading and then let it go. Of course, that happens at the beginning of the chorus, so I hit the subjunctive 3 times. Too much? </div><div><br /></div><div>The rhyme scheme is interesting in how it came about. I\'m very much against the idea that a word rhymes with itself. Most of that is because it doesn\'t. And yet, I had "me" and "me" in the first verse in an AAXA BBXBB pattern. No problem, I\'ll just redefine the rhyme scheme to use AAXB CCXBB. Now the first and second "me"s are not rhyming with each other. One is an A, one is a B, and it\'s just a coincidence they\'re both in the same rhyming family. So there. I compensated by going the rest of the song (that is, choruses and bridge) without rhyming at all, a practice with which I\'m becoming increasingly comfortable. </div><div><br /></div><div>The music has some obvious influences: Elton John, Billy Joel, Ben Folds, Alicia Keys...basically anyone who uses a lot of piano in popular music. Also felt some Sondheim happening, but then I can\'t really play anything with a bunch of Imaj7 and IVmaj7 without hearing "Pretty Women". Bonus shout out to No More Kings\' "About Schroeder" for the III7 to IV resolution. My instinct was to go to vi (treating the III7 as a V7/vi), but I liked the sound so I stole it. </div><div><br /></div><div>Ouch. That "different than" really is big fat in there, isn\'t it? Bad Brian. Your an idiot, and you should of known better.'
 	},
