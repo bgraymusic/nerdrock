@@ -13,7 +13,7 @@ function buildAlbums(discography) {
 		$('#bg-music').append(albumDiv);
 	}
 	registerJQueryUI();
-	var startBlog = $.url().param('blog') ? $.url().param('blog') : blogroot;
+	var startBlog = $.url().param('blog') ? $.url().param('blog') : ' ';
 	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab'), blog: startBlog });
 }
 
