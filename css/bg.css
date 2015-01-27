@@ -40,8 +40,11 @@
 #bg-body>.bg-top-level-tabs {
 	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
 }
+
+/* HOW HIGH TO PUT THE TABS. LOWER NUMBERS ARE HIGHER */
+#bg-body>.bg-top-level-tabs>ul { top: 20em; }
 #bg-body>.bg-top-level-tabs>ul {
-	position: absolute; top: 24em; left: 3em; z-index: 1; height: 1.5em; border: 0;
+	position: absolute; left: 3em; z-index: 1; height: 1.5em; border: 0;
 	font-size: medium; background: none; padding: 0;
 }
 #bg-body>.bg-top-level-tabs>ul>li.ui-state-default {
