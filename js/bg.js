@@ -138,6 +138,11 @@ function buildAlbumAccordionBody(body, track) {
 	else
 		body.append($('<div></div>').attr('id', track.track_id + 'notes').html(track.about));
 
+	if (info && info.media) {
+		body.append($('<div></div>').addClass('bg-track-media').attr('id', track.track_id + 'media').html(trackInfo[track.track_id].media));
+		tabs.append($('<li></li').append($('<a></a>').attr('href', '#' + track.track_id + 'media').text('Media')));
+	}
+
 	if (info && info.tab) {
 		tabs.append($('<li></li').append($('<a></a>').attr('href', '#' + track.track_id + 'tab').text('Tablature')));
 		body.append($('<div></div>').attr('id', track.track_id + 'tab').addClass('vex-tabdiv').attr('scale', '2').attr('width', '600').html(info.tab));
