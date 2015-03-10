@@ -42,7 +42,7 @@
 }
 
 /* HOW HIGH TO PUT THE TABS. LOWER NUMBERS ARE HIGHER */
-#bg-body>.bg-top-level-tabs>ul { top: 20em; }
+#bg-body>.bg-top-level-tabs>ul { top: 25em; }
 #bg-body>.bg-top-level-tabs>ul {
 	position: absolute; left: 3em; z-index: 1; height: 1.5em; border: 0;
 	font-size: medium; background: none; padding: 0;
@@ -160,15 +160,6 @@
 #bg-top-level-tabs .ui-dialog .ui-dialog-titlebar button span {
 	margin-left: -9px;
 }
-#bg-buy-dialog {
-	padding: 0; padding-top: 0.3em;
-	overflow: hidden;
-}
-#bg-buy-dialog iframe {
-	width: 100%;
-	height: 100%;
-	border: 0;
-}
 
 
 #bg-blog { width: 100%; height: 100% }
@@ -201,6 +192,9 @@ body.blog a:link,body.single a:link,body.archive a:link { color: #3383BB; }
 #bg-begging { width: 100%; height: 100% }
 #bg-begging iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 
+
+#bg-tribbulous { width: 100%; height: 100% }
+#bg-tribbulous iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 
 #bg-github { width: 100%; height: 100% }
 #bg-github iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
