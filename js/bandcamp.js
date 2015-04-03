@@ -96,8 +96,8 @@ Bandcamp.discography = {};
 
 Bandcamp.prototype = {
 	getBandcampData: function(cb) {
-		jQuery.ajaxSetup({async:false});
 		Bandcamp.callback = cb;
+		jQuery.ajaxSetup({async:false});
 		var foo = $.getJSON(Bandcamp.apiURL + Bandcamp.discographyApi, { key: Bandcamp.apiKey, band_id: Bandcamp.bandId }, function(discData) {
 			Bandcamp.discography = discData.discography;
 			for (var albumIdx in Bandcamp.discography) {
@@ -112,7 +112,6 @@ Bandcamp.prototype = {
 				});
 			}
 		});
-		jQuery.ajaxSetup({async:true});
 		Bandcamp.callback(Bandcamp.discography);
 		return (!!Bandcamp.netError);
 	}
