@@ -6,8 +6,12 @@ function onDataComplete(bcData) {
 	registerGlobalJQueryUI();
 	BG.Discography.registerJQueryUI();
 
-	var startBlog = $.url().param('blog') ? $.url().param('blog') : ' ';
-	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab'), blog: startBlog });
+// 	var startBlog = $.url().param('blog') ? $.url().param('blog') : ' ';
+// 	navigate({ toptab: $.url().param('toptab'), song: $.url().param('song'), songtab: $.url().param('songtab'), blog: startBlog });
+	navigate({
+		toptab: $.url().param('toptab'), blog: $.url().param('blog'),
+		song: $.url().param('song'), songtab: $.url().param('songtab')
+	});
 }
 
 function registerGlobalJQueryUI() {
@@ -29,13 +33,9 @@ function navigate(params) {
 			if (index >= 0) {
 				$(this).accordion('option', 'active', index);
 				$('#bg-contents').animate({ scrollTop: header.position().top }, 1000);
-				if (params['songtab']) {
-					header.next().tabs('option', 'active', params['songtab']);
-				}
+				if (params['songtab']) header.next().tabs('option', 'active', params['songtab']);
 			}
 		});
 	}
-	if (params['blog']) {
-		$('#bg-blogframe').attr('src', blogroot + params['blog'])
-	}
+	$('#bg-blogframe').attr('src', blogroot + (params['blog'] ? params['blog'] : ''));
 }
