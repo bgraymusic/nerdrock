@@ -36,13 +36,11 @@ handlers:
 - url: /bc.*
   script: nerdrock.bandcamp
 
-<<<<<<< Updated upstream
 - url: /github.*
   script: nerdrock.github
-=======
+
 - url: /proxy.*
   script: proxy.proxy
->>>>>>> Stashed changes
 
 libraries:
 - name: webapp2
