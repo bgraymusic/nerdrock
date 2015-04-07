@@ -55,19 +55,74 @@ BG.Track.prototype.buildDOM = function(hdr, body) {
 
 BG.Track.prototype.buildHeader = function() {
 	this.hdr.attr('title', this.title);
-	this.hdr.attr('song', this.mashTitle(this.title));
+	this.hdr.attr('song', BG.Track.mashTitle(this.title));
 	var controls = $('<div/>').addClass(BG.Track.css.hdr.controls.cont);
 	this.hdr.append(controls);
 	this.buildControls(controls);
 	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).text(this.title));
 }
 
-BG.Track.prototype.mashTitle = function(title) {
+BG.Track.mashTitle = function(title) {
 	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_`~()]/g,"").replace(/\s+/g, "");
 }
 
 BG.Track.prototype.buildControls = function(controls) {
-	this.player = $('<div/>').addClass(BG.Track.css.hdr.player).jPlayer({
+// 	this.player = $('<div/>').addClass(BG.Track.css.hdr.player).jPlayer({
+// 		ready: function(event) { $(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url }); },
+// 		timeupdate: function(event) {
+// 			var track = BG.Track.getFromElement($(this).data().controls);
+// 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
+// 			if (!slider.data('sliding')) {
+// 				slider.slider('value', $(this).data().jPlayer.status.currentTime);
+// 				slider.prev().text($.jPlayer.convertTime($(this).data().jPlayer.status.currentTime));
+// 				BG.Track.markElapsedLyrics(track.body.find('.'+BG.Track.css.body.lyr.cont), $(this).data().jPlayer.status.currentTime);
+// 			}
+// 		},
+// 		ended: function(event) {
+// 			var track = BG.Track.getFromElement($(this).data().controls);
+// 			var playButton = track.hdr.find('.'+BG.Track.css.hdr.controls.play);
+// 			setPlayButton(track.hdr.find('.'+BG.Track.css.hdr.controls.play), true);
+// 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
+// 			slider.slider('value', 0);
+// 			slider.prev().text($.jPlayer.convertTime(0));
+// 			var onesong = track.album.cont.find('.'+BG.Album.css.meta.onesong).prop('checked');
+// 			var repeat = track.album.cont.find('.'+BG.Album.css.meta.repeat).prop('checked');
+// 			if (!onesong) {
+// 				var idx = $.inArray(track, track.album.workingTracks);
+// 				var targetTrack;
+// 				if (idx >= 0 && idx < track.album.workingTracks.length - 1) {
+// 					targetTrack = track.album.workingTracks[idx+1];
+// 				} else if (idx == track.album.workingTracks.length - 1 && repeat) {
+// 					targetTrack = track.album.workingTracks[0];
+// 				}
+// 				targetTrack.player.data().jPlayer.stop();
+// 				targetTrack.hdr.find('.'+BG.Track.css.hdr.controls.play).click();
+// 			}
+// 		},
+// 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
+// 	}).data('controls', controls);
+	this.player = $('<div/>').addClass(BG.Track.css.hdr.player).data('controls', controls);
+	this.buildPlayer();
+
+	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.play));
+
+	var shuttle = $('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.cont);
+	var shuttleTable = $('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.table);
+	controls.append(shuttle.append(shuttleTable));
+	this.buildTrackShuttle(shuttleTable);
+
+	var vol = $('<div/>').addClass(BG.Track.css.hdr.controls.vol.cont);
+	var volTable = $('<div/>').addClass(BG.Track.css.hdr.controls.vol.table);
+	controls.append(vol.append(volTable));
+	this.buildTrackVolume(volTable);
+
+	controls.append($('<a/>').attr('title', 'Buy "' + this.title + '" on BandCamp.com')
+		.attr('href', Bandcamp.URL + this.url).attr('target', '_blank')
+		.addClass(BG.Track.css.hdr.controls.buy).addClass('ui-icon ui-icon-cart'));
+}
+
+BG.Track.prototype.buildPlayer = function() {
+	this.player.jPlayer({
 		ready: function(event) { $(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url }); },
 		timeupdate: function(event) {
 			var track = BG.Track.getFromElement($(this).data().controls);
@@ -100,26 +155,7 @@ BG.Track.prototype.buildControls = function(controls) {
 			}
 		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
-	}).data('controls', controls);
-
-//	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.play).addClass('ui-icon ui-icon-play'));
-	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.play));
-
-	var shuttle = $('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.cont);
-	var shuttleTable = $('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.table);
-	controls.append(shuttle.append(shuttleTable));
-	this.buildTrackShuttle(shuttleTable);
-
-	var vol = $('<div/>').addClass(BG.Track.css.hdr.controls.vol.cont);
-	var volTable = $('<div/>').addClass(BG.Track.css.hdr.controls.vol.table);
-	controls.append(vol.append(volTable));
-	this.buildTrackVolume(volTable);
-
-	controls.append($('<a/>')
-		.attr('title', 'Buy "' + this.title + '" on BandCamp.com')
-		.attr('href', Bandcamp.URL + this.url)
-		.attr('target', '_blank')
-		.addClass(BG.Track.css.hdr.controls.buy).addClass('ui-icon ui-icon-cart'));
+	});
 }
 
 BG.Track.prototype.buildTrackShuttle = function(shuttle) {
@@ -155,7 +191,7 @@ BG.Track.prototype.buildBody = function() {
 
 	if (this.media) {
 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'media').text('Media')));
-		this.body.append($('<div/>').attr('id', this.track_id + 'media').addClass(BG.Track.css.body.media).html(this.media));
+		this.body.append($('<div/>').attr('id', this.track_id + 'media').addClass(BG.Track.css.body.media));
 	}
 
 /*
@@ -172,9 +208,8 @@ BG.Track.prototype.buildBody = function() {
 }
 
 BG.Track.setPlayButton = function(button, play) {
-	if (play) {
-		$(button).button('option', 'icons', { primary: 'ui-icon-play' });
-	} else {
+	if (play) $(button).button('option', 'icons', { primary: 'ui-icon-play' });
+	else {
 		$('.'+BG.Track.css.hdr.controls.play).each(function() {
 			$(button).button('option', 'icons', { primary: 'ui-icon-play' });
 		});

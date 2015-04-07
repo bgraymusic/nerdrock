@@ -24,7 +24,7 @@ function navigate(params) {
 	}
 	if (params['song']) {
 		$('.bg-album-accordion').each(function() {
-			var header = $(this).find('.bg-accordion-header[song=' + mashTitle(params['song']) + ']');
+			var header = $(this).find('.bg-accordion-header[song=' + BG.Track.mashTitle(params['song']) + ']');
 			var index = $(this).find('.bg-accordion-header').index(header);
 			if (index >= 0) {
 				$(this).accordion('option', 'active', index);

@@ -96,6 +96,7 @@ BG.Album.registerJQueryUI = function() {
 		var album = BG.Album.getFromElement($(this));
 		if (this.checked) BG.Album.shuffle(album.workingTracks);
 		else album.workingTracks = album.masterTracks.slice(0);
+		$('.'+BG.Track.css.body.media).filter(':hidden').empty();
 		var step = 0;
 		$(album.workingTracks).each(function() { setTimeout(BG.Album.shuffleStart, 33*step, album.accordion, this); ++step; });
 	});
@@ -105,6 +106,11 @@ BG.Album.registerJQueryUI = function() {
 			$('.'+BG.Album.css.content.accordion).each(function() {
 				if (this != event.target) $(this).accordion('option', 'active', false);
 			});
+// 			var mediaTab = ui.newPanel.find('.'+BG.Track.css.body.media+':empty');
+// 			if (mediaTab.length) mediaTab.html(BG.Track.getFromElement(mediaTab).media);
+			ui.newPanel.find('.'+BG.Track.css.body.media+':empty').each(function() {
+				$(this).html(BG.Track.getFromElement(this).media);
+			});
 		}
 	});
 
@@ -112,8 +118,6 @@ BG.Album.registerJQueryUI = function() {
 }
 
 BG.Album.shuffleStart = function(accordion, track) {
-//	$(accordion).append(track.hdr, track.body);
-//	accordion.accordion('refresh');
 	$(track.hdr).hide({ effect: 'highlight', color: '#599fcf', complete: function() {
 		$(accordion).append(track.hdr, track.body);
 		$(track.hdr).show('highlight', { color: '#599fcf' } );
