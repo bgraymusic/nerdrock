@@ -67,40 +67,6 @@ BG.Track.mashTitle = function(title) {
 }
 
 BG.Track.prototype.buildControls = function(controls) {
-// 	this.player = $('<div/>').addClass(BG.Track.css.hdr.player).jPlayer({
-// 		ready: function(event) { $(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url }); },
-// 		timeupdate: function(event) {
-// 			var track = BG.Track.getFromElement($(this).data().controls);
-// 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
-// 			if (!slider.data('sliding')) {
-// 				slider.slider('value', $(this).data().jPlayer.status.currentTime);
-// 				slider.prev().text($.jPlayer.convertTime($(this).data().jPlayer.status.currentTime));
-// 				BG.Track.markElapsedLyrics(track.body.find('.'+BG.Track.css.body.lyr.cont), $(this).data().jPlayer.status.currentTime);
-// 			}
-// 		},
-// 		ended: function(event) {
-// 			var track = BG.Track.getFromElement($(this).data().controls);
-// 			var playButton = track.hdr.find('.'+BG.Track.css.hdr.controls.play);
-// 			setPlayButton(track.hdr.find('.'+BG.Track.css.hdr.controls.play), true);
-// 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
-// 			slider.slider('value', 0);
-// 			slider.prev().text($.jPlayer.convertTime(0));
-// 			var onesong = track.album.cont.find('.'+BG.Album.css.meta.onesong).prop('checked');
-// 			var repeat = track.album.cont.find('.'+BG.Album.css.meta.repeat).prop('checked');
-// 			if (!onesong) {
-// 				var idx = $.inArray(track, track.album.workingTracks);
-// 				var targetTrack;
-// 				if (idx >= 0 && idx < track.album.workingTracks.length - 1) {
-// 					targetTrack = track.album.workingTracks[idx+1];
-// 				} else if (idx == track.album.workingTracks.length - 1 && repeat) {
-// 					targetTrack = track.album.workingTracks[0];
-// 				}
-// 				targetTrack.player.data().jPlayer.stop();
-// 				targetTrack.hdr.find('.'+BG.Track.css.hdr.controls.play).click();
-// 			}
-// 		},
-// 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
-// 	}).data('controls', controls);
 	this.player = $('<div/>').addClass(BG.Track.css.hdr.player).data('controls', controls);
 	this.buildPlayer();
 
@@ -136,7 +102,7 @@ BG.Track.prototype.buildPlayer = function() {
 		ended: function(event) {
 			var track = BG.Track.getFromElement($(this).data().controls);
 			var playButton = track.hdr.find('.'+BG.Track.css.hdr.controls.play);
-			setPlayButton(track.hdr.find('.'+BG.Track.css.hdr.controls.play), true);
+			BG.Track.setPlayButton(track.hdr.find('.'+BG.Track.css.hdr.controls.play), true);
 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
 			slider.slider('value', 0);
 			slider.prev().text($.jPlayer.convertTime(0));
