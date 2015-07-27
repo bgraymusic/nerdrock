@@ -63,7 +63,7 @@ BG.Track.prototype.buildHeader = function() {
 }
 
 BG.Track.mashTitle = function(title) {
-	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_`~()]/g,"").replace(/\s+/g, "");
+	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_'`~()]/g,"").replace(/\s+/g, "");
 }
 
 BG.Track.prototype.buildControls = function(controls) {
