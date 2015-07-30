@@ -1,6 +1,10 @@
 var blogroot = 'https://briangraymusic.wordpress.com';
 var discography;
 
+// Used to detect initial (useless) popstate.
+// If history.state exists, assume browser isn't going to fire initial popstate.
+var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
+
 function onDataComplete(bcData) {
 	new BG.Discography(bcData).buildDOM($('#'+BG.Discography.css.cont));
 	registerGlobalJQueryUI();
@@ -19,6 +23,17 @@ function registerGlobalJQueryUI() {
 	$('#bg-prefs-button').button();
 	$('.bg-top-level-tabs').tabs({ activate: function(event, ui) { saveState(); } });
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
+	$(window).bind('popstate', function(event) {
+		// Ignore inital popstate that some browsers fire on page load
+		var initialPop = !popped && location.href == initialURL
+		popped = true
+		if (initialPop) return;
+
+		navigate({
+			toptab: $.url().param('toptab'), blog: $.url().param('blog'),
+			song: $.url().param('song'), songtab: $.url().param('songtab')
+		});
+	});
 }
 
 function saveState() {
