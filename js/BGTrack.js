@@ -120,6 +120,13 @@ BG.Track.prototype.buildPlayer = function() {
 				targetTrack.hdr.find('.'+BG.Track.css.hdr.controls.play).click();
 			}
 		},
+		play: function(event) {
+			var track = BG.Track.getFromElement($(this).data().controls);
+			if (track.album.cont.find('.'+BG.Album.css.meta.follow).prop('checked')) {
+				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
+				track.album.accordion.accordion('option', 'active', idx);
+			}
+		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
 	});
 }
@@ -253,7 +260,7 @@ BG.Track.registerJQueryUI = function() {
 
 	$('.bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
 
-	$('.bg-accordion-body').tabs();
+	$('.bg-accordion-body').tabs({ activate: function(event, ui) { saveState(); } });
 
 //	try { Vex.Flow.TabDiv.start(); } catch(e) { console.log('Error starting up VexFlow.'); }
 }

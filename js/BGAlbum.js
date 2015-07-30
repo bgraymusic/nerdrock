@@ -19,7 +19,7 @@ BG.Album = function(discography, bcInfo) {
 BG.Album.css = {
 	cont: 'bg-album', row: 'bg-album-row', meta: {
 		cont: 'bg-album-meta-cell', art: 'bg-album-art',
-		onesong: 'bg-onesong-button', repeat: 'bg-repeat-button', shuffle: 'bg-shuffle-button'
+		onesong: 'bg-onesong-button', repeat: 'bg-repeat-button', shuffle: 'bg-shuffle-button', follow: 'bg-follow-button'
 	}, content: {
 		cont: 'bg-album-content-cell', title: 'bg-album-title', accordion: 'bg-album-accordion'
 	}
@@ -64,6 +64,9 @@ BG.Album.prototype.buildMetaCell = function(metaCell) {
 	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_shuffle')
 		.addClass(BG.Album.css.meta.shuffle));
 	metaCell.append($('<label/>').attr('for', this.album_id + '_shuffle').text('Shuffle Album'));
+	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_follow')
+		.addClass(BG.Album.css.meta.follow));
+	metaCell.append($('<label/>').attr('for', this.album_id + '_follow').text('Open lyrics when a song starts playing'));
 }
 
 BG.Album.prototype.buildAlbumContents = function(albumContents) {
@@ -100,6 +103,7 @@ BG.Album.registerJQueryUI = function() {
 		var step = 0;
 		$(album.workingTracks).each(function() { setTimeout(BG.Album.shuffleStart, 33*step, album.accordion, this); ++step; });
 	});
+	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' }, text: false });
 
 	$('.'+BG.Album.css.content.accordion).accordion({
 		collapsible: true, active: false, heightStyle: 'content', beforeActivate: function(event, ui) {
@@ -111,7 +115,7 @@ BG.Album.registerJQueryUI = function() {
 			ui.newPanel.find('.'+BG.Track.css.body.media+':empty').each(function() {
 				$(this).html(BG.Track.getFromElement(this).media);
 			});
-		}
+		}, activate: function(event, ui) { saveState(); }
 	});
 
 	BG.Track.registerJQueryUI();

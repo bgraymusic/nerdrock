@@ -17,8 +17,25 @@ function onDataComplete(bcData) {
 function registerGlobalJQueryUI() {
 	$(document).tooltip();
 	$('#bg-prefs-button').button();
-	$('.bg-top-level-tabs').tabs();
+	$('.bg-top-level-tabs').tabs({ activate: function(event, ui) { saveState(); } });
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
+}
+
+function saveState() {
+	var state = {};
+	state.toptab = $('#bg-top-level-tabs').tabs('option', 'active');
+	$('.bg-album-accordion').each(function() {
+		var idx = $(this).accordion('option', 'active');
+		if (idx !== false) {
+			var header = $(this).find('.bg-accordion-header')[idx];
+			state.song = $(header).attr('song');
+			state.songtab = $(header).next().tabs('option', 'active');
+		}
+	});
+	var url = '?toptab=' + state.toptab;
+	if (state.song !== undefined) url += '&song=' + state.song;
+	if (state.songtab !== undefined) url += '&songtab=' + state.songtab;
+	window.history.pushState(state, '', url);
 }
 
 // params: toptab(0-n), song(title), songtab(0-n), blog(relative path off blogroot)
