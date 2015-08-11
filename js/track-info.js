@@ -114,18 +114,6 @@ A life in ashes and a raincoat, and immutable, final loss\n\
 The simple act of letting go,\n\
 \n\
 [Chorus]',
-// 		syllables: [
-// 			[0,0], [7,0],
-// 			[9,10], [9.3,12], [9.6,18], [9.9,23], [10.2,26], [10.5,32], [10.8,34], [11.4,38],
-// 				[12,42], [12.3,47], [12.9,52], [13.4,56], [14,60],
-// 			[18.1,61], [18.4,63], [18.7,69], [19,74], [19.3,77], [19.6,83], [19.9,86], [20.4,92],
-// 				[20.7,94], [21.2,99], [21.8,104], [22.4,109],
-// 			[27,110], [27.3,114], [27.9,117], [28.4,121], [28.9,127], [29.5,130], [30.1,133],
-// 				[30.6,139], [31.1,141], [31.4,147], [32,152], [32.3,154], [32.9,161],
-// 				[33.5,167], [34.3,170], [34.6,174],
-// 			[35.2,181], [36.1,185], [36.4,187], [22.5,193], [23,198], [23.5,201], [24,203],
-// 				[24.5,208], [25,212], [25.5,215], [26,220], [26.5,225], [27,230]
-// 		],
 		about: 'So then out of nowhere, I write a serious song. And not serious like "<a href="https://sites.google.com/site/briangraymusic/songs/when-you-get-there" target="_blank">When You Get There</a>", but serious and not even a little bit geeky. For this one, I\'m going to leave it up to you. The lyrics are pretty ambiguous, so if you like mystery in your music then listen, enjoy, and imagine that it means what you imagine it to mean. It was written for the SpinTunes songwriting contest as a sequel to "3 A.M." by Matchbox Twenty. If you\'d like to know what it means to me, feel free to read...<br /><br /><a href="https://sites.google.com/site/briangraymusic/songs/one-more-cloud/one-more-cloud-bio" target="_blank">THE BIO</a><br /><br />The opinions of this song were about as varied as it can get. Out of 6 judges, 2 liked it and placed it in the middle of the pack (partially because of poor mixing which has mostly been fixed), three placed it at or near last place, and one thought it was the best song of the round and placed it first. The optimist in me makes the argument that any great work of art must necessarily be unacceptable to a sizable portion of those who experience it. The pessimist in me counters with the premise that the optimist is "a doo-doo head". They may both be right.<br /><br />The judge that placed me first -- Dr. Lindyke -- wrote up a detailed review. It gives away almost as much as the bio, and indeed I replied in the comments section with thoughts that I have since added to the bio itself. So read if you don\'t mind the mystery being spoiled:<br /><br /><a href="http://music.cratchit.org/2010/10/deconstructing-one-more-cloud.html" target="_blank" rel="nofollow">Deconstructing "One More Cloud"<br /></a>'
 	},
 	// Hard to Get
@@ -649,6 +637,27 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	},
 	// St. Agnes
 	1551341395: {
+		lyrics: '\u200C\
+\u200CWe \u200Cso\u200Cro\u200Cral \u200Cband\u200C \u200Chere\u200Cby \u200Cform \u200Cthe \u200Cna\u200Ction \u200Cof \u200CSt. \u200CAg\u200Cnes\u200C\n\
+\u200CSing\u200Cing \u200Cloud \u200Cand \u200Cclear\u200C \u200Cof \u200Cthe \u200Cbond \u200Cthat \u200Cties \u200Cus\u200C\n\
+\u200CHere \u200Cwe \u200Cmake \u200Cour \u200Cstand\u200C \u200Csearch\u200Cing \u200Cout \u200Cin\u200Cto \u200Cour \u200Cfield \u200Cof \u200Cview\u200C\n\
+\u200CFor \u200Csome\u200Cbo\u200Cdy \u200Cto\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C\n\
+\n\
+We’ve an anthem now, and a banner waving high and free\n\
+Made with all the paint that a dollar buys us\n\
+All we need somehow to legitimize our sovereign rule\n\
+Is somebody who’ll recognize us\n\
+\n\
+We were lost and scared, holding out against the cold and hunger\n\
+Looking far and wide for someone to prize us\n\
+Now we sit here spared, praying into a familial night\n\
+That somebody might recognize us',
+		timing: [ 0,
+3.0, 3.25, 3.5, 4, 4.5, 5.5, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 8, 8.5, 9, 10.5,
+11, 11.25, 11.5, 12, 12.5, 13.5, 14, 14.25, 14.5, 15, 15.5, 16, 18.5,
+19, 19.25, 19.5, 20, 20.5, 21.5, 22, 22.25, 22.5, 22.75, 23, 23.25, 23.5, 24, 24.5, 26.5,
+27, 27.25, 27.5, 28, 28.5, 29.5, 30, 30.25, 30.5, 31, 33.5
+		],
 		about: 'So these girls in an orphanage get bored and decide to create their own country. I kind of channeled Annie with the whole looking out the window and wondering if their parents would ever show up thing, and Ender\'s Shadow with being hungry on the streets of Rotterdam before going into the orphanage (or was that the other way around?).<div><br /></div><div>Originally had it using all the paint that a quarter bought them, but what can you really get for a quarter? Not sure you can buy paint for a dollar either, but maybe leftovers from someone else\'s DIY job?</div><div><br /></div><div>I like the opposing emotions with enthusiasm about asserting their identity, vs being beholden to others to recognize them. Tried to mirror this, particularly when the drums come in on triplets over the straight eighth-note melody. And it would seem no matter how simple a song I try to write, there\'s always room for a bVI in there.</div><div><br /></div><div>And yes, I did just return from Scotland. How did you guess?'
 	},
 	// Otisburg
