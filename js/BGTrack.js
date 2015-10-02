@@ -224,9 +224,13 @@ BG.Track.registerJQueryUI = function() {
 		event.stopPropagation();
 		var track = BG.Track.getFromElement(this);
 		var isPlaying = $(this).button('option', 'icons').primary == 'ui-icon-pause';
-		isPlaying || track.player.jPlayer('pauseOthers');
+		if (!isPlaying) {
+			track.player.jPlayer('pauseOthers');
+			$('.bg-track-play-pause-button').button('option', 'icons', { primary: 'ui-icon-play' });
+		}
 		track.player.jPlayer(isPlaying ? 'pause' : 'play');
 		BG.Track.setPlayButton(this, isPlaying);
+		
 	});
 
 	$('.bg-track-shuttle-slider').each(function() {
