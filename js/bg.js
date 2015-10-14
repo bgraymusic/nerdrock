@@ -65,7 +65,7 @@ function onDataComplete(bcData) {
 }
 
 function registerGlobalJQueryUI() {
-	$(document).tooltip();
+//	$(document).tooltip();
 	$('#bg-prefs-button').button();
 	$('.bg-top-level-tabs').tabs({ activate: function(event, ui) { saveState(); } });
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });

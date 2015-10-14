@@ -1,0 +1,25 @@
+#bg-body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; background: #dddddd; }
+#bg-body .bg-hide { display: none; }
+
+#bg-header { font-weight: bold; text-align: center; text-shadow: 0 0 0.5em aliceblue; }
+
+#bg-body>.bg-top-level-tabs {
+	background: none; border: none; z-index: 1;
+	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
+}
+#bg-body>.bg-top-level-tabs>ul { display: none; }
+
+#bg-contents {
+	display: block; position: fixed; overflow-x: hidden; overflow-y: auto; border: 1px solid black;
+	background-color: white; font-size: medium;
+}
+#bg-contents>div { padding: 0; }
+#bg-contents>table { padding: 0; }
+
+#bg-music .bg-album { display: table; width: 100%; }
+#bg-music .bg-album-row { display: table-row; }
+#bg-music .bg-album-content-cell { display: table-cell; padding-left: 0.5em;}
+#bg-music .bg-album-title {
+	display: inline; height: 1.5em; vertical-align: top;
+	padding-left: 0.5em; color: black; font-size: large; font-weight: bold;
+}

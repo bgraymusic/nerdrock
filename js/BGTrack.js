@@ -18,7 +18,7 @@ BG.Track = function(album, bcInfo, bgInfo) {
 // Classes applied to elements for styling
 BG.Track.css = {
 	hdr: {
-		cont: 'bg-accordion-header', name: 'bg-track-name', player: 'bg-track-player',
+		cont: 'bg-accordion-header', name: 'bg-track-name', name_text: 'bg-track-name-text', player: 'bg-track-player',
 		controls: {
 			cont: 'bg-track-controls', play: 'bg-track-play-pause-button',
 			shuttle: {
@@ -59,7 +59,7 @@ BG.Track.prototype.buildHeader = function() {
 	var controls = $('<div/>').addClass(BG.Track.css.hdr.controls.cont);
 	this.hdr.append(controls);
 	this.buildControls(controls);
-	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).text(this.title));
+	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).append($('<span/>').addClass(BG.Track.css.hdr.name_text).text(this.title)));
 }
 
 BG.Track.mashTitle = function(title) {
@@ -82,9 +82,10 @@ BG.Track.prototype.buildControls = function(controls) {
 	controls.append(vol.append(volTable));
 	this.buildTrackVolume(volTable);
 
-	controls.append($('<a/>').attr('title', 'Buy "' + this.title + '" on BandCamp.com')
-		.attr('href', Bandcamp.URL + this.url).attr('target', '_blank')
-		.addClass(BG.Track.css.hdr.controls.buy).addClass('ui-icon ui-icon-cart'));
+	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.buy));
+// 	controls.append($('<a/>').attr('title', 'Buy "' + this.title + '" on BandCamp.com')
+// 		.attr('href', Bandcamp.URL + this.url).attr('target', '_blank')
+// 		.addClass(BG.Track.css.hdr.controls.buy).addClass('ui-icon ui-icon-cart'));
 }
 
 BG.Track.prototype.buildPlayer = function() {
@@ -262,7 +263,8 @@ BG.Track.registerJQueryUI = function() {
 			}
 		});
 
-	$('.bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
+ 	$('.bg-track-buy-button').button({ icons: { primary: 'ui-icon-cart' }, text: false });
+// 	$('.bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
 
 	$('.bg-accordion-body').tabs({ activate: function(event, ui) { saveState(); } });
 
