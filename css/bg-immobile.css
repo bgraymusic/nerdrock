@@ -23,8 +23,7 @@
 #bg-body>.bg-top-level-tabs>ul { top: 24em; }
 
 #bg-body>.bg-top-level-tabs>ul {
-	position: absolute; left: 3em; z-index: 1; height: 1.5em; border: 0;
-	font-size: medium; background: none; padding: 0;
+	position: absolute; left: 3em; z-index: 1; height: 1.5em; border: 0; font-size: medium; background: none; padding: 0;
 }
 #bg-body>.bg-top-level-tabs>ul>li.ui-state-default {
 	height: 100%; margin: 0; float: right; margin-left: 1px; margin-right: 1px;
@@ -38,7 +37,7 @@
 	-ms-transform-origin: 0 2em; -ms-transform: rotate(-90deg);
 	-o-transform-origin: 0 2em; -o-transform: rotate(-90deg);
 	transform-origin: 0 2em; transform: rotate(-90deg);
-	filter: progid:DXImageTransform.Microsoft.Matrix(M11=-0.00000000, M12=1.00000000, M21=-1.00000000, M22=-0.00000000,sizingMethod='auto expand');
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=-0.00000000, M12=1.00000000, M21=-1.00000000, M22=-0.00000000, sizingMethod='auto expand');
 	top: 9em\9; left: 1em\9;
 }
 
@@ -55,7 +54,7 @@
 	height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
 	border-radius: 6px; outline-style: none;
 }
-#bg-music .bg-accordion-header { height: 1.2em; padding: 0 0 0 2em; margin-bottom: 1px;}
+#bg-music .bg-accordion-header { height: 1.2em; padding: 0 0 0 2em; margin-bottom: 1px; outline-style: none; }
 #bg-music .bg-accordion-header button {
 	float: left; height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
 	border-radius: 6px; outline-style: none;
@@ -67,9 +66,7 @@
 #bg-music .bg-accordion-header button .ui-button-text { padding: 0; margin: 0; }
 #bg-music .bg-accordion-body { overflow: hidden }
 #bg-music .bg-accordion-body .ui-tabs-panel { max-height: 25em; padding: 0.5em; overflow: auto; }
-#bg-music .bg-track-name {
-	display: table-cell; height: 100%; vertical-align: middle; font-size: medium;
-}
+#bg-music .bg-track-name { display: table-cell; height: 100%; vertical-align: middle; font-size: medium; }
 #bg-music .bg-track-controls { display: table-cell; float: right; }
 #bg-music .bg-track-buy-button { background-position: -48px -112px; }
 #bg-music .bg-accordion-body { padding: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
