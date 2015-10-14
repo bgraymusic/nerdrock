@@ -1,0 +1,83 @@
+#bg-body {
+	position: fixed; width: 100%; height: 100%; margin: 0; border: none; background: #dddddd;
+	box-shadow: 0 0 0.25em 0px black inset;
+}
+.ui-tooltip { display: none; }
+#bg-header {
+	font-size: 1.5em; font-weight: bold; text-align: center; padding: 0.05em;
+	letter-spacing: 0.05em; text-shadow: 0 0 0.5em aliceblue;
+}
+#bg-header div { display: none; }
+#bg-body>#bg-shadow-box { display: none; }
+#bg-body>.bg-top-level-tabs {
+	background: none; border: none; z-index: 1;
+	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
+}
+#bg-body>.bg-top-level-tabs>ul { display: none; }
+
+#bg-contents {
+	display: block; position: fixed; top: 2em; bottom: 0; width: 100%;
+	padding: 0.25em; overflow-x: hidden; overflow-y: auto; border-top: 1px solid black;
+	background-color: white; box-shadow: 0 0 0.25em 0 black; font-size: medium;
+}
+#bg-contents>div { padding: 0; }
+#bg-contents>table { padding: 0; }
+
+
+#bg-music { display: block !important; }
+#bg-music .bg-album { display: table; width: 100%; }
+#bg-music .bg-album-row { display: table-row; }
+#bg-music .bg-album-meta-cell { display: none; }
+#bg-music .bg-album-art { width: 100px; height: 100px; }
+#bg-music .bg-album-content-cell { display: table-cell; padding-left: 0.5em;}
+#bg-music .bg-album-title {
+	display: table-cell; height: 1.5em; vertical-align: top;
+	padding-left: 0.5em; color: black; font-size: large; font-weight: bold;
+}
+#bg-music .bg-album-meta-cell label {
+	height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
+	border-radius: 6px; outline-style: none;
+}
+
+#bg-music .bg-album-accordion { margin-right: 0.5em;}
+#bg-music .bg-accordion-header { height: 1.2em; padding: 0 0 0 2em; margin-bottom: 1px;}
+#bg-music .bg-accordion-header button {
+	float: left; height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
+	border-radius: 6px; outline-style: none;
+}
+#bg-music .bg-accordion-header a {
+	float: left; height: 16px; width: 16px; margin: 0.08em; vertical-align: middle;
+	border-radius: 6px; outline-style: none;
+}
+#bg-music .bg-accordion-header button .ui-button-text { padding: 0; margin: 0; }
+#bg-music .bg-accordion-body { overflow: hidden }
+#bg-music .bg-accordion-body .ui-tabs-panel { max-height: 25em; padding: 0.5em; overflow: auto; }
+#bg-music .bg-track-name {
+	display: table-cell; height: 100%; vertical-align: middle; font-size: medium;
+}
+#bg-music .bg-track-controls { display: table-cell; float: right; }
+#bg-music .bg-track-shuttle { display: none; }
+#bg-music .bg-track-volume { display: none; }
+#bg-music .bg-track-download-button { background-position: -224px -48px; }
+#bg-music .bg-track-buy-button { background-position: -48px -112px; }
+#bg-music .bg-accordion-body { padding: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
+#bg-music .bg-accordion-body div { font-size: small; white-space: pre-wrap; }
+#bg-music .bg-tabs-nav {
+	border-top: 0; border-left: 0; border-right: 0; font-size: small;
+	border-top-left-radius: 0; border-top-right-radius: 0; padding-left: 1em; padding-right: 1em;
+}
+#bg-music .bg-tabs-nav a { padding: 0.1em 0.25em 0.1em 0.25em; outline-style: none; }
+#bg-music .bg-lyrics-now { color: #599fcf; }
+#bg-music .bg-lyrics-elapsed { color: #3383bb; }
+#bg-music .bg-track-notes img { display: block; margin: auto; }
+#bg-music .vex-tabdiv { font-family:"Times New Roman", Times, serif; }
+#bg-music .vex-tabdiv canvas { display: block; max-width: 800px; margin: auto; }
+
+
+#bg-blog { display: none !important; }
+#bg-social { display: none !important; }
+#bg-tribbulous { display: none !important; }
+#bg-github { display: none !important; }
+
+
+#bg-footer { display: none; }
