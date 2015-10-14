@@ -188,9 +188,9 @@
 #bg-social iframe { position: absolute; width: 100%; height: 100%; margin: 0; padding: 0; border: none; }
 
 #bg-social #bg-facebook { left: 0; right: 36%; height: 100% }
-#bg-social #bg-facebook div { height: 100% !important }
-#bg-social #bg-facebook div span { height: 100% !important }
-#bg-social #bg-facebook div span iframe { height: 100% !important }
+#bg-social #bg-facebook div { height: 100% !important; width: 100% !important }
+#bg-social #bg-facebook div span { height: 100% !important; width: 100% !important }
+#bg-social #bg-facebook div span iframe { height: 100% !important; width: 100% !important }
 #bg-social #bg-twitter { left: 65%; right: 2%; height: 100% }
 #bg-social #bg-twitter iframe { height: 100% !important }
 
