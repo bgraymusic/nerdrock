@@ -21,7 +21,7 @@ BG.Album.css = {
 		cont: 'bg-album-meta-cell', art: 'bg-album-art',
 		onesong: 'bg-onesong-button', repeat: 'bg-repeat-button', shuffle: 'bg-shuffle-button', follow: 'bg-follow-button'
 	}, content: {
-		cont: 'bg-album-content-cell', title: 'bg-album-title', accordion: 'bg-album-accordion'
+		cont: 'bg-album-content-cell', art: 'bg-album-art-small', title: 'bg-album-title', accordion: 'bg-album-accordion'
 	}
 }
 
@@ -70,7 +70,8 @@ BG.Album.prototype.buildMetaCell = function(metaCell) {
 }
 
 BG.Album.prototype.buildAlbumContents = function(albumContents) {
-	albumContents.append($('<div/>').addClass(BG.Album.css.content.title).text(this.title));
+	albumContents.append($('<img/>').addClass(BG.Album.css.content.art).attr('src', this.small_art_url));
+	albumContents.append($('<span/>').addClass(BG.Album.css.content.title).text(this.title));
 
 	this.accordion = $('<div/>').addClass(BG.Album.css.content.accordion);
 	albumContents.append(this.accordion); 

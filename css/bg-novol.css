@@ -89,6 +89,7 @@
 #bg-music .bg-album-meta-cell { display: table-cell; width: 100px; vertical-align: top; }
 #bg-music .bg-album-art { width: 100px; height: 100px; }
 #bg-music .bg-album-content-cell { display: table-cell; padding-left: 0.5em;}
+#bg-music .bg-album-art-small { display: none; }
 #bg-music .bg-album-title {
 	display: table-cell; height: 1.5em; vertical-align: top;
 	padding-left: 0.5em; color: black; font-size: large; font-weight: bold;

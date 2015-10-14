@@ -28,10 +28,10 @@
 #bg-music .bg-album { display: table; width: 100%; }
 #bg-music .bg-album-row { display: table-row; }
 #bg-music .bg-album-meta-cell { display: none; }
-#bg-music .bg-album-art { width: 100px; height: 100px; }
+#bg-music .bg-album-art-small { width: 1.25em; height: 1.25em; }
 #bg-music .bg-album-content-cell { display: table-cell; padding-left: 0.5em;}
 #bg-music .bg-album-title {
-	display: table-cell; height: 1.5em; vertical-align: top;
+	display: inline; height: 1.5em; vertical-align: top;
 	padding-left: 0.5em; color: black; font-size: large; font-weight: bold;
 }
 #bg-music .bg-album-meta-cell label {
