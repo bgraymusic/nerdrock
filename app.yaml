@@ -21,11 +21,18 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /browserconfig\.xml
+  static_files: browserconfig.xml
+  upload: browserconfig\.xml
+
 - url: /js
   static_dir: js
 
 - url: /css
   static_dir: css
+
+- url: /img
+  static_dir: img
 
 - url: /blog.*
   script: nerdrock.wordpress
