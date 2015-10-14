@@ -47,12 +47,12 @@ ga('send', 'pageview');
 	</head>
 	<body id="bg-body" class="ui-widget-header">
 		<!-- Facebook JS API -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -69,9 +69,6 @@ ga('send', 'pageview');
 			<ul class="bg-vertical-text">
 				<li><a href="#bg-shadow-blog">News</a></li>
 				<li><a href="#bg-shadow-music">Music</a></li>
-<!--
-				<li><a href="#bg-shadow-begging">Begging</a></li>
--->
 				<li><a href="#bg-shadow-social">Social</a></li>
 				<li><a href="#bg-shadow-tribbulous">Business</a></li>
 				<li><a href="#bg-shadow-github">Code</a></li>
@@ -81,9 +78,6 @@ ga('send', 'pageview');
 			<ul class="bg-vertical-text">
 				<li><a href="#bg-blog">News</a></li>
 				<li><a href="#bg-music">Music</a></li>
-<!--
-				<li><a href="#bg-begging">Begging</a></li>
--->
 				<li><a href="#bg-social">Social</a></li>
 				<li><a href="#bg-tribbulous">Business</a></li>
 				<li><a href="#bg-github">Code</a></li>
@@ -91,17 +85,17 @@ ga('send', 'pageview');
 			<div id="bg-contents">
 				<div id="bg-blog"><iframe id="bg-blogframe"></iframe></div>
 				<div id="bg-music"></div>
-<!--
-				<div id="bg-begging"><iframe src="http://www.patreon.com/BrianGray"></iframe></div>
--->
 				<table id="bg-social"><tr>
-					<td id="bg-facebook"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FBrian-Gray%2F128630780517046&amp;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true" allowTransparency="true"></iframe></td>
+					<td id="bg-facebook"><div class="fb-page" data-href="https://www.facebook.com/bgraymusic" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bgraymusic"><a href="https://www.facebook.com/bgraymusic">Brian Gray</a></blockquote></div></div></td>
 					<td id="bg-twitter"><a class="twitter-timeline" href="https://twitter.com/BrianGrayMusic" data-widget-id="555018606363561985">Tweets by @BrianGrayMusic</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
 				</table>
 				<div id="bg-tribbulous"><p>This page is to track all the administrative activities required to set up a bona fide business to handle all my music activities. Until I’m up and running officially, legally, let’s consider this page a work in progress. For now, I'm actually doing the most hands-on work with building out my studio, so here we see the progress with that.</p><iframe src="https://trello.com/b/7OmMrxYJ.html"></iframe></div>
 				<div id="bg-github">How meta is this? Here's the code for this web site. Feel free to clone the <a href="https://github.com/bgraymusic/nerdrock" target="_blank">original repo</a>, or just browse inline by clicking the link below.</div>
 			</div>
+		</div>
+		<div id="bg-cannot-save-badges-alert" title="Cannot save badges">
+			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Your browser does not support localStorage, and so cannot save your badges. Please consider upgrading.</p>
 		</div>
 		<div id="bg-footer" class="ui-widget-header">
 			<span id="bg-footer-content">
