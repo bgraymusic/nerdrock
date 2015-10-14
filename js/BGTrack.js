@@ -82,10 +82,8 @@ BG.Track.prototype.buildControls = function(controls) {
 	controls.append(vol.append(volTable));
 	this.buildTrackVolume(volTable);
 
-	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.buy));
-// 	controls.append($('<a/>').attr('title', 'Buy "' + this.title + '" on BandCamp.com')
-// 		.attr('href', Bandcamp.URL + this.url).attr('target', '_blank')
-// 		.addClass(BG.Track.css.hdr.controls.buy).addClass('ui-icon ui-icon-cart'));
+	controls.append($('<button/>').addClass(BG.Track.css.hdr.controls.buy)
+		.attr('title', 'Buy "' + this.title + '" on BandCamp.com').data('href', Bandcamp.URL + this.url));
 }
 
 BG.Track.prototype.buildPlayer = function() {
@@ -231,7 +229,6 @@ BG.Track.registerJQueryUI = function() {
 		}
 		track.player.jPlayer(isPlaying ? 'pause' : 'play');
 		BG.Track.setPlayButton(this, isPlaying);
-		
 	});
 
 	$('.bg-track-shuttle-slider').each(function() {
@@ -263,8 +260,10 @@ BG.Track.registerJQueryUI = function() {
 			}
 		});
 
- 	$('.bg-track-buy-button').button({ icons: { primary: 'ui-icon-cart' }, text: false });
-// 	$('.bg-track-buy-button').button().click(function(event) { event.stopPropagation(); });
+	$('.bg-track-buy-button').button({ icons: { primary: 'ui-icon-cart' }, text: false }).click(function(event) {
+		event.stopPropagation();
+		window.open($(this).data().href);
+	});
 
 	$('.bg-accordion-body').tabs({ activate: function(event, ui) { saveState(); } });
 
