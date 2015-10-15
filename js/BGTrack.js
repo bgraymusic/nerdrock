@@ -59,7 +59,9 @@ BG.Track.prototype.buildHeader = function() {
 	var controls = $('<div/>').addClass(BG.Track.css.hdr.controls.cont);
 	this.hdr.append(controls);
 	this.buildControls(controls);
-	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).append($('<span/>').addClass(BG.Track.css.hdr.name_text).text(this.title)));
+	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).append(
+		$('<span/>').addClass(BG.Track.css.hdr.name_text).text(this.title)
+	));
 }
 
 BG.Track.mashTitle = function(title) {
@@ -88,14 +90,17 @@ BG.Track.prototype.buildControls = function(controls) {
 
 BG.Track.prototype.buildPlayer = function() {
 	this.player.jPlayer({
-		ready: function(event) { $(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url }); },
+		ready: function(event) {
+			$(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url });
+		},
 		timeupdate: function(event) {
 			var track = BG.Track.getFromElement($(this).data().controls);
 			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
 			if (!slider.data('sliding')) {
 				slider.slider('value', $(this).data().jPlayer.status.currentTime);
 				slider.prev().text($.jPlayer.convertTime($(this).data().jPlayer.status.currentTime));
-				BG.Track.markElapsedLyrics(track.body.find('.'+BG.Track.css.body.lyr.cont), $(this).data().jPlayer.status.currentTime);
+				BG.Track.markElapsedLyrics(track.body.find('.'+BG.Track.css.body.lyr.cont),
+				                           $(this).data().jPlayer.status.currentTime);
 			}
 		},
 		ended: function(event) {
@@ -133,7 +138,8 @@ BG.Track.prototype.buildPlayer = function() {
 BG.Track.prototype.buildTrackShuttle = function(shuttle) {
 	shuttle.append($('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.value).text($.jPlayer.convertTime(0)));
 	shuttle.append($('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.slider));
-	shuttle.append($('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.max).text($.jPlayer.convertTime(this.duration)));
+	shuttle.append($('<div/>').addClass(BG.Track.css.hdr.controls.shuttle.max)
+		.text($.jPlayer.convertTime(this.duration)));
 }
 
 BG.Track.prototype.buildTrackVolume = function(vol) {
@@ -169,12 +175,18 @@ BG.Track.prototype.buildBody = function() {
 /*
 	if (this.tab) {
 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'tab').text('Tablature')));
-		this.body.append($('<div/>').attr('id', this.track_id + 'tab').addClass(BG.Track.css.body.tab).attr('scale', '2').attr('width', '600').html(this.tab));
+		this.body.append(
+			$('<div/>').attr('id', this.track_id + 'tab').addClass(BG.Track.css.body.tab).attr('scale', '2')
+				.attr('width', '600').html(this.tab)
+		);
 	}
 
 	if (this.score) {
 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'score').text('Score')));
-		this.body.append($('<div/>').attr('id', this.track_id + 'score').addClass(BG.Track.css.body.score).attr('scale', '2').attr('width', '600').html(this.score));
+		this.body.append(
+			$('<div/>').attr('id', this.track_id + 'score').addClass(BG.Track.css.body.score).attr('scale', '2')
+				.attr('width', '600').html(this.score)
+		);
 	}
 */
 }
@@ -213,7 +225,8 @@ BG.Track.markElapsedLyrics = function(lyrics, time) {
 			if (time < trackInfo[trackId].syllables[highTime][0]) break;
 		}
 		elapsedLyrics.html(trackInfo[trackId].lyrics.substring(0, trackInfo[trackId].syllables[highTime-1][1]));
-		currentLyrics.html(trackInfo[trackId].lyrics.substring(trackInfo[trackId].syllables[highTime-1][1], trackInfo[trackId].syllables[highTime][1]));
+		currentLyrics.html(trackInfo[trackId].lyrics.substring(trackInfo[trackId].syllables[highTime-1][1],
+		                                                       trackInfo[trackId].syllables[highTime][1]));
 		futureLyrics.html(trackInfo[trackId].lyrics.substring(trackInfo[trackId].syllables[highTime][1]));
 	}
 }

@@ -95,14 +95,18 @@ BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 BG.Album.registerJQueryUI = function() {
 	$('.'+BG.Album.css.meta.onesong).button({ icons: { primary: 'ui-icon-arrowthickstop-1-e' }, text: false });
 	$('.'+BG.Album.css.meta.repeat).button({ icons: { primary: 'ui-icon-refresh' }, text: false });
-	$('.'+BG.Album.css.meta.shuffle).button({ icons: { primary: 'ui-icon-shuffle' }, text: false }).click(function(event) {
+	$('.'+BG.Album.css.meta.shuffle).button({
+		icons: { primary: 'ui-icon-shuffle' }, text: false
+	}).click(function(event) {
 		event.stopPropagation();
 		var album = BG.Album.getFromElement($(this));
 		if (this.checked) BG.Album.shuffle(album.workingTracks);
 		else album.workingTracks = album.masterTracks.slice(0);
 		$('.'+BG.Track.css.body.media).filter(':hidden').empty();
 		var step = 0;
-		$(album.workingTracks).each(function() { setTimeout(BG.Album.shuffleStart, 33*step, album.accordion, this); ++step; });
+		$(album.workingTracks).each(function() {
+			setTimeout(BG.Album.shuffleStart, 33*step, album.accordion, this); ++step;
+		});
 	});
 	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' }, text: false });
 
