@@ -43,6 +43,7 @@ if (window.top != window.self) window.top.location.replace(window.top.location.p
 		<script src="/js/BGDiscography.js"></script>
 		<script src="/js/BGAlbum.js"></script>
 		<script src="/js/BGTrack.js"></script>
+		<script src="/js/BGBadges.js"></script>
 		<script src="/js/bg.js"></script>
 
 		<!-- Bootstrap UI with a BandCamp query fed to the main callback -->
@@ -67,8 +68,8 @@ ga('send', 'pageview');
 	</head>
 	<body id="bg-body" class="ui-widget-header">
 		<!-- Facebook JS API -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -77,12 +78,27 @@ ga('send', 'pageview');
 }(document, 'script', 'facebook-jssdk'));</script>
 
 		<!-- Start page content -->
-		<div id="bg-prefs-dialog"></div>
-		<div id="bg-header">
-			<div id="bg-err" class="bg-hide ui-state-error ui-corner-all" title="Bandcamp failed to respond. Data in the music pane has been pulled from cache and may be stale.">
-				<span class="ui-icon ui-icon-alert"></span>
+		<div id="bg-page-description">Nerd Rock all up in your tympanic membranes.</div>
+		<div id="bg-badge-stuff">
+			<div id="bg-badges"></div>
+			<div id="bg-add-badge-dialog" class="bg-hide">
+				<input id="bg-add-badge-value" type="text" title="Enter the secret code for your badge"/>
+				<button id="bg-add-badge-submit">Add</button>
 			</div>
-			<div id="bg-prefs-button" class="bg-hide ui-widget-content ui-icon ui-icon-gear" title="Preferences"></div>
+		</div>
+		<div id="bg-new-badge-alert" title="Achievement Unlocked">
+			<p><img id="bg-new-badge-icon"/><span id="bg-new-badge-msg"></span></p>
+		</div>
+		<div id="bg-cannot-save-badges-alert" class="ui-state-error" title="Cannot Save Badge(s)">
+			<p><span class="bg-alert-icon ui-icon ui-icon-alert"></span>Your browser does not support local storage, and so cannot save your badges. Please consider upgrading.</p>
+		</div>
+		<div id="bg-header">
+			<div id="bg-global-stuff" class="bg-hide">
+				<div id="bg-err" class="ui-state-error ui-corner-all" title="Bandcamp failed to respond. Data in the music pane has been pulled from cache and may be stale.">
+					<span class="ui-icon ui-icon-alert"></span>
+				</div>
+				<button id="bg-prefs-button" title="Preferences"></button>
+			</div>
 			<span>Brian Gray. Nerd Rock.</span>
 		</div>
 		<div id="bg-shadow-box" class="bg-top-level-tabs">
@@ -113,9 +129,6 @@ ga('send', 'pageview');
 				<div id="bg-tribbulous"><p>This page is to track all the administrative activities required to set up a bona fide business to handle all my music activities. Until I’m up and running officially, legally, let’s consider this page a work in progress. For now, I'm actually doing the most hands-on work with building out my studio, so here we see the progress with that.</p><iframe src="https://trello.com/b/7OmMrxYJ.html"></iframe></div>
 				<div id="bg-github">How meta is this? Here's the code for this web site. Feel free to clone the <a href="https://github.com/bgraymusic/nerdrock" target="_blank">original repo</a>, or just browse inline by clicking the link below.</div>
 			</div>
-		</div>
-		<div id="bg-cannot-save-badges-alert" title="Cannot save badges">
-			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Your browser does not support localStorage, and so cannot save your badges. Please consider upgrading.</p>
 		</div>
 		<div id="bg-footer" class="ui-widget-header">
 			<span id="bg-footer-content">
