@@ -31,6 +31,10 @@
 	padding: 0.1em 0.25em; outline-style: none;
 	font-family: inherit; font-weight: inherit; font-size: inherit; letter-spacing: inherit;
 }
+#bg-social-buttons { display: inline; vertical-align: top; float: right; margin: 0.5em; }
+#bg-social-buttons>a { display: none; }
+#bg-social-buttons .twitter-follow-button { vertical-align: top; }
+#bg-social-buttons .twitter-follow-button-rendered { display: inline; }
 #bg-global-stuff {
 	display: inline; vertical-align: top; float: right;
 	font-family: sans-serif; font-weight: normal; font-size: small; letter-spacing: 0;

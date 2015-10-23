@@ -3,6 +3,7 @@
 .ui-tooltip { display: none !important; }
 
 #bg-badge-stuff { display: none; }
+#bg-social-buttons { display: none; }
 #bg-header { font-size: 1.5em; padding: 0.05em; letter-spacing: 0.05em; }
 #bg-header div { display: none; }
 

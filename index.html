@@ -14,6 +14,11 @@ if (window.top != window.self) window.top.location.replace(window.top.location.p
 		<meta name="msapplication-square310x310logo" content="img/logo_large.png"/>
 		<meta name="viewport" content="initial-scale=1"/>
 
+		<meta property="og:url" content="http://briangraymusic.com" />
+		<meta property="og:title" content="Brian Gray. Nerd Rock." />
+		<meta property="og:image" content="http://briangraymusic.com/img/presidential_suite_show.jpg" />
+		<meta property="og:description" content="Nerd rock all up in your tympanic membranes." />
+
 		<title>Brian Gray. Nerd Rock.</title>
 
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/overcast/jquery-ui.css">
@@ -78,13 +83,16 @@ ga('send', 'pageview');
 }(document, 'script', 'facebook-jssdk'));</script>
 
 		<!-- Start page content -->
-		<div id="bg-page-description">Nerd Rock all up in your tympanic membranes.</div>
 		<div id="bg-badge-stuff">
 			<div id="bg-badges"></div>
 			<div id="bg-add-badge-dialog" class="bg-hide">
 				<input id="bg-add-badge-value" type="text" title="Enter the secret code for your badge"/>
 				<button id="bg-add-badge-submit">Add</button>
 			</div>
+		</div>
+		<div id="bg-social-buttons">
+			<a href="https://twitter.com/BrianGrayMusic" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @BrianGrayMusic</a>
+			<div class="fb-like" data-href="https://www.facebook.com/bgraymusic" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 		<div id="bg-new-badge-alert" title="Achievement Unlocked">
 			<p><img id="bg-new-badge-icon"/><span id="bg-new-badge-msg"></span></p>

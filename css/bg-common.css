@@ -11,7 +11,7 @@
 .bg-alert-icon { float: left; margin: 0 0.5em 3em 0; }
 #bg-new-badge-icon { float: left; margin: 0 0.5em 1em 0; width: 4em; height: 4em; }
 
-#bg-header { font-weight: bold; text-align: center; text-shadow: 0 0 0.5em aliceblue; }
+#bg-header { position: absolute; width: 100%; font-weight: bold; text-align: center; text-shadow: 0 0 0.5em aliceblue; }
 
 #bg-body>.bg-top-level-tabs {
 	background: none; border: none; z-index: 1;
