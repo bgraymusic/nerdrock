@@ -83,23 +83,6 @@ ga('send', 'pageview');
 }(document, 'script', 'facebook-jssdk'));</script>
 
 		<!-- Start page content -->
-		<div id="bg-badge-stuff">
-			<div id="bg-badges"></div>
-			<div id="bg-add-badge-dialog" class="bg-hide">
-				<input id="bg-add-badge-value" type="text" title="Enter the secret code for your badge"/>
-				<button id="bg-add-badge-submit">Add</button>
-			</div>
-		</div>
-		<div id="bg-social-buttons">
-			<a href="https://twitter.com/BrianGrayMusic" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @BrianGrayMusic</a>
-			<div class="fb-like" data-href="https://www.facebook.com/bgraymusic" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-		</div>
-		<div id="bg-new-badge-alert" title="Achievement Unlocked">
-			<p><img id="bg-new-badge-icon"/><span id="bg-new-badge-msg"></span></p>
-		</div>
-		<div id="bg-cannot-save-badges-alert" class="ui-state-error" title="Cannot Save Badge(s)">
-			<p><span class="bg-alert-icon ui-icon ui-icon-alert"></span>Your browser does not support local storage, and so cannot save your badges. Please consider upgrading.</p>
-		</div>
 		<div id="bg-header">
 			<div id="bg-global-stuff" class="bg-hide">
 				<div id="bg-err" class="ui-state-error ui-corner-all" title="Bandcamp failed to respond. Data in the music pane has been pulled from cache and may be stale.">
@@ -131,8 +114,7 @@ ga('send', 'pageview');
 				<div id="bg-music"></div>
 				<table id="bg-social"><tr>
 					<td id="bg-facebook"><div class="fb-page" data-href="https://www.facebook.com/bgraymusic" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bgraymusic"><a href="https://www.facebook.com/bgraymusic">Brian Gray</a></blockquote></div></div></td>
-					<td id="bg-twitter"><a class="twitter-timeline" href="https://twitter.com/BrianGrayMusic" data-widget-id="555018606363561985">Tweets by @BrianGrayMusic</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
+					<td id="bg-twitter"><a class="twitter-timeline" href="https://twitter.com/BrianGrayMusic" data-widget-id="555018606363561985">Tweets by @BrianGrayMusic</a></td>
 				</table>
 				<div id="bg-tribbulous"><p>This page is to track all the administrative activities required to set up a bona fide business to handle all my music activities. Until I’m up and running officially, legally, let’s consider this page a work in progress. For now, I'm actually doing the most hands-on work with building out my studio, so here we see the progress with that.</p><iframe src="https://trello.com/b/7OmMrxYJ.html"></iframe></div>
 				<div id="bg-github">How meta is this? Here's the code for this web site. Feel free to clone the <a href="https://github.com/bgraymusic/nerdrock" target="_blank">original repo</a>, or just browse inline by clicking the link below.</div>
@@ -144,5 +126,23 @@ ga('send', 'pageview');
 				All music is licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/us/" rel="nofollow">Creative Commons Attribution-Noncommercial 3.0 United States License</a>
 			</span>
 		</div>
+		<div id="bg-social-buttons">
+			<a href="https://twitter.com/BrianGrayMusic" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @BrianGrayMusic</a>
+			<div class="fb-like" data-href="https://www.facebook.com/bgraymusic" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+		<div id="bg-badge-stuff">
+			<div id="bg-badges"></div>
+			<div id="bg-add-badge-dialog" class="bg-hide">
+				<input id="bg-add-badge-value" type="text" title="Enter the secret code for your badge"/>
+				<button id="bg-add-badge-submit">Add</button>
+			</div>
+		</div>
+		<div id="bg-new-badge-alert" title="Achievement Unlocked">
+			<p><img id="bg-new-badge-icon"/><span id="bg-new-badge-msg"></span></p>
+		</div>
+		<div id="bg-cannot-save-badges-alert" class="ui-state-error" title="Cannot Save Badge(s)">
+			<p><span class="bg-alert-icon ui-icon ui-icon-alert"></span>Your browser does not support local storage, and so cannot save your badges. Please consider upgrading.</p>
+		</div>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	</body>
 </html>
