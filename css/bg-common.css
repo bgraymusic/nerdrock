@@ -1,4 +1,8 @@
-#bg-body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; background: #dddddd; }
+#bg-body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; }
+/* 
+#bg-body { background: #dddddd; }
+ */
+#bg-body { background: #c0d8f0; }
 #bg-body .bg-hide { display: none; }
 
 #bg-page-description { display: none; }
@@ -20,9 +24,10 @@
 #bg-body>.bg-top-level-tabs>ul { display: none; }
 
 #bg-contents {
-	display: block; position: fixed; overflow-x: hidden; overflow-y: auto; border: 1px solid black;
-	background-color: white; font-size: medium;
+	display: block; position: fixed; overflow-x: hidden; overflow-y: auto; border: 1px solid black; font-size: medium;
 }
+#bg-contents { background-color: aliceblue; }
+
 #bg-contents>div { padding: 0; }
 #bg-contents>table { padding: 0; }
 
