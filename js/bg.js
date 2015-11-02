@@ -47,6 +47,10 @@ function registerGlobalJQueryUI() {
 		'Woo-hoo!': function() { $(this).dialog('close'); },
 		'Ok': function() { $(this).dialog('close'); }
 	}});
+	$('#bg-patreon-button').button().click(function(event) {
+		event.stopPropagation();
+		window.open("http://patreon.com/BrianGray");
+	});
 }
 
 function saveState() {

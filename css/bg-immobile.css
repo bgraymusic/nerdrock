@@ -5,6 +5,8 @@
 #bg-body { box-shadow: 0 0 1em 0px black inset; }
 
 .ui-tooltip { font-size: small; padding: 0.4em }
+.bg-left { float: left; }
+.bg-right { float: right; }
 
 #bg-header { font-size: 2.5em; padding: 0.25em; letter-spacing: 0.1em; }
 #bg-header div.bg-right { margin-right: 0.1em; float: right; }
@@ -31,11 +33,15 @@
 	padding: 0.1em 0.25em; outline-style: none;
 	font-family: inherit; font-weight: inherit; font-size: inherit; letter-spacing: inherit;
 }
-#bg-social-buttons { display: inline; vertical-align: top; float: left; margin: 0.75em; }
-#bg-social-buttons { background-color: aliceblue; box-shadow: 0 0 0.5em 0.25em aliceblue; border-radius: 0.2em; }
-#bg-social-buttons>a { display: none; }
-#bg-social-buttons .twitter-follow-button { vertical-align: top; }
-#bg-social-buttons .twitter-follow-button-rendered { display: inline; position: relative !important; }
+.bg-social-buttons { display: inline; vertical-align: top; margin: 0.75em; }
+.bg-social-buttons { background-color: aliceblue; box-shadow: 0 0 0.5em 0.25em aliceblue; border-radius: 0.2em; }
+.bg-social-buttons>a { display: none; }
+.bg-social-buttons .twitter-follow-button { vertical-align: top; }
+.bg-social-buttons .twitter-follow-button-rendered { display: inline; position: relative !important; }
+#bg-patreon-button { display: none; vertical-align: top; margin-right: 0; border-radius: 3px; outline-style: none; }
+#bg-patreon-button.ui-button { display: inline; }
+#bg-patreon-button .ui-button-text { padding: 0 4px; margin-top: -2px; margin-bottom: -1px; }
+#bg-patreon-button img { height: 12px; width: 52px; }
 #bg-global-stuff {
 	display: inline; vertical-align: top; float: right;
 	font-family: sans-serif; font-weight: normal; font-size: small; letter-spacing: 0;
