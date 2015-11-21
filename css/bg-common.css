@@ -11,6 +11,8 @@
  */
 #bg-cannot-save-badges-alert { display: none; }
 #bg-new-badge-alert { display: none; }
+#bg-cannot-save-badges-alert.ui-dialog-content { display: block; }
+#bg-new-badge-alert.ui-dialog-content { display: block; }
 .ui-dialog .ui-button-text-only { outline-style: none; }
 .ui-dialog .ui-button-text-only .ui-button-text { padding: 0.25em 0.5em; outline-style: none; }
 .ui-dialog .ui-dialog-buttonpane { margin: 0; padding: 0; }

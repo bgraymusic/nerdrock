@@ -34,6 +34,14 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 	});
 }
 
+BG.Discography.prototype.addAlbumDOM = function(albumData) {
+ 	var album = new BG.Album(discography, albumData);
+	this.bgAlbums.push(album);
+ 	var albumDiv = $('<div/>').addClass(BG.Album.css.cont);
+ 	$(this.cont).prepend(albumDiv);
+	album.buildDOM(albumDiv);
+}
+
 BG.Discography.registerJQueryUI = function() {
 	BG.Album.registerJQueryUI();
 }
@@ -41,4 +49,8 @@ BG.Discography.registerJQueryUI = function() {
 BG.Discography.prototype.addAlbums = function(bcInfo) {
 	var albums = this.albums;
 	$(bcInfo).each(function() { albums.push(this); });
+}
+
+BG.Discography.prototype.addAlbum = function(album) {
+	this.albums.push(album);
 }

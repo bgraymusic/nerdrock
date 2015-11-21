@@ -2,7 +2,7 @@ var blogroot = 'https://briangraymusic.wordpress.com';
 var bc = new Bandcamp();
 var discography = new BG.Discography();
 var bgBandId = '230945364';
-var secretBandId = '2536692004';
+//var secretBandId = '2536692004';
 var badges = new BG.Badges();
 
 // Used to detect initial (useless) popstate.
@@ -16,12 +16,11 @@ $(function() {
 
 function onDataComplete(bcData) {
 	discography.addAlbums(bcData);
-	if (badges.hasBadges()) bc.getBandcampData(onSecretDataComplete, secretBandId);
-	else bgInit();
-}
-
-function onSecretDataComplete(bcData) {
-	discography.addAlbums(bcData);
+	$(badges.badges).each(function() {
+		var album = { album_id: badges.spec[this].album };
+		bc.getAlbum(album);
+		discography.addAlbum(album);
+	});
 	bgInit();
 }
 
@@ -39,11 +38,11 @@ function bgInit() {
 function registerGlobalJQueryUI() {
 //	$(document).tooltip();
 	$('#bg-prefs-button').button({ icons: { primary: 'ui-icon-gear' }, text: false });
-	$('#bg-add-badge-value').button();
-	$('#bg-add-badge-submit').button().click(function(event) {
-		event.stopPropagation();
-		badges.addNewBadge($('#bg-add-badge-value').val());
-	});
+// 	$('#bg-add-badge-value').button();
+// 	$('#bg-add-badge-submit').button().click(function(event) {
+// 		event.stopPropagation();
+// 		badges.addNewBadge($('#bg-add-badge-value').val());
+// 	});
 	$('.bg-top-level-tabs').tabs({ activate: function(event, ui) { saveState(); } });
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
 	$(window).bind('popstate', function(event) {
@@ -56,20 +55,6 @@ function registerGlobalJQueryUI() {
 				song: $.url().param('song'), songtab: $.url().param('songtab')
 			});
 		}
-	});
-	$('#bg-cannot-save-badges-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
-		'Don\'t tell me what to do': function() { $(this).dialog('close'); },
-		'Ok': function() { $(this).dialog('close'); }
-	}});
-	$('#bg-new-badge-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
-		'Woo-hoo!': function() { $(this).dialog('close'); },
-		'Ok': function() { $(this).dialog('close'); }
-// 	}, beforeClose: function() {
-// 		$(this).dialog('widget').effect('transfer', {
-// 			to: '#badge-' + $(this).data('badge').id, className: 'ui-effects-transfer' },
-// 			500, function() { $(this).remove()
-// 		});
-	}
 	});
 	$('#bg-patreon-button').button().click(function(event) {
 		event.stopPropagation();

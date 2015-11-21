@@ -13,23 +13,35 @@ var BG = BG || {};
 
 BG.Badges = function() {
 	this.spec = {
-		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey' },
-		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron' },
-		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner' }
+		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey', album: '24668382' },
+		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron', album: '3599490148' },
+		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner', album: '444214854' }
 	};
 	this.badges = [];
 
 	return this;
 }
 
+BG.Badges.getHashForCode = function(code) { return code.toLowerCase().hashCode().toString(); }
+
+BG.Badges.registerJQueryUI = function() {
+	$('#bg-cannot-save-badges-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
+		'Don\'t tell me what to do': function() { $(this).dialog('close'); },
+		'Ok': function() { $(this).dialog('close'); }
+	}});
+	$('#bg-new-badge-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
+		'Woo-hoo!': function() { $(this).dialog('close'); },
+		'Just Ok': function() { $(this).dialog('close'); }
+	}});
+}
+
 BG.Badges.prototype.bootstrap = function() {
 	this.loadFromStorage();
+	BG.Badges.registerJQueryUI();
 	var newBadges = this.loadFromQueryString();
 	this.store(newBadges.length > 0);
 	this.draw();
 }
-
-BG.Badges.getHashForCode = function(code) { return code.toLowerCase().hashCode().toString(); }
 
 BG.Badges.prototype.hasBadges = function() { return !!this.badges.length; }
 
@@ -85,6 +97,10 @@ BG.Badges.prototype.addNewBadge = function(code) {
 		$('#bg-new-badge-msg').text(this.spec[hash].title);
 		$('#bg-new-badge-alert').data('badge', this.spec[hash]);
 		$('#bg-new-badge-alert').dialog('open');
+		var album = { album_id: this.spec[hash].album };
+		bc.getAlbum(album);
+		discography.addAlbum(album);
+		discography.addAlbumDOM(album);
 	}
 }
 
@@ -101,12 +117,12 @@ BG.Badges.prototype.draw = function() {
 		                                  .attr('src', obj.spec[this].img).attr('title', obj.spec[this].title));
 		$('#bg-badges').append($('<br/>'));
 	});
-	$('#bg-badges').append($('<label/>').attr('for', 'bg-add-badge-button').text('Add new badge...'));
-	$('#bg-badges').append($('<input/>').attr('type', 'checkbox').attr('id', 'bg-add-badge-button'));
-
-	$('#bg-add-badge-button').button({ icons: { primary: 'ui-icon-plus' }, text: false }).click(function(event) {
-		event.stopPropagation();
-		if (this.checked) { $('#bg-add-badge-value').val(''); $('#bg-add-badge-dialog').removeClass('bg-hide'); }
-		else $('#bg-add-badge-dialog').addClass('bg-hide');
-	});
+// 	$('#bg-badges').append($('<label/>').attr('for', 'bg-add-badge-button').text('Add new badge...'));
+// 	$('#bg-badges').append($('<input/>').attr('type', 'checkbox').attr('id', 'bg-add-badge-button'));
+// 
+// 	$('#bg-add-badge-button').button({ icons: { primary: 'ui-icon-plus' }, text: false }).click(function(event) {
+// 		event.stopPropagation();
+// 		if (this.checked) { $('#bg-add-badge-value').val(''); $('#bg-add-badge-dialog').removeClass('bg-hide'); }
+// 		else $('#bg-add-badge-dialog').addClass('bg-hide');
+// 	});
 }
