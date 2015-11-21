@@ -1,15 +1,33 @@
 var blogroot = 'https://briangraymusic.wordpress.com';
-var discography;
+var bc = new Bandcamp();
+var discography = new BG.Discography();
+var bgBandId = '230945364';
+var secretBandId = '2536692004';
 var badges = new BG.Badges();
 
 // Used to detect initial (useless) popstate.
 // If history.state exists, assume browser isn't going to fire initial popstate.
 var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
 
-function onDataComplete(bcData) {
-	new BG.Discography(bcData).buildDOM($('#'+BG.Discography.css.cont));
-	registerGlobalJQueryUI();
+$(function() {
 	badges.bootstrap();
+	if (bc.getBandcampData(onDataComplete, bgBandId)) { $('.bg-err').removeClass('bg-hide'); }
+});
+
+function onDataComplete(bcData) {
+	discography.addAlbums(bcData);
+	if (badges.hasBadges()) bc.getBandcampData(onSecretDataComplete, secretBandId);
+	else bgInit();
+}
+
+function onSecretDataComplete(bcData) {
+	discography.addAlbums(bcData);
+	bgInit();
+}
+
+function bgInit() {
+	discography.buildDOM($('#'+BG.Discography.css.cont));
+	registerGlobalJQueryUI();
 	BG.Discography.registerJQueryUI();
 
 	navigate({
@@ -46,7 +64,13 @@ function registerGlobalJQueryUI() {
 	$('#bg-new-badge-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
 		'Woo-hoo!': function() { $(this).dialog('close'); },
 		'Ok': function() { $(this).dialog('close'); }
-	}});
+// 	}, beforeClose: function() {
+// 		$(this).dialog('widget').effect('transfer', {
+// 			to: '#badge-' + $(this).data('badge').id, className: 'ui-effects-transfer' },
+// 			500, function() { $(this).remove()
+// 		});
+	}
+	});
 	$('#bg-patreon-button').button().click(function(event) {
 		event.stopPropagation();
 		window.open("http://patreon.com/BrianGray");

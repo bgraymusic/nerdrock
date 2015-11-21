@@ -1,7 +1,7 @@
 var BG = BG || {};
 
-BG.Discography = function(bcInfo) {
-	this.albums = bcInfo;
+BG.Discography = function() {
+	this.albums = [];
 	this.bgAlbums = [];
 
 	// Important HTML DOM elements
@@ -36,4 +36,9 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 
 BG.Discography.registerJQueryUI = function() {
 	BG.Album.registerJQueryUI();
+}
+
+BG.Discography.prototype.addAlbums = function(bcInfo) {
+	var albums = this.albums;
+	$(bcInfo).each(function() { albums.push(this); });
 }

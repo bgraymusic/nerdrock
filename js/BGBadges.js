@@ -31,9 +31,13 @@ BG.Badges.prototype.bootstrap = function() {
 
 BG.Badges.getHashForCode = function(code) { return code.toLowerCase().hashCode().toString(); }
 
+BG.Badges.prototype.hasBadges = function() { return !!this.badges.length; }
+
 BG.Badges.prototype.hasBadge = function(id) {
-	$.each(this.badges, function() { if (this.id === id) return true; });
-	return false;
+	var spec = this.spec;
+	var found = false;
+	$.each(this.badges, function() { if (spec[this].id === id) found = true; });
+	return found;
 }
 
 BG.Badges.prototype.hasBadgeForCode = function(id) {
@@ -79,6 +83,7 @@ BG.Badges.prototype.addNewBadge = function(code) {
 		this.draw();
 		$('#bg-new-badge-icon').attr('src', this.spec[hash].img);
 		$('#bg-new-badge-msg').text(this.spec[hash].title);
+		$('#bg-new-badge-alert').data('badge', this.spec[hash]);
 		$('#bg-new-badge-alert').dialog('open');
 	}
 }
@@ -89,10 +94,12 @@ BG.Badges.prototype.close = function() {
 
 BG.Badges.prototype.draw = function() {
 	$('#bg-badges').empty();
-	$('#bg-badges').text('Badges: ');
+//	$('#bg-badges').text('Badges: ');
 	var obj = this;
 	$.each(this.badges, function() {
-		$('#bg-badges').append($('<img/>').attr('src', obj.spec[this].img).attr('title', obj.spec[this].title));
+		$('#bg-badges').append($('<img/>').attr('id', 'badge-' + obj.spec[this].id)
+		                                  .attr('src', obj.spec[this].img).attr('title', obj.spec[this].title));
+		$('#bg-badges').append($('<br/>'));
 	});
 	$('#bg-badges').append($('<label/>').attr('for', 'bg-add-badge-button').text('Add new badge...'));
 	$('#bg-badges').append($('<input/>').attr('type', 'checkbox').attr('id', 'bg-add-badge-button'));

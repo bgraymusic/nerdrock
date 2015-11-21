@@ -87,7 +87,7 @@ function Bandcamp() {
 Bandcamp.URL = 'http://briangray.bandcamp.com';
 Bandcamp.apiURL = '/bcapi';
 Bandcamp.apiKey = 'throtaudvinroftignmarkreina';
-Bandcamp.bandId = '230945364'; // probably permanent
+//Bandcamp.bandId = '230945364'; // probably permanent
 Bandcamp.bandInfoApi = '/api/band/3/info';
 Bandcamp.discographyApi = '/api/band/3/discography';
 Bandcamp.albumInfoApi = '/api/album/2/info';
@@ -95,16 +95,16 @@ Bandcamp.trackInfoApi = '/api/track/3/info';
 Bandcamp.discography = {};
 
 Bandcamp.prototype = {
-	getBandcampData: function(cb) {
-		Bandcamp.callback = cb;
+	getBandcampData: function(cb, bandId) {
 		jQuery.ajaxSetup({async:false});
-		var foo = $.getJSON(Bandcamp.apiURL + Bandcamp.discographyApi, { key: Bandcamp.apiKey, band_id: Bandcamp.bandId }, function(discData) {
-			Bandcamp.discography = discData.discography;
-			for (var albumIdx in Bandcamp.discography) {
-				var album = Bandcamp.discography[albumIdx];
+		var discography = {};
+		var foo = $.getJSON(Bandcamp.apiURL + Bandcamp.discographyApi, { key: Bandcamp.apiKey, band_id: bandId }, function(discData) {
+			discography = discData.discography;
+			for (var albumIdx in discography) {
+				var album = discography[albumIdx];
 				$.getJSON(Bandcamp.apiURL + Bandcamp.albumInfoApi, { key: Bandcamp.apiKey, album_id: album.album_id }, function(albumData) {
-					for (var albumIdx in Bandcamp.discography) {
-						var album = Bandcamp.discography[albumIdx];
+					for (var albumIdx in discography) {
+						var album = discography[albumIdx];
 						if (album.album_id == albumData.album_id) {
 							album.tracks = albumData.tracks;
 						}
@@ -112,7 +112,7 @@ Bandcamp.prototype = {
 				});
 			}
 		});
-		Bandcamp.callback(Bandcamp.discography);
+		cb(discography);
 		return (!!Bandcamp.netError);
 	}
 }

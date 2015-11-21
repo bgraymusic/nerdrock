@@ -6,7 +6,9 @@
 #bg-body .bg-hide { display: none; }
 
 #bg-page-description { display: none; }
+/* 
 #bg-badge-stuff { display: none; }
+ */
 #bg-cannot-save-badges-alert { display: none; }
 #bg-new-badge-alert { display: none; }
 .ui-dialog .ui-button-text-only { outline-style: none; }
