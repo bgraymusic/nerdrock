@@ -21,7 +21,16 @@ function onDataComplete(bcData) {
 }
 
 function onSecretDataComplete(bcData) {
-	discography.addAlbums(bcData);
+	var secretAlbums = [];
+	$(badges.badges).each(function() {
+		var badgeId = this;
+		$(bcData).each(function() {
+			var album = this;
+			if (album["album_id"] == badges.spec[badgeId].aid)
+				secretAlbums.push(album);
+		});
+	});
+	discography.addAlbums(secretAlbums);
 	bgInit();
 }
 

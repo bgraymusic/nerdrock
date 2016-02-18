@@ -13,9 +13,9 @@ var BG = BG || {};
 
 BG.Badges = function() {
 	this.spec = {
-		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey' },
-		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron' },
-		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner' }
+		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey', aid: 24668382 },
+		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron', aid: 3599490148 },
+		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner', aid: 444214854 }
 	};
 	this.badges = [];
 
