@@ -130,6 +130,7 @@ BG.Album.shuffleStart = function(accordion, track) {
 	$(track.hdr).hide({ effect: 'highlight', color: '#599fcf', complete: function() {
 		$(accordion).append(track.hdr, track.body);
 		$(track.hdr).show('highlight', { color: '#599fcf' } );
+		$(accordion).accordion('refresh');
 	}});
 }
 
