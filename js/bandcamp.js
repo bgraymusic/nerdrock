@@ -96,23 +96,27 @@ Bandcamp.discography = {};
 
 Bandcamp.prototype = {
 	getBandcampData: function(cb, bandId) {
+		var bcObj = this;
 		jQuery.ajaxSetup({async:false});
 		var discography = {};
-		var foo = $.getJSON(Bandcamp.apiURL + Bandcamp.discographyApi, { key: Bandcamp.apiKey, band_id: bandId }, function(discData) {
+		var foo = $.getJSON(Bandcamp.apiURL + Bandcamp.discographyApi, {
+			key: Bandcamp.apiKey, band_id: bandId
+		}, function(discData) {
 			discography = discData.discography;
 			for (var albumIdx in discography) {
 				var album = discography[albumIdx];
-				$.getJSON(Bandcamp.apiURL + Bandcamp.albumInfoApi, { key: Bandcamp.apiKey, album_id: album.album_id }, function(albumData) {
-					for (var albumIdx in discography) {
-						var album = discography[albumIdx];
-						if (album.album_id == albumData.album_id) {
-							album.tracks = albumData.tracks;
-						}
-					}
-				});
+				bcObj.getAlbum(album);
 			}
 		});
 		cb(discography);
 		return (!!Bandcamp.netError);
+	},
+
+	getAlbum: function(album) {
+		$.getJSON(Bandcamp.apiURL + Bandcamp.albumInfoApi, {
+			key: Bandcamp.apiKey, album_id: album.album_id
+		}, function(albumData) {
+			$.extend(album, albumData);
+		});
 	}
 }
