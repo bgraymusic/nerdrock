@@ -2,7 +2,7 @@ var blogroot = 'https://briangraymusic.wordpress.com';
 var bc = new Bandcamp();
 var discography = new BG.Discography();
 var bgBandId = '230945364';
-//var secretBandId = '2536692004';
+var secretBandId = '2536692004';
 var badges = new BG.Badges();
 
 // Used to detect initial (useless) popstate.
