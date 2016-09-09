@@ -254,7 +254,7 @@ BG.Track.registerJQueryUI = function() {
 				$(this).prev().text($.jPlayer.convertTime(ui.value));
 				BG.Track.markElapsedLyrics($(this).closest('.bg-accordion-header').next().find('.bg-lyrics'), ui.value);
 			},
-			stop : function(event, ui) {
+			stop: function(event, ui) {
 				var player = BG.Track.getFromElement(this).player.data().jPlayer;
 				if (player.status.paused) player.pause(ui.value);
 				else player.play(ui.value);
@@ -264,13 +264,9 @@ BG.Track.registerJQueryUI = function() {
 		});
 	});
 
-	$('.bg-track-volume-slider')
-		.slider({
+	$('.bg-track-volume-slider').slider({
 			range: 'min', min: 0, max: 100, value: 100, animate: 'fast',
-			slide: function(event, ui) {
-				var player = $(this).parent().parent().parent().data('player');
-				player.jPlayer('volume', ui.value/100);
-			}
+			slide: function(event, ui) { BG.Track.getFromElement(this).player.data().jPlayer.volume(ui.value / 100); }
 		});
 
 	$('.bg-track-buy-button').button({ icons: { primary: 'ui-icon-cart' }, text: false }).click(function(event) {

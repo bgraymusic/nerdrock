@@ -14,6 +14,8 @@
 
 		<meta property="og:url" content="http://briangraymusic.com" />
 		<meta property="og:title" content="Brian Gray. Nerd Rock." />
+		<meta property="og:description" content="Nerd rock all up in your tympanic membranes." />
+
 		<!-- Brian playing guitar at the Presidential Suite 2015 -->
 		<meta property="og:image" content="http://briangraymusic.com/img/presidential_suite_show.jpg" />
 		<!-- π Day pie -->
@@ -24,24 +26,32 @@
 		<meta property="og:image" content="http://briangraymusic.com/img/saruman.jpg" />
 		<!-- Queen of Oz -->
 		<meta property="og:image" content="http://briangraymusic.com/img/mae.jpg" />
-		<meta property="og:description" content="Nerd rock all up in your tympanic membranes." />
 
 		<title>Brian Gray. Nerd Rock.</title>
 
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/overcast/jquery-ui.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/overcast/jquery-ui.css">
 
 		<link rel="stylesheet" href="/css/bg-common.css">
 		<link rel="stylesheet" media="screen and (max-width: 520px)" href="/css/bg-mobile.css">
 		<link rel="stylesheet" media="screen and (min-width: 521px)" href="/css/bg-immobile.css">
 
-		<link rel="stylesheet" media="screen and (min-width: 521px) and (max-width: 660px)" href="/css/bg-noshuttle.css">
-		<link rel="stylesheet" media="screen and (min-width: 661px) and (max-width: 710px)" href="/css/bg-smallshuttle.css">
-		<link rel="stylesheet" media="screen and (min-width: 711px) and (max-width: 760px)" href="/css/bg-medshuttle.css">
-		<link rel="stylesheet" media="screen and (min-width: 761px) and (max-width: 880px)" href="/css/bg-novol.css">
-		<link rel="stylesheet" media="screen and (min-width: 881px)" href="/css/bg-full.css">
+		<link rel="stylesheet" media="screen and (max-width: 520px)" href="/css/bg-title-full.css">
+		<link rel="stylesheet" media="screen and (min-width: 521px) and (max-width: 670px)" href="/css/bg-title-nonerdrock.css">
+		<link rel="stylesheet" media="screen and (min-width: 671px) and (max-width: 790px)" href="/css/bg-title-norock.css">
+		<link rel="stylesheet" media="screen and (min-width: 791px)" href="/css/bg-title-full.css">
 
+		<link rel="stylesheet" media="screen and (min-width: 521px) and (max-width: 630px)" href="/css/bg-noshuttle.css">
+		<link rel="stylesheet" media="screen and (min-width: 631px) and (max-width: 680px)" href="/css/bg-smallshuttle.css">
+		<link rel="stylesheet" media="screen and (min-width: 681px) and (max-width: 730px)" href="/css/bg-medshuttle.css">
+		<link rel="stylesheet" media="screen and (min-width: 731px) and (max-width: 850px)" href="/css/bg-novol.css">
+		<link rel="stylesheet" media="screen and (min-width: 851px)" href="/css/bg-full.css">
+
+<!-- 
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+ -->
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<script src="/js/jquery.jplayer.min.js"></script>
 		<script src="/js/purl.js"></script>
 		<script src="/js/repo.min.js"></script>
@@ -70,7 +80,7 @@
 				</div>
 				<button id="bg-prefs-button" title="Preferences"></button>
 			</div>
-			<span>Brian Gray. Nerd Rock.</span>
+			<span id="bg-header-title"></span>
 		</div>
 		<div id="bg-shadow-box" class="bg-top-level-tabs">
 			<ul class="bg-vertical-text">

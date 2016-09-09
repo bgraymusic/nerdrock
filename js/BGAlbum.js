@@ -52,21 +52,11 @@ BG.Album.prototype.buildDOM = function(albumTable) {
 
 BG.Album.prototype.buildMetaCell = function(metaCell) {
 	metaCell.append($('<img/>').addClass(BG.Album.css.meta.art).attr('src', this.small_art_url));
-
 	metaCell.append($('<br/>'));
-
-	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_onesong')
-		.addClass(BG.Album.css.meta.onesong));
-	metaCell.append($('<label/>').attr('for', this.album_id + '_onesong').text('Stop playing after song'));
-	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_repeat')
-		.addClass(BG.Album.css.meta.repeat));
-	metaCell.append($('<label/>').attr('for', this.album_id + '_repeat').text('Repeat Album'));
-	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_shuffle')
-		.addClass(BG.Album.css.meta.shuffle));
-	metaCell.append($('<label/>').attr('for', this.album_id + '_shuffle').text('Shuffle Album'));
-	metaCell.append($('<input/>').attr('type', 'checkbox').attr('id', this.album_id + '_follow')
-		.addClass(BG.Album.css.meta.follow));
-	metaCell.append($('<label/>').attr('for', this.album_id + '_follow').text('Open lyrics when a song starts playing'));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_onesong').addClass(BG.Album.css.meta.onesong));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_repeat').addClass(BG.Album.css.meta.repeat));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_shuffle').addClass(BG.Album.css.meta.shuffle));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_follow').addClass(BG.Album.css.meta.follow));
 }
 
 BG.Album.prototype.buildAlbumContents = function(albumContents) {
@@ -93,22 +83,25 @@ BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 }
 
 BG.Album.registerJQueryUI = function() {
-	$('.'+BG.Album.css.meta.onesong).button({ icons: { primary: 'ui-icon-arrowthickstop-1-e' }, text: false });
-	$('.'+BG.Album.css.meta.repeat).button({ icons: { primary: 'ui-icon-refresh' }, text: false });
-	$('.'+BG.Album.css.meta.shuffle).button({
-		icons: { primary: 'ui-icon-shuffle' }, text: false
-	}).click(function(event) {
-		event.stopPropagation();
-		var album = BG.Album.getFromElement($(this));
-		if (this.checked) BG.Album.shuffle(album.workingTracks);
+	$('.'+BG.Album.css.meta.onesong).button({ icons: { primary: 'ui-icon-arrowthickstop-1-e' } }).addClass('bg-toggle');
+	$('.'+BG.Album.css.meta.repeat).button({ icons: { primary: 'ui-icon-refresh' } }).addClass('bg-toggle');
+	$('.'+BG.Album.css.meta.shuffle).button({ icons: { primary: 'ui-icon-shuffle' } }).addClass('bg-toggle').data('click', function(event, pressed) {
+		var album = BG.Album.getFromElement(event.target);
+		if (pressed) BG.Album.shuffle(album.workingTracks);
 		else album.workingTracks = album.masterTracks.slice(0);
 		$('.'+BG.Track.css.body.media).filter(':hidden').empty();
-		var step = 0;
-		$(album.workingTracks).each(function() {
-			setTimeout(BG.Album.shuffleStart, 33*step, album.accordion, this); ++step;
-		});
+		$(album.workingTracks).each(function() { album.accordion.append(this.hdr, this.body); });
+		album.accordion.accordion('refresh');
 	});
-	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' }, text: false });
+	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' } }).addClass('bg-toggle');
+	$('.bg-toggle').button().data('state', false).mousedown(function (event) {
+			event.preventDefault();
+    	this.checked = !this.checked;
+    	this.checked ? $(this).addClass('ui-state-active') : $(this).removeClass('ui-state-active');
+    	$(this).attr('aria-pressed', this.checked ? 'true' : 'false');
+    	if ($(this).data('click')) $(this).data('click')(event, this.checked);
+	});
+	$('.'+BG.Album.css.meta.follow).button().mousedown();
 
 	$('.'+BG.Album.css.content.accordion).accordion({
 		collapsible: true, active: false, heightStyle: 'content', beforeActivate: function(event, ui) {
@@ -124,14 +117,6 @@ BG.Album.registerJQueryUI = function() {
 	});
 
 	BG.Track.registerJQueryUI();
-}
-
-BG.Album.shuffleStart = function(accordion, track) {
-	$(track.hdr).hide({ effect: 'highlight', color: '#599fcf', complete: function() {
-		$(accordion).append(track.hdr, track.body);
-		$(track.hdr).show('highlight', { color: '#599fcf' } );
-		$(accordion).accordion('refresh');
-	}});
 }
 
 BG.Album.shuffle = function(array) {

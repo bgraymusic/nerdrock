@@ -65,9 +65,8 @@
 .bg-social-buttons .twitter-follow-button { vertical-align: top; }
 .bg-social-buttons .twitter-follow-button-rendered { display: inline; position: relative !important; }
 #bg-patreon-button { display: none; vertical-align: top; margin-right: 0; border-radius: 3px; outline-style: none; }
-#bg-patreon-button.ui-button { display: inline; }
-#bg-patreon-button .ui-button-text { padding: 0 4px; margin-top: -2px; margin-bottom: -1px; }
-#bg-patreon-button img { height: 12px; width: 52px; }
+#bg-patreon-button.ui-button { display: inline; height: 20px; padding: 0 4px }
+#bg-patreon-button img { height: 14px; width: 60px; }
 #bg-global-stuff {
 	display: inline; vertical-align: top; float: right;
 	font-family: sans-serif; font-weight: normal; font-size: small; letter-spacing: 0;
@@ -113,14 +112,13 @@
 #bg-music .bg-album-meta-cell { display: table-cell; width: 100px; vertical-align: top; }
 #bg-music .bg-album-art { width: 100px; height: 100px; }
 #bg-music .bg-album-art-small { display: none; }
-#bg-music .bg-album-meta-cell label {
-	height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
-	border-radius: 6px; outline-style: none;
+#bg-music .bg-album-meta-cell button {
+	height: 18px; width: 18px; vertical-align: middle; border-radius: 4px; outline-style: none; padding: 0
 }
-#bg-music .bg-accordion-header { height: 1.2em; padding: 0 0 0 2em; margin-bottom: 1px; outline-style: none; }
+#bg-music .bg-album-meta-cell .ui-button-icon { margin: -5px 0 0 0 }
+#bg-music .bg-accordion-header { height: 1.2em; padding: 0 0 0 0.25em; margin-bottom: 1px; outline-style: none; }
 #bg-music .bg-accordion-header button {
-	float: left; height: 18px; width: 18px; margin: 0.08em; vertical-align: middle;
-	border-radius: 6px; outline-style: none;
+	float: left; height: 18px; width: 18px; margin: 1px; padding: 1px; border-radius: 4px; outline-style: none;
 }
 #bg-music .bg-accordion-header a {
 	float: left; height: 16px; width: 16px; margin: 0.08em; vertical-align: middle;
@@ -129,7 +127,7 @@
 #bg-music .bg-accordion-header button .ui-button-text { padding: 0; margin: 0; }
 #bg-music .bg-accordion-body { overflow: hidden }
 #bg-music .bg-accordion-body .ui-tabs-panel { max-height: 25em; padding: 0.5em; overflow: auto; }
-#bg-music .bg-track-name { display: table-cell; height: 100%; vertical-align: middle; font-size: medium; }
+#bg-music .bg-track-name { display: inline; height: 100%; font-size: medium; }
 #bg-music .bg-track-controls { display: table-cell; float: right; }
 #bg-music .bg-track-buy-button { background-position: -48px -112px; }
 #bg-music .bg-accordion-body { padding: 0; border-top-left-radius: 0; border-top-right-radius: 0; }

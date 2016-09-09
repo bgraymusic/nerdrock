@@ -15,7 +15,7 @@
 #bg-music .bg-album-art-small { width: 1.25em; height: 1.25em; }
 
 #bg-music .bg-album-accordion { margin-right: 1em;}
-#bg-music .bg-accordion-header { height: 2.5em; padding: 0 0 0 2em; margin-bottom: 1px; outline-style: none; }
+#bg-music .bg-accordion-header { height: 2.5em; padding: 0 0 0 0.5em; margin-bottom: 1px; outline-style: none; }
 #bg-music .bg-accordion-header button {
 	float: left; height: 2.25em; width: 2.25em; margin: 0.1em; vertical-align: middle;
 	border-radius: 6px; outline-style: none;
@@ -23,8 +23,8 @@
 #bg-music .bg-accordion-header button .ui-button-text { padding: 0; margin: 0; }
 #bg-music .bg-accordion-body { overflow: hidden }
 #bg-music .bg-accordion-body .ui-tabs-panel { max-height: 25em; padding: 0.5em; overflow: auto; }
-#bg-music .bg-track-name { display: table; height: 100%; vertical-align: middle; font-size: medium; }
-#bg-music .bg-track-name-text { display: table-cell; vertical-align: middle; }
+#bg-music .bg-track-name { display: inline-block; height: 100%; vertical-align: middle; font-size: medium; }
+#bg-music .bg-track-name-text { display: inline-block; vertical-align: middle; padding-top: 0.55em }
 #bg-music .bg-track-controls { display: table-cell; float: right; }
 #bg-music .bg-track-shuttle { display: none; }
 #bg-music .bg-track-volume { display: none; }
