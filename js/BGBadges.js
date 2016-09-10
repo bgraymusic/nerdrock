@@ -59,8 +59,8 @@ BG.Badges.prototype.hasBadgeForCode = function(id) {
 
 BG.Badges.prototype.loadFromStorage = function() {
 	if (typeof(Storage) !== 'undefined') {
-		if (!localStorage.getItem('badges')) localStorage.setItem('badges', JSON.stringify([]));
-		this.badges = JSON.parse(localStorage.getItem('badges'));
+		if (!localStorage.getItem('badges')) this.badges = [];
+		else this.badges = JSON.parse(localStorage.getItem('badges'));
 	} else badges = [];
 }
 
@@ -79,11 +79,13 @@ BG.Badges.prototype.loadFromQueryString = function() {
 }
 
 BG.Badges.prototype.store = function(gotNewBadges) {
-	if (typeof(Storage) !== 'undefined') {
-		localStorage.setItem('badges', JSON.stringify(this.badges));
-	} else if (gotNewBadges) {
-		$('#bg-cannot-save-badges-alert').dialog('open');
-	}
+	try {
+		if (typeof(Storage) !== 'undefined') {
+			localStorage.setItem('badges', JSON.stringify(this.badges));
+		} else if (gotNewBadges) {
+			$('#bg-cannot-save-badges-alert').dialog('open');
+		}
+	} catch(e) { /* can't store, NBD */ }
 }
 
 BG.Badges.prototype.addNewBadge = function(code) {

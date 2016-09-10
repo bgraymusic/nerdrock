@@ -23,8 +23,10 @@
 #bg-music .bg-accordion-header button .ui-button-text { padding: 0; margin: 0; }
 #bg-music .bg-accordion-body { overflow: hidden }
 #bg-music .bg-accordion-body .ui-tabs-panel { max-height: 25em; padding: 0.5em; overflow: auto; }
-#bg-music .bg-track-name { display: inline-block; height: 100%; vertical-align: middle; font-size: medium; }
+#bg-music .bg-track-name { display: inline-block; margin-top: 0.7em; height: 100%; font-size: medium; }
+/*
 #bg-music .bg-track-name-text { display: inline-block; vertical-align: middle; padding-top: 0.55em }
+*/
 #bg-music .bg-track-controls { display: table-cell; float: right; }
 #bg-music .bg-track-shuttle { display: none; }
 #bg-music .bg-track-volume { display: none; }
