@@ -2,6 +2,13 @@
 ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: aliceblue; border-radius: 8px; }
 ::-webkit-scrollbar-thumb { border-radius: 8px; background-color: #599fcf; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
 
+#bg-nag { border: 1px solid black; padding: 0.25em; display: none; }
+#bg-nag-buttons { text-align: center; }
+#bg-nag-buttons button { margin-top: 0.2em; padding: 0 0.2em; font-size: small; outline: none; }
+#bg-nag-buttons .bg-patreon-button { padding-top: 2px; }
+#bg-nag-dismiss { float: right; margin-top: 0.4em; }
+.bg-patreon-prefix { vertical-align: top; }
+
 #bg-body { box-shadow: 0 0 1em 0px black inset; }
 
 .ui-tooltip { font-size: small; padding: 0.4em }
@@ -64,9 +71,9 @@
 .bg-social-buttons>a { display: none; }
 .bg-social-buttons .twitter-follow-button { vertical-align: top; }
 .bg-social-buttons .twitter-follow-button-rendered { display: inline; position: relative !important; }
-#bg-patreon-button { display: none; vertical-align: top; margin-right: 0; border-radius: 3px; outline-style: none; }
-#bg-patreon-button.ui-button { display: inline; height: 20px; padding: 0 4px }
-#bg-patreon-button img { height: 14px; width: 60px; }
+.bg-patreon-button { display: none; vertical-align: top; margin-right: 0; border-radius: 3px; outline-style: none; }
+.bg-patreon-button.ui-button { display: inline; height: 20px; padding: 0 4px }
+.bg-patreon-button img { height: 14px; width: 60px; }
 #bg-global-stuff {
 	display: inline; vertical-align: top; float: right;
 	font-family: sans-serif; font-weight: normal; font-size: small; letter-spacing: 0;

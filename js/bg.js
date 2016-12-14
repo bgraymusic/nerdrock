@@ -4,12 +4,23 @@ var discography = new BG.Discography();
 var bgBandId = '230945364';
 var secretBandId = '2536692004';
 var badges = new BG.Badges();
+var nag;
 
 // Used to detect initial (useless) popstate.
 // If history.state exists, assume browser isn't going to fire initial popstate.
 var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
 
 $(function() {
+	nag = new BG.Nag({
+		container: $('#bg-nag'),
+		heightDetermined: function(height) {
+			console.log('Nag height: ' + height);
+			$('#bg-contents').css('top', height + 80 + 'px');
+		},
+		close: function() {
+			$('#bg-contents').css('top', 80 + 'px');
+		}
+	});
 	badges.bootstrap();
 	if (bc.getBandcampData(onDataComplete, bgBandId)) { $('.bg-err').removeClass('bg-hide'); }
 });
@@ -66,7 +77,7 @@ function registerGlobalJQueryUI() {
 			});
 		}
 	});
-	$('#bg-patreon-button').button().click(function(event) {
+	$('.bg-patreon-button').button().click(function(event) {
 		event.stopPropagation();
 		window.open("http://patreon.com/BrianGray");
 	});

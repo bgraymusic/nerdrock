@@ -1,7 +1,5 @@
+body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; }
 #bg-body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; }
-/* 
-#bg-body { background: #dddddd; }
- */
 #bg-body { background: #c0d8f0; }
 #bg-body .bg-hide { display: none; }
 
@@ -23,7 +21,7 @@
 
 #bg-body>.bg-top-level-tabs {
 	background: none; border: none; z-index: 1;
-	position: fixed; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
+	position: relative; top: 0; right: 0; bottom: 0; left: 0; border: none; padding: 0; height: 0;
 }
 #bg-body>.bg-top-level-tabs>ul { display: none; }
 
