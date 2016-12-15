@@ -3,6 +3,8 @@
 ::-webkit-scrollbar-thumb { border-radius: 8px; background-color: #599fcf; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
 
 #bg-nag { border: 1px solid black; padding: 0.25em; display: none; }
+#bg-nag p { margin: 0; margin-bottom: 0.25em; text-indent: 1em; }
+#bg-nag p.bg-greeting { text-indent: 0; }
 #bg-nag-buttons { text-align: center; }
 #bg-nag-buttons button { margin-top: 0.2em; padding: 0 0.2em; font-size: small; outline: none; }
 #bg-nag-buttons .bg-patreon-button { padding-top: 2px; }
