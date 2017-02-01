@@ -15,7 +15,8 @@ BG.Badges = function() {
 	this.spec = {
 		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey', aid: 24668382 },
 		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron', aid: 3599490148 },
-		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner', aid: 444214854 }
+		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner', aid: 444214854 },
+		'113796': { id: 'sfw', img: 'img/safety.png', title: 'Safe for Work' }
 	};
 	this.badges = [];
 
@@ -32,6 +33,20 @@ BG.Badges.registerJQueryUI = function() {
 	$('#bg-new-badge-alert').dialog({ autoOpen: false, resizable: false, modal: true, buttons: {
 		'Woo-hoo!': function() { $(this).dialog('close'); },
 		'Just Ok': function() { $(this).dialog('close'); }
+	}});
+	$('#bg-nsfw-alert').dialog({ autoOpen: false, resizable: false, modal: true, width: 400, buttons: {
+		'Stay Safe': function() { $(this).dialog('close'); },
+		'Enter NSFW Mode': function() {
+			var idx = badges.badges.indexOf('113796');
+			if (idx > -1) {
+				badges.badges.splice(idx, 1);
+				badges.store();
+			}
+			$(this).dialog('close');
+			discography.albums.reverse();
+			bgInit();
+			badges.draw();
+		}
 	}});
 }
 
@@ -99,10 +114,13 @@ BG.Badges.prototype.addNewBadge = function(code) {
 		$('#bg-new-badge-msg').text(this.spec[hash].title);
 		$('#bg-new-badge-alert').data('badge', this.spec[hash]);
 		$('#bg-new-badge-alert').dialog('open');
-		var album = { album_id: this.spec[hash].album };
-		bc.getAlbum(album);
-		discography.addAlbum(album);
-		discography.addAlbumDOM(album);
+		var aid = this.spec[hash].album;
+		if (aid) {
+			var album = { album_id: aid };
+			bc.getAlbum(album);
+			discography.addAlbum(album);
+			discography.addAlbumDOM(album);
+		}
 	}
 }
 

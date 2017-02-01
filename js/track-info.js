@@ -1,4 +1,12 @@
 trackInfo = {
+	// Staff Meeting 2015
+	1057430561: {
+		nsfw: true
+	},
+	// She Said
+	1595466326: {
+		nsfw: true
+	},
 	// Pi Day
 	2923511621: {
 		lyrics: '\u200C\
@@ -81,6 +89,29 @@ Hap\u200Cpy, \u200Chap\u200Cpy \u200Cπ \u200CDay!\u200C \u200CI\'m \u200Call \u
 Some holidays just get the short end of the stick. Why is it that days based on mathematical constants (you know who you are) lack the public awareness of days marking religious or historical significance? It\'s just not rational.\n\n\
 Thanks to <a href="http://www.weirdal.com/" target="_blank">Weird Al</a> and his "<a href="http://www.youtube.com/watch?v=t039p6xqutU" target="_blank">Christmas at Ground Zero</a>" for the idea to give it a holiday sound by using sleigh bells. I was thinking about using the baritone sax as well, but decided it didn\'t work in this case.\n\n\
 EDIT: New version for π Day 2013! I rethought the sax and decided it works after all. Added a uke, accordion, and moving left hand on the piano, and kicked up the energy. Hope you like it. '
+	},
+	// Blow Up
+	4062818800: {
+		lyrics: '\
+All around me I see crazy people, mad as can be, mad as can be.\n\
+Go to bed and hope the sleep I sleep will rest within me, rest within me\n\
+Now the world is spinning on a tangent. Twenty-eight days, twenty-eight days\n\
+Are required just to make it stable. Am I able? Am I able?\n\
+\n\
+And I find it kind of funny, the voices in my head say this crazy freaky bunny\'s the manipulated dead.\n\
+I find it hard to tell you the message I must send; if I don\'t return the artifact the world is gonna\n\
+Blow up, blow up.\n\
+\n\
+Grandma Death again is staring blankly. Got no letter, got no letter.\n\
+All while my companion whispers frankly floods and blazes, make it better.\n\
+Past the elemental vortex gateway, can you hear me? Can you hear me?\n\
+Trapped in subtext all for my ensurance, love or fear me, love or fear me.\n\
+\n\
+And I find it kind of funny, the passages I read say this crazy freaky bunny\'s the manipulated dead.\n\
+I find it hard to tell you, and harder to pretend; if I don\'t return the artifact the world is gonna\n\
+Blow up, blow up.\n\
+\n\
+Embiggen your world. Blow up.'
 	},
 	// One More Cloud
 	3359648026: {
@@ -390,6 +421,7 @@ That\'s it, enough, wake up, it\'s just a dream.',
 	},
 	// Before You Go
 	537269823: {
+		nsfw: true,
 		lyrics: '\
 [Verse 1]\n\
 I understand. You think that I don\'t get it, but I do. You need your space.\n\
@@ -675,28 +707,13 @@ That somebody might recognize us',
 	266721102: {
 		about: '<br /><div style="display:block;text-align:left"><a href="https://3.bp.blogspot.com/-v3dGTS6h3hw/U_AYpRL0qvI/AAAAAAAACgU/u5U4z1liKCg/s1600/Lincolnville_Beach.jpg" target="_blank" imageanchor="1" rel="nofollow"><img border="0" width="90%" src="https://3.bp.blogspot.com/-v3dGTS6h3hw/U_AYpRL0qvI/AAAAAAAACgU/u5U4z1liKCg/s1600/Lincolnville_Beach.jpg" width="400" /></a></div><br /><div>What does the above photo make you think of? Wrong. The correct answer is sharks eating people. Why is that the correct answer? Because Jaws has been playing every time I\'ve turned on the TV for the past month.</div><div><br /></div><div>Going for a nostalgic feel here, like a song you\'d play and sing around a campfire about some adolescent adventure involving a crush. Took a lot of inspiration from James Taylor, Harry Chapin, Jonathan Coulton, Kenny Loggins, etc. Even Weird Al\'s <a href="https://www.youtube.com/watch?v=MtqvMCP8GNE" target="_blank">Good Old Days</a>.</div><div><br /></div><div>Logic Pro has been practicing, and is getting better at me playing guitar! That flex time stuff really goes a long way to correcting my timing problems, especially when I have three guitar parts overlapping each other and the attacks need to line up. And I\'m loving the sound of my <a href="http://www.seagullguitars.com/seagull_artist_mosaic_folk.html" target="_blank" rel="nofollow">Seagull Artist Mosaic Folk</a>. I\'ll just go ahead and give them free publicity in front of the 47 people who will ever read this page. For a smaller guy like me the folk size and shorter Gibsonesque scale fit perfectly (and match my electric, which is convenient), and it has a surprising amount of projection. I recorded DI and applied effects inside the box to brighten it up. I had planned on strumming with a quarter but the ITB effects worked nicely and allowed me to strum with just my fingers.'
 	},
-	// Blow Up
-	4062818800: {
-		lyrics: '\
-All around me I see crazy people, mad as can be, mad as can be.\n\
-Go to bed and hope the sleep I sleep will rest within me, rest within me\n\
-Now the world is spinning on a tangent. Twenty-eight days, twenty-eight days\n\
-Are required just to make it stable. Am I able? Am I able?\n\
-\n\
-And I find it kind of funny, the voices in my head say this crazy freaky bunny\'s the manipulated dead.\n\
-I find it hard to tell you the message I must send; if I don\'t return the artifact the world is gonna\n\
-Blow up, blow up.\n\
-\n\
-Grandma Death again is staring blankly. Got no letter, got no letter.\n\
-All while my companion whispers frankly floods and blazes, make it better.\n\
-Past the elemental vortex gateway, can you hear me? Can you hear me?\n\
-Trapped in subtext all for my ensurance, love or fear me, love or fear me.\n\
-\n\
-And I find it kind of funny, the passages I read say this crazy freaky bunny\'s the manipulated dead.\n\
-I find it hard to tell you, and harder to pretend; if I don\'t return the artifact the world is gonna\n\
-Blow up, blow up.\n\
-\n\
-Embiggen your world. Blow up.'
+	// Just You and Me
+	2302238082: {
+		nsfw: true
+	},
+	// Staff Meeting (original)
+	488898176: {
+		nsfw: true
 	},
 	// Clubbin' Tonight
 	510863922: {
@@ -831,5 +848,9 @@ Fei gong! Impartial care\'s our universal tapestry to weave.\n\
 Our song tells a tale of struggle wherein two teams enter, two teams leave.\n\
 Respect, unselfishness, and sportsmanship shall be be our crowning jewel.\n\
 For the inner peace you\'ve missed, trade your fist for pacifist at the Spring and Autumn Mohist School!'
+	},
+	// Stupid Face
+	139362120: {
+		nsfw: true
 	}
 };

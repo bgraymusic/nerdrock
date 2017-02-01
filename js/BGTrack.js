@@ -54,7 +54,7 @@ BG.Track.prototype.buildDOM = function(hdr, body) {
 }
 
 BG.Track.prototype.buildHeader = function() {
-	this.hdr.attr('title', this.title);
+//	this.hdr.attr('title', this.title);
 	this.hdr.attr('song', BG.Track.mashTitle(this.title));
 	var controls = $('<div/>').addClass(BG.Track.css.hdr.controls.cont);
 	this.hdr.append(controls);

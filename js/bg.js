@@ -57,7 +57,7 @@ function bgInit() {
 }
 
 function registerGlobalJQueryUI() {
-//	$(document).tooltip();
+	$(document).tooltip();
 	$('#bg-prefs-button').button({ icons: { primary: 'ui-icon-gear' }, text: false });
 // 	$('#bg-add-badge-value').button();
 // 	$('#bg-add-badge-submit').button().click(function(event) {
@@ -106,6 +106,16 @@ function navigate(params) {
 		$('#bg-top-level-tabs').tabs('option', 'active', params['toptab']);
 	}
 	if (params['song']) {
+		var track;
+		$(discography.bgAlbums).each(function() {
+			$(this.masterTracks).each(function() {
+				if (BG.Track.mashTitle(this.title) == BG.Track.mashTitle(params['song'])) { track = this; return false; }
+			});
+		});
+		if (track.nsfw && badges.hasBadge('sfw')) {
+			$('#bg-nsfw-alert').dialog('open');
+		}
+
 		$('.bg-album-accordion').each(function() {
 			var header = $(this).find('.bg-accordion-header[song=' + BG.Track.mashTitle(params['song']) + ']');
 			var index = $(this).find('.bg-accordion-header').index(header);

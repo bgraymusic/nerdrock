@@ -53,10 +53,10 @@ BG.Album.prototype.buildDOM = function(albumTable) {
 BG.Album.prototype.buildMetaCell = function(metaCell) {
 	metaCell.append($('<img/>').addClass(BG.Album.css.meta.art).attr('src', this.small_art_url));
 	metaCell.append($('<br/>'));
-	metaCell.append($('<button/>').attr('id', this.album_id + '_onesong').addClass(BG.Album.css.meta.onesong));
-	metaCell.append($('<button/>').attr('id', this.album_id + '_repeat').addClass(BG.Album.css.meta.repeat));
-	metaCell.append($('<button/>').attr('id', this.album_id + '_shuffle').addClass(BG.Album.css.meta.shuffle));
-	metaCell.append($('<button/>').attr('id', this.album_id + '_follow').addClass(BG.Album.css.meta.follow));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_onesong').addClass(BG.Album.css.meta.onesong).attr('title', 'Stop at end of current song'));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_repeat').addClass(BG.Album.css.meta.repeat).attr('title', 'Repeat album'));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_shuffle').addClass(BG.Album.css.meta.shuffle).attr('title', 'Shuffle album'));
+	metaCell.append($('<button/>').attr('id', this.album_id + '_follow').addClass(BG.Album.css.meta.follow).attr('title', 'Open info pane on song start'));
 }
 
 BG.Album.prototype.buildAlbumContents = function(albumContents) {
@@ -74,6 +74,7 @@ BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 		var track = new BG.Track(album, this, trackInfo[this.track_id]);
 		album.masterTracks.push(track);
 		album.workingTracks.push(track);
+		if (badges.hasBadge('sfw') && track.nsfw) return true;
 		var header = $('<div/>').addClass(BG.Track.css.hdr.cont);
 		var body = $('<div/>').addClass(BG.Track.css.body.cont);
 		albumAccordion.append(header);
@@ -83,8 +84,8 @@ BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 }
 
 BG.Album.registerJQueryUI = function() {
-	$('.'+BG.Album.css.meta.onesong).button({ icons: { primary: 'ui-icon-arrowthickstop-1-e' } }).addClass('bg-toggle');
-	$('.'+BG.Album.css.meta.repeat).button({ icons: { primary: 'ui-icon-refresh' } }).addClass('bg-toggle');
+	$('.'+BG.Album.css.meta.onesong).button({ icons: { primary: 'ui-icon-arrowthickstop-1-e' } }).addClass('bg-toggle').tooltip();
+	$('.'+BG.Album.css.meta.repeat).button({ icons: { primary: 'ui-icon-refresh' } }).addClass('bg-toggle').tooltip();
 	$('.'+BG.Album.css.meta.shuffle).button({ icons: { primary: 'ui-icon-shuffle' } }).addClass('bg-toggle').data('click', function(event, pressed) {
 		var album = BG.Album.getFromElement(event.target);
 		if (pressed) BG.Album.shuffle(album.workingTracks);
@@ -92,8 +93,8 @@ BG.Album.registerJQueryUI = function() {
 		$('.'+BG.Track.css.body.media).filter(':hidden').empty();
 		$(album.workingTracks).each(function() { album.accordion.append(this.hdr, this.body); });
 		album.accordion.accordion('refresh');
-	});
-	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' } }).addClass('bg-toggle');
+	}).tooltip();
+	$('.'+BG.Album.css.meta.follow).button({ icons: { primary: 'ui-icon-info' } }).addClass('bg-toggle').tooltip();
 	$('.bg-toggle').button().data('state', false).mousedown(function (event) {
 			event.preventDefault();
     	this.checked = !this.checked;

@@ -9,6 +9,7 @@ body { position: fixed; width: 100%; height: 100%; margin: 0; border: none; }
  */
 #bg-cannot-save-badges-alert { display: none; }
 #bg-new-badge-alert { display: none; }
+#bg-nsfw-alert { width: 600px; display: none; }
 #bg-cannot-save-badges-alert.ui-dialog-content { display: block; }
 #bg-new-badge-alert.ui-dialog-content { display: block; }
 .ui-dialog .ui-button-text-only { outline-style: none; }
