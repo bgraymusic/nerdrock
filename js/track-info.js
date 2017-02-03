@@ -1,4 +1,7 @@
 trackInfo = {
+	///////////////////////////////////////////////////////
+	// Every Song in the Universe
+
 	// Staff Meeting 2015
 	1057430561: {
 		nsfw: true
@@ -711,6 +714,14 @@ That somebody might recognize us',
 	2302238082: {
 		nsfw: true
 	},
+	// Abernathy Fitzgerald
+	929852550: {
+		nsfw: true
+	},
+
+	///////////////////////////////////////////////////////
+	// Also This Other Stuff
+
 	// Staff Meeting (original)
 	488898176: {
 		nsfw: true
