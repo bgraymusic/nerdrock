@@ -10,6 +10,8 @@ trackInfo = {
 	1595466326: {
 		nsfw: true
 	},
+	// Is There a Doctor in the House?
+	2506011436: {},
 	// Pi Day
 	2923511621: {
 		lyrics: '\u200C\
@@ -93,6 +95,10 @@ Some holidays just get the short end of the stick. Why is it that days based on 
 Thanks to <a href="http://www.weirdal.com/" target="_blank">Weird Al</a> and his "<a href="http://www.youtube.com/watch?v=t039p6xqutU" target="_blank">Christmas at Ground Zero</a>" for the idea to give it a holiday sound by using sleigh bells. I was thinking about using the baritone sax as well, but decided it didn\'t work in this case.\n\n\
 EDIT: New version for π Day 2013! I rethought the sax and decided it works after all. Added a uke, accordion, and moving left hand on the piano, and kicked up the energy. Hope you like it. '
 	},
+	// Not Even Close
+	2596419917: {},
+	// Friction Bill
+	1503760657: {},
 	// Blow Up
 	4062818800: {
 		lyrics: '\
@@ -681,21 +687,22 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 \u200CHere \u200Cwe \u200Cmake \u200Cour \u200Cstand\u200C \u200Csearch\u200Cing \u200Cout \u200Cin\u200Cto \u200Cour \u200Cfield \u200Cof \u200Cview\u200C\n\
 \u200CFor \u200Csome\u200Cbo\u200Cdy \u200Cto\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C\n\
 \n\
-We’ve an anthem now, and a banner waving high and free\n\
-Made with all the paint that a dollar buys us\n\
-All we need somehow to legitimize our sovereign rule\n\
-Is somebody who’ll recognize us\n\
+\u200CWe’ve \u200Can \u200Can\u200Cthem \u200Cnow,\u200C \u200Cand \u200Ca \u200Cban\u200Cner \u200Cwa\u200Cving \u200Chigh \u200Cand \u200Cfree\u200C\n\
+\u200CMade \u200Cwith \u200Call \u200Cthe \u200Cpaint\u200C \u200Cthat \u200Ca \u200Cdol\u200Clar \u200Cbuys \u200Cus\u200C\n\
+\u200CAll \u200Cwe \u200Cneed \u200Csome\u200Chow\u200C \u200Cto \u200Cle\u200Cgi\u200Cti\u200Cmize \u200Cour \u200Csove\u200Creign \u200Crule\u200C\n\
+\u200CIs \u200Csome\u200Cbo\u200Cdy \u200Cwho’ll\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C\n\
 \n\
-We were lost and scared, holding out against the cold and hunger\n\
-Looking far and wide for someone to prize us\n\
-Now we sit here spared, praying into a familial night\n\
-That somebody might recognize us',
-		timing: [ 0,
-3.0, 3.25, 3.5, 4, 4.5, 5.5, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 8, 8.5, 9, 10.5,
-11, 11.25, 11.5, 12, 12.5, 13.5, 14, 14.25, 14.5, 15, 15.5, 16, 18.5,
-19, 19.25, 19.5, 20, 20.5, 21.5, 22, 22.25, 22.5, 22.75, 23, 23.25, 23.5, 24, 24.5, 26.5,
-27, 27.25, 27.5, 28, 28.5, 29.5, 30, 30.25, 30.5, 31, 33.5
-		],
+\u200CWe \u200Cwere \u200Clost \u200Cand \u200Cscared, \u200Chol\u200Cding \u200Cout \u200Ca\u200Cgainst \u200Cthe \u200Ccold \u200Cand \u200Chun\u200Cger\u200C\n\
+\u200CLook\u200Cing \u200Cfar \u200Cand \u200Cwide\u200C \u200Cfor \u200Csome\u200Cone \u200Cto \u200Cprize \u200Cus\u200C\n\
+\u200CNow \u200Cwe \u200Csit \u200Chere \u200Cspared\u200C, \u200Cpray\u200Cing \u200Cin\u200Cto \u200Ca \u200Cfa\u200Cmil\u200Cial \u200Cnight\u200C\n\
+\u200CThat \u200Csome\u200Cbo\u200Cdy \u200Cmight\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C',
+// 		timing: [ 0,
+// 3.0, 3.25, 3.5, 4, 4.5, 5.5, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 8, 8.5, 9, 10.5,
+// 11, 11.25, 11.5, 12, 12.5, 13.5, 14, 14.25, 14.5, 15, 15.5, 16, 18.5,
+// 19, 19.25, 19.5, 20, 20.5, 21.5, 22, 22.25, 22.5, 22.75, 23, 23.25, 23.5, 24, 24.5, 26.5,
+// 27, 27.25, 27.5, 28, 28.5, 29.5, 30, 30.25, 30.5, 31, 33.5
+// 		],
+		timing: [0, 3.5, 3.8, 4.1, 4.6, 5.1, 6.6, 6.8, 7.1, 7.3, 7.6, 7.8, 8.2, 8.6, 9.0, 9.5, 11.6, 11.8, 12.1, 12.6, 13.0, 14.6, 14.8, 15.1, 15.6, 16.0, 16.7, 19.6, 19.8, 20.1, 20.6, 21.1, 22.6, 22.8, 23.1, 23.3, 23.6, 23.9, 24.2, 24.6, 25.1, 27.6, 27.8, 28.1, 28.6, 29.1, 30.6, 30.8, 31.1, 31.6, 34.0, 35.5, 35.8, 36.0, 36.6, 37.0, 38.6, 38.8, 39.0, 39.3, 39.6, 39.8, 40.1, 40.6, 41.0, 43.5, 43.8, 44.1, 44.5, 45.0, 46.5, 46.8, 47.0, 47.5, 48.0, 48.5, 51.5, 51.8, 52.0, 52.5, 53.0, 54.5, 54.8, 55.1, 55.4, 55.6, 55.8, 56.1, 56.5, 57.0, 59.5, 59.8, 60.0, 60.5, 61.0, 62.6, 62.8, 63.0, 63.5, 66.1, 83.6, 83.8, 84.1, 84.5, 85.0, 86.6, 86.8, 87.0, 87.3, 87.5, 87.8, 88.1, 88.6, 89.0, 89.5, 91.6, 91.8, 92.1, 92.5, 93.0, 94.5, 94.8, 95.0, 95.5, 96.0, 96.5, 99.5, 99.8, 100.0, 100.5, 101.0, 102.5, 102.7, 103.0, 103.3, 103.6, 103.8, 104.0, 104.6, 105.0, 107.5, 107.8, 108.0, 108.6, 109.0, 110.5, 110.8, 111.0, 111.5, 114.1, 115.5, 115.7, 116.0, 116.6, 117.0, 118.5, 118.8, 119.1, 119.7],
 		about: 'So these girls in an orphanage get bored and decide to create their own country. I kind of channeled Annie with the whole looking out the window and wondering if their parents would ever show up thing, and Ender\'s Shadow with being hungry on the streets of Rotterdam before going into the orphanage (or was that the other way around?).<div><br /></div><div>Originally had it using all the paint that a quarter bought them, but what can you really get for a quarter? Not sure you can buy paint for a dollar either, but maybe leftovers from someone else\'s DIY job?</div><div><br /></div><div>I like the opposing emotions with enthusiasm about asserting their identity, vs being beholden to others to recognize them. Tried to mirror this, particularly when the drums come in on triplets over the straight eighth-note melody. And it would seem no matter how simple a song I try to write, there\'s always room for a bVI in there.</div><div><br /></div><div>And yes, I did just return from Scotland. How did you guess?'
 	},
 	// Otisburg
@@ -714,10 +721,82 @@ That somebody might recognize us',
 	2302238082: {
 		nsfw: true
 	},
+	// I'll Do It Myself
+	1032192358: {},
+	// Off the Grid
+	824991007: {},
+	// 47 Tribbles
+	1411794882: {},
+	// First One Here
+	1962611442: {},
+	// Building an Orc Army
+	3629665746: {},
+	// Queen of Oz
+	2402938913: {
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CBoots and all, return of the prodigal in living polychrome.\n\
+\u200CHello you, world weary bestie who I guess we’ve never known.\n\
+\u200CA world gone mad at the sister I never had back from no place like home.\n\
+\u200CSay again how you miss me every now and then, and I’ll go with you\n\
+\n\
+\u200C[Chorus]\n\
+To the end of the world, and a little bit farther, maybe just because.\n\
+\u200COver the rainbow to find if I hate you or love you, since a life that was.\n\
+\u200CNothing to see, it’s just me and the Queen of Oz.\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CLong time, no anything. A grief ago I’d have denied the rage.\n\
+\u200CClaimed acceptance as you became adept on a different kind of stage.\n\
+\u200CForgot why I ever needed someone by the time I came of age.\n\
+\u200CCan I bend, finally trusting to allow a friend to carry me\n\
+\n\
+\u200C[Chorus]\n\
+To the end of the world, and a little bit farther, just because.\n\
+\u200COver the rainbow to find if I hate you or love you, for a life that was.\n\
+\u200CNothing to see, it’s just me and the Queen of Oz.\n\
+\u200CDon’t look at me, it’s all she who’s the Queen of Oz\u200C\n\
+\n\
+\u200C[Verse 3]\n\
+\u200CA walking stick, clicks on a yellow brick, to count us on our way,\n\
+\u200COn the fence with the royal conscience, wherein the thing\'s the play.\n\
+\u200CTo seek why, and maybe to degreenify, or maybe drift astray,\n\
+\u200CAcross the moon, embarking on our balloon and sailing off...\n\
+\n\
+\u200C[Chorus]\n\
+To the end of the world, and a step or two farther, with you just because\n\
+\u200COver the rainbow to find if I hate you or love you, and a life that was\n\
+\u200CNothing to see, it’s just me and the Queen of Oz\n\
+\n\
+\u200CTo the end of the world and a leap into something else with you just because\n\
+\u200COut of the garden and into the woods of a larger world made of coup d’etats\n\
+\u200CNothing to see, it’s just me and the Queen of Oz\n\
+\u200CLittle old me on a spree with the Queen of Oz\n\
+\u200CEverything free by decree of the Queen of Oz\n\
+\u200CNothing to see…\u200C',
+		timing: [
+0,
+// Verse 1
+20.1, 22.1, 33.1, 42.4, 53.7,
+// Chorus
+60.1, 69.5, 79.1,
+// Verse 2
+87.2, 89.2, 100.0, 109.5, 119.9,
+// Chorus
+126.3, 135.7, 145.3, 155.1, 164.9,
+// Verse 3
+177.8, 179.8, 190.9, 200.4, 210.8,
+// Chorus
+217.1, 226.5, 236.2, 241.5, 250.7, 260.5, 270.2, 280.0, 289.8,
+294.5
+		]
+	},
 	// Abernathy Fitzgerald
 	929852550: {
 		nsfw: true
 	},
+	// Code Red
+	1194742554: {},
 
 	///////////////////////////////////////////////////////
 	// Also This Other Stuff
