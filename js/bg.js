@@ -5,6 +5,7 @@ var bgBandId = '230945364';
 var secretBandId = '2536692004';
 var badges = new BG.Badges();
 var nag;
+var debugLyricTimings = false;
 
 // Used to detect initial (useless) popstate.
 // If history.state exists, assume browser isn't going to fire initial popstate.
