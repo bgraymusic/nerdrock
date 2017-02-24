@@ -91,19 +91,18 @@ BG.Track.prototype.buildControls = function(controls) {
 BG.Track.prototype.buildPlayer = function() {
 	this.player.jPlayer({
 		ready: function(event) {
-			$(this).jPlayer('setMedia', { mp3: BG.Track.getFromElement($(this).data().controls).streaming_url });
-		},
-		timeupdate: function(event) {
 			var track = BG.Track.getFromElement($(this).data().controls);
-			var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
-			if (!slider.data('sliding')) {
-				slider.slider('value', $(this).data().jPlayer.status.currentTime);
-				slider.prev().text($.jPlayer.convertTime($(this).data().jPlayer.status.currentTime));
-				BG.Track.markElapsedLyrics(track.body.find('.'+BG.Track.css.body.lyr.cont),
-				                           $(this).data().jPlayer.status.currentTime);
-			}
+			$(this).jPlayer('setMedia', { mp3: track.streaming_url });
+			$(this).data('track', track);
+			$(this).data('slider', track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider));
+			var lyrics = track.body.find('.'+BG.Track.css.body.lyr.cont);
+			$(this).data('lyrics', lyrics);
+			$(this).data('elapsedLyrics', lyrics.find('.'+BG.Track.css.body.lyr.elapsed));
+			$(this).data('currentLyrics', lyrics.find('.'+BG.Track.css.body.lyr.now));
+			$(this).data('futureLyrics', lyrics.find('.'+BG.Track.css.body.lyr.unelapsed));
 		},
 		ended: function(event) {
+			window.clearInterval($(this).data().ticks);
 			var track = BG.Track.getFromElement($(this).data().controls);
 			var playButton = track.hdr.find('.'+BG.Track.css.hdr.controls.play);
 			BG.Track.setPlayButton(track.hdr.find('.'+BG.Track.css.hdr.controls.play), true);
@@ -130,6 +129,10 @@ BG.Track.prototype.buildPlayer = function() {
 				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
 				track.album.accordion.accordion('option', 'active', idx);
 			}
+			$(this).data('ticks', window.setInterval(BG.Track.playerTick, 10, this));
+		},
+		pause: function(event) {
+			window.clearInterval($(this).data().ticks);
 		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
 	});
@@ -201,34 +204,41 @@ BG.Track.setPlayButton = function(button, play) {
 	}
 }
 
-BG.Track.markElapsedLyrics = function(lyrics, time) {
-	if (!lyrics.length) return;
-	var trackId = BG.Track.getFromElement(lyrics).track_id;
-	if (!trackInfo[trackId] || !trackInfo[trackId].lyrics)
+BG.Track.playerTick = function(player) {
+	var track = BG.Track.getFromElement($(player).data().controls);
+// 	var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
+// 	var lyrics = track.body.find('.'+BG.Track.css.body.lyr.cont);
+	var time = $(player).data().jPlayer.status.currentTime;
+	BG.Track.updateSlider($(player).data().slider, time);
+	BG.Track.markElapsedLyrics(player, time);
+}
+
+BG.Track.updateSlider = function(slider, time) {
+	if (!slider.data('sliding')) {
+		slider.slider('value', time);
+		slider.prev().text($.jPlayer.convertTime(time));
+	}
+}
+
+BG.Track.markElapsedLyrics = function(player, time) {
+	if (!$(player).data().lyrics.length) return;
+//	var trackId = BG.Track.getFromElement(lyrics).track_id;
+	var trackId = $(player).data().track.track_id;
+	if (!trackInfo[trackId] || !trackInfo[trackId].lyrics || !trackInfo[trackId].timing)
 		return;
 
-	var elapsedLyrics = lyrics.find('.'+BG.Track.css.body.lyr.elapsed);
-	var currentLyrics = lyrics.find('.'+BG.Track.css.body.lyr.now);
-	var futureLyrics = lyrics.find('.'+BG.Track.css.body.lyr.unelapsed);
-	if (trackInfo[trackId].timing) {
-		var highTime;
-		for (highTime = 0; highTime < trackInfo[trackId].timing.length; ++highTime) {
-			if (time < trackInfo[trackId].timing[highTime]) break;
-		}
-		var tokens = trackInfo[trackId].lyrics.split('\u200C');
-		elapsedLyrics.html(tokens.slice(0, highTime).join(''));
-		currentLyrics.html(tokens[highTime]);
-		futureLyrics.html(tokens.slice(highTime + 1).join(''));
-	} else if (trackInfo[trackId].syllables) {
-		var highTime;
-		for (highTime = 0; highTime < trackInfo[trackId].syllables.length; ++highTime) {
-			if (time < trackInfo[trackId].syllables[highTime][0]) break;
-		}
-		elapsedLyrics.html(trackInfo[trackId].lyrics.substring(0, trackInfo[trackId].syllables[highTime-1][1]));
-		currentLyrics.html(trackInfo[trackId].lyrics.substring(trackInfo[trackId].syllables[highTime-1][1],
-		                                                       trackInfo[trackId].syllables[highTime][1]));
-		futureLyrics.html(trackInfo[trackId].lyrics.substring(trackInfo[trackId].syllables[highTime][1]));
+	var elapsedLyrics = $(player).data().elapsedLyrics;
+	var currentLyrics = $(player).data().currentLyrics;
+	var futureLyrics = $(player).data().futureLyrics;
+	var highTime;
+	for (highTime = 0; highTime < trackInfo[trackId].timing.length; ++highTime) {
+		if (time < trackInfo[trackId].timing[highTime]) break;
 	}
+	var tokens = trackInfo[trackId].lyrics.split('\u200C');
+	elapsedLyrics.html(tokens.slice(0, highTime).join(''));
+	currentLyrics.html(tokens[highTime]);
+	futureLyrics.html(tokens.slice(highTime + 1).join(''));
+	if (debugLyricTimings) { console.log(trackInfo[trackId].timing[highTime] + ': ' + tokens[highTime]); }
 }
 
 BG.Track.registerJQueryUI = function() {
@@ -252,7 +262,7 @@ BG.Track.registerJQueryUI = function() {
 			},
 			slide: function(event, ui) {
 				$(this).prev().text($.jPlayer.convertTime(ui.value));
-				BG.Track.markElapsedLyrics($(this).closest('.bg-accordion-header').next().find('.bg-lyrics'), ui.value);
+				BG.Track.markElapsedLyrics(BG.Track.getFromElement(this).player, ui.value);
 			},
 			stop: function(event, ui) {
 				var player = BG.Track.getFromElement(this).player.data().jPlayer;
