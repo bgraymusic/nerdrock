@@ -4,7 +4,60 @@ trackInfo = {
 
 	// Staff Meeting 2015
 	1057430561: {
-		nsfw: true
+		nsfw: true,
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CWel\u200Ccome, \u200Cfolks! \u200CA\u200Cno\u200Cther \u200Cwon\u200Cder\u200Cful \u200Cyear \u200Cfor \u200Cthe \u200Ccom\u200Cpa\u200Cny.\n\
+\u200CWe\'ve \u200Cgot \u200Cgreat, \u200Cbig \u200Chopes, \u200Cand \u200Csome \u200Cex\u200Cci\u200Cting \u200Ci\u200Cni\u200Ctia\u200Ctives \u200Cfor \u200CI\u200CT.\n\
+\u200CWe\'ll \u200Cbe \u200Cex\u200Cpan\u200Cding, \u200Cgo\u200Cing \u200Cglo\u200Cbal, \u200Cso \u200Cwhat \u200Cdoes \u200Call \u200Cthis \u200Cmean \u200Cfor \u200Cyou?\n\
+\n\
+\u200C[Chorus]\n\
+\u200CYou\'re \u200Call \u200Cfired!\n\
+\u200CWe\'ve \u200Cac\u200Cquired \u200Can \u200Coff-\u200Csite \u200Csource \u200Cto \u200Cdo \u200Cthe \u200Cwork \u200Cthat \u200Cyou \u200Cguys \u200Cdo \u200Cfor \u200Ca \u200Cbit \u200Cless \u200Cmo\u200Cney.\n\
+\u200CYou\'re \u200Call \u200Cfired!\n\
+\u200CThis \u200Cin\u200Cspired \u200Ci\u200Cde\u200Ca \u200Cby \u200Cfi\u200Cnance \u200Cis \u200Cthe \u200Cin\u200Cno\u200Cva\u200Ction \u200Cwe\'ve \u200Cbeen \u200Csear\u200Cching \u200Cfor.\n\
+\u200CYou\'re \u200Call \u200Cfired!\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CNo \u200Cpre\u200Ctense, \u200Cwe \u200Cknow \u200Cthat \u200Cqua\u200Cli\u200Cty\'s \u200Cpro\u200Cbab\u200Cly \u200Cgoing \u200Cto \u200Cfall.\n\
+\u200CIt\'s \u200Cjust, \u200Ceigh\u200Cty \u200Ccents \u200Cis \u200Cwhat \u200Cthe \u200Co\u200Cver\u200Cseas \u200Cteam \u200Ccosts \u200Con \u200Cthe \u200Cdol\u200Clar.\n\
+\u200CWe \u200Cshould \u200Cex\u200Cpect \u200Ca \u200Cmo\u200Cdest \u200Cstock \u200Cprice \u200Cin\u200Ccrease \u200Cfrom \u200Cthe \u200Cpress \u200Cre\u200Clease.\n\
+\n\
+\u200C[Chorus]\n\
+\n\
+\u200C[Bridge]\n\
+\u200CI \u200Chope \u200Cyou \u200Cun\u200Cder\u200Cstand \u200Cthat \u200Cwe \u200Cdon\'t \u200Ctake \u200Cthis \u200Cac\u200Ction \u200Clight\u200Cly.\n\
+\u200CAn\u200Cdrew, \u200Cgive \u200Cme \u200Ca \u200Chand \u200Cand \u200Cshow \u200Cthese \u200Cfolks \u200Cthe \u200Cgra\u200Cphic \u200Cthat \u200Cyou\n\
+\u200CMade \u200Cof \u200Cthe \u200Cpile \u200Cof \u200Ccash \u200CI\'m \u200Cgoing \u200Cto \u200Croll \u200Ca\u200Cround \u200Cin \u200Cna\u200Cked.\n\
+\n\
+\u200C[Verse 3]\n\
+\u200CYour \u200Cac\u200Ccounts \u200Chave \u200Cbeen \u200Cdis\u200Ca\u200Cbled \u200Cwhile \u200Cwe\'ve \u200Cbeen \u200Cspea\u200Cking \u200Chere.\n\
+\u200CI\'d \u200Clike \u200Cto \u200Can\u200Cnounce \u200Cyour \u200Cstuff \u200Cis \u200Cout\u200Cside \u200Cin \u200Cbox\u200Ces \u200Cla\u200Cbeled \u200C"En\u200Cgi\u200Cneer\u200Cing".\n\
+\u200CI \u200Csee \u200Csome \u200Cof \u200Cyou \u200Chave \u200Car\u200Crived \u200Chere \u200Clate, \u200Cso \u200Cto \u200Cbring \u200Cyou \u200Cup \u200Cto \u200Cspeed,\n\
+\n\
+\u200C[Chorus]\n\
+\u200CYou\'re \u200Call \u200Cfired!\n\
+\u200CWe\'re \u200Cjust \u200Ctired \u200Cof \u200Cpay\u200Cing \u200Cfirst-\u200Cworld \u200Cwa\u200Cges, \u200Cthen \u200Cyou \u200Call \u200Cwant \u200Cto \u200Ctake \u200Ctwo \u200Cweeks \u200Cva\u200Cca\u200Ction.\n\
+\u200CSo \u200Cyou\'re \u200Call \u200Cfired!\n\
+\u200CAs \u200Cre\u200Cquired \u200Cby \u200Ccor\u200Cporate \u200Ccoun\u200Csel, \u200Cwe\'ll \u200Chave \u200Cyou \u200Csign \u200Csome \u200Cpa\u200Cpers \u200Con \u200Cyour \u200Cway \u200Cout\u200Cside.\n\
+\u200CYou\'re \u200Call \u200Cfired!',
+		timing: [0,
+
+8.0, 10.0, 10.48, 10.84, 11.96, 12.12, 12.32, 12.48, 12.68, 12.88, 13.08, 13.44, 13.6, 13.8, 14.12, 14.48, 14.84, 15.04, 15.72, 16.24, 16.6, 17.72, 17.88, 18.04, 18.2, 18.4, 18.56, 18.76, 19.12, 19.52, 20.0, 20.24, 20.52, 21.44, 21.6, 21.96, 22.32, 22.84, 23.04, 23.4, 23.72, 24.04, 24.48, 24.68, 24.84, 25.12, 25.48, 25.88, 26.24, 26.64,
+
+26.96, 28.96, 29.12, 29.48, 31.8, 31.96, 32.28, 32.8, 33.0, 33.36, 33.8, 34.24, 34.48, 34.8, 35.16, 35.68, 35.92, 36.24, 36.6, 36.92, 37.08, 37.28, 37.56, 38.04, 38.24, 40.36, 40.56, 40.92, 43.24, 43.4, 43.76, 44.28, 44.68, 44.84, 45.2, 45.68, 45.88, 46.24, 46.44, 46.6, 47.16, 47.32, 47.68, 48.04, 48.4, 48.76, 49.16, 49.52, 51.8, 51.96, 52.36,
+
+59.48, 61.48, 62.0, 62.36, 63.4, 63.6, 63.76, 63.92, 64.12, 64.28, 64.48, 64.8, 65.0, 65.2, 65.52, 65.88, 66.24, 66.4, 67.12, 67.64, 68.04, 69.08, 69.28, 69.48, 69.68, 69.84, 70.04, 70.2, 70.56, 70.92, 71.44, 71.64, 71.96, 72.84, 73.04, 73.4, 73.76, 74.24, 74.44, 74.8, 75.2, 75.52, 75.92, 76.28, 76.84, 77.16, 77.36, 77.72, 78.08,
+
+80.2,
+
+108.04, 110.04, 110.2, 110.56, 110.92, 111.4, 111.6, 111.96, 112.52, 112.68, 113.04, 113.4, 113.76, 114.28, 114.48, 114.88, 115.72, 116.12, 116.48, 116.84, 117.04, 117.36, 117.84, 118.2, 118.56, 118.92, 119.28, 119.48, 119.84, 120.2, 120.52, 121.04, 121.24, 121.44, 121.64, 122.0, 122.36, 122.72, 123.08, 123.4, 123.92, 124.08, 124.44, 124.8, 125.2, 125.56,
+
+128.04, 130.04, 130.52, 130.92, 132.0, 132.16, 132.36, 132.52, 132.72, 132.88, 133.08, 133.44, 133.8, 134.12, 134.44, 134.84, 135.0, 135.68, 136.16, 136.56, 137.68, 137.84, 138.0, 138.2, 138.4, 138.6, 138.8, 139.12, 139.48, 139.88, 140.24, 140.68, 140.88, 141.04, 141.64, 142.0, 142.36, 142.72, 143.04, 143.4, 143.56, 143.72, 144.04, 144.44, 144.84, 145.0, 145.2, 145.56, 145.92, 146.24, 146.6, 
+
+148.96,
+
+171.84, 172.0, 172.32, 174.64, 174.84, 175.16, 175.72, 175.88, 176.24, 176.6, 177.0, 177.36, 177.76, 178.16, 178.6, 178.8, 179.08, 179.24, 179.44, 179.8, 180.16, 180.52, 180.88, 181.24, 183.12, 183.28, 183.4, 183.8, 186.12, 186.44, 186.64, 187.16, 187.32, 187.6, 188.04, 188.36, 188.76, 189.08, 189.24, 189.4, 190.0, 190.2, 190.52, 190.92, 191.28, 191.6, 192.0, 192.36, 194.68, 194.84, 195.2]
 	},
 	// She Said
 	1595466326: {
