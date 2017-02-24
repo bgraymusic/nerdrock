@@ -692,17 +692,28 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 \u200CAll \u200Cwe \u200Cneed \u200Csome\u200Chow\u200C \u200Cto \u200Cle\u200Cgi\u200Cti\u200Cmize \u200Cour \u200Csove\u200Creign \u200Crule\u200C\n\
 \u200CIs \u200Csome\u200Cbo\u200Cdy \u200Cwho’ll\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C\n\
 \n\
-\u200CWe \u200Cwere \u200Clost \u200Cand \u200Cscared, \u200Chol\u200Cding \u200Cout \u200Ca\u200Cgainst \u200Cthe \u200Ccold \u200Cand \u200Chun\u200Cger\u200C\n\
+\u200CWe \u200Cwere \u200Clost \u200Cand \u200Cscared,\u200C \u200Chol\u200Cding \u200Cout \u200Ca\u200Cgainst \u200Cthe \u200Ccold \u200Cand \u200Chun\u200Cger\u200C\n\
 \u200CLook\u200Cing \u200Cfar \u200Cand \u200Cwide\u200C \u200Cfor \u200Csome\u200Cone \u200Cto \u200Cprize \u200Cus\u200C\n\
 \u200CNow \u200Cwe \u200Csit \u200Chere \u200Cspared\u200C, \u200Cpray\u200Cing \u200Cin\u200Cto \u200Ca \u200Cfa\u200Cmil\u200Cial \u200Cnight\u200C\n\
+\u200CThat \u200Csome\u200Cbo\u200Cdy \u200Cmight\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C\n\
 \u200CThat \u200Csome\u200Cbo\u200Cdy \u200Cmight\u200C \u200Cre\u200Ccog\u200Cnize \u200Cus\u200C',
-// 		timing: [ 0,
-// 3.0, 3.25, 3.5, 4, 4.5, 5.5, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 8, 8.5, 9, 10.5,
-// 11, 11.25, 11.5, 12, 12.5, 13.5, 14, 14.25, 14.5, 15, 15.5, 16, 18.5,
-// 19, 19.25, 19.5, 20, 20.5, 21.5, 22, 22.25, 22.5, 22.75, 23, 23.25, 23.5, 24, 24.5, 26.5,
-// 27, 27.25, 27.5, 28, 28.5, 29.5, 30, 30.25, 30.5, 31, 33.5
-// 		],
-		timing: [0, 3.5, 3.8, 4.1, 4.6, 5.1, 6.6, 6.8, 7.1, 7.3, 7.6, 7.8, 8.2, 8.6, 9.0, 9.5, 11.6, 11.8, 12.1, 12.6, 13.0, 14.6, 14.8, 15.1, 15.6, 16.0, 16.7, 19.6, 19.8, 20.1, 20.6, 21.1, 22.6, 22.8, 23.1, 23.3, 23.6, 23.9, 24.2, 24.6, 25.1, 27.6, 27.8, 28.1, 28.6, 29.1, 30.6, 30.8, 31.1, 31.6, 34.0, 35.5, 35.8, 36.0, 36.6, 37.0, 38.6, 38.8, 39.0, 39.3, 39.6, 39.8, 40.1, 40.6, 41.0, 43.5, 43.8, 44.1, 44.5, 45.0, 46.5, 46.8, 47.0, 47.5, 48.0, 48.5, 51.5, 51.8, 52.0, 52.5, 53.0, 54.5, 54.8, 55.1, 55.4, 55.6, 55.8, 56.1, 56.5, 57.0, 59.5, 59.8, 60.0, 60.5, 61.0, 62.6, 62.8, 63.0, 63.5, 66.1, 83.6, 83.8, 84.1, 84.5, 85.0, 86.6, 86.8, 87.0, 87.3, 87.5, 87.8, 88.1, 88.6, 89.0, 89.5, 91.6, 91.8, 92.1, 92.5, 93.0, 94.5, 94.8, 95.0, 95.5, 96.0, 96.5, 99.5, 99.8, 100.0, 100.5, 101.0, 102.5, 102.7, 103.0, 103.3, 103.6, 103.8, 104.0, 104.6, 105.0, 107.5, 107.8, 108.0, 108.6, 109.0, 110.5, 110.8, 111.0, 111.5, 114.1, 115.5, 115.7, 116.0, 116.6, 117.0, 118.5, 118.8, 119.1, 119.7],
+		timing: [0,
+3.02, 3.3, 3.54, 4.06, 4.54, 5.58, 6.1, 6.34, 6.58, 6.82, 7.1, 7.38, 7.62, 8.1, 8.54, 9.06, 10.54,
+11.1, 11.3, 11.54, 12.06, 12.58, 13.62, 14.1, 14.34, 14.58, 15.1, 15.58, 16.14, 18.58,
+19.06, 19.3, 19.58, 20.1, 20.58, 21.62, 22.06, 22.3, 22.54, 22.82, 23.1, 23.38, 23.66, 24.18, 24.62, 26.54,
+27.02, 27.3, 27.54, 28.1, 28.54, 29.7, 30.06, 30.34, 30.58, 31.1, 33.54,
+
+35.06, 35.34, 35.58, 36.1, 36.58, 37.5, 38.02, 38.3, 38.54, 38.78, 39.06, 39.3, 39.58, 40.1, 40.54, 42.54,
+43.06, 43.3, 43.54, 44.02, 44.54, 45.5, 46.06, 46.3, 46.58, 47.02, 47.54, 48.02, 50.58,
+51.1, 51.34, 51.58, 52.06, 52.54, 53.58, 54.06, 54.34, 54.58, 54.82, 55.1, 55.34, 55.58, 56.06, 56.58, 58.54,
+59.06, 59.3, 59.58, 60.1, 60.58, 61.54, 62.1, 62.34, 62.58, 63.06, 65.58,
+
+83.1, 83.34, 83.54, 84.02, 84.5, 85.54, 86.06, 86.26, 86.5, 86.74, 86.98, 87.26, 87.5, 88.06, 88.58, 89.1, 90.62,
+91.1, 91.34, 91.54, 92.06, 92.54, 93.62, 94.06, 94.3, 94.54, 95.02, 95.58, 96.06, 98.54,
+99.02, 99.3, 99.54, 100.06, 100.5, 101.54, 102.02, 102.26, 102.5, 102.74, 103.02, 103.3, 103.5, 104.06, 104.54, 106.54,
+107.02, 107.26, 107.54, 108.06, 108.54, 109.54, 110.1, 110.34, 110.58, 111.06, 113.58,
+115.06, 115.3, 115.54, 116.1, 116.58, 117.54, 118.1, 118.38, 118.62, 119.22, 122.26
+		],
 		about: 'So these girls in an orphanage get bored and decide to create their own country. I kind of channeled Annie with the whole looking out the window and wondering if their parents would ever show up thing, and Ender\'s Shadow with being hungry on the streets of Rotterdam before going into the orphanage (or was that the other way around?).<div><br /></div><div>Originally had it using all the paint that a quarter bought them, but what can you really get for a quarter? Not sure you can buy paint for a dollar either, but maybe leftovers from someone else\'s DIY job?</div><div><br /></div><div>I like the opposing emotions with enthusiasm about asserting their identity, vs being beholden to others to recognize them. Tried to mirror this, particularly when the drums come in on triplets over the straight eighth-note melody. And it would seem no matter how simple a song I try to write, there\'s always room for a bVI in there.</div><div><br /></div><div>And yes, I did just return from Scotland. How did you guess?'
 	},
 	// Otisburg
@@ -793,7 +804,58 @@ To the end of the world, and a step or two farther, with you just because\n\
 	},
 	// Abernathy Fitzgerald
 	929852550: {
-		nsfw: true
+		nsfw: true,
+		lyrics: '\u200C\n\
+\u200C[Verse 1]\n\
+\u200CTough \u200Ccam\u200Cpaign; \u200Can \u200Cup\u200Chill \u200Cclimb, \u200Cnow \u200Cit’s \u200Ctime \u200Cfor \u200Cpop\u200Cpin’ \u200Cthe\n\
+\u200CGood \u200CCham\u200Cpaign; \u200Cso \u200Cup\u200Cper \u200Ccrust, \u200Cthere \u200Cwas \u200Cjust \u200Cno \u200Cstop\u200Cpin’ \u200Cthe\n\
+\u200CPop\u200Cu\u200Clace \u200Cfrom \u200Chop\u200Cpin’ \u200Cthe \u200CMe \u200CTrain.\n\
+\u200CAll \u200Chigh \u200Croad; \u200Cno \u200Cbad \u200Cblood \u200Cfrom \u200Cthe \u200Cmud \u200Cthey \u200Csling\u200Cin’ \u200Con.\n\
+\u200CThat’s \u200Cmy \u200Ccode: \u200Cain’t \u200Cno \u200Csludge \u200Cif \u200Ca \u200Cgrudge \u200Cain’t \u200Ccling\u200Cin’ \u200Con.\n\
+\u200CI’d \u200Csay \u200C“good \u200Cgame”, \u200Cbut \u200Cpsych! \u200CI \u200Cwin, \u200Cso \u200Cyou \u200Ccan \u200Call \u200Clike…\n\
+\n\
+[Chorus]\n\
+\u200CSuck \u200Cit, \u200C(suck \u200Cit, \u200Csuck \u200Cit). \u200CAll \u200Cyou \u200Cha\u200Cters \u200Cknow \u200Cyou \u200Ccan\n\
+\u200CSuck \u200Cit, \u200C(suck \u200Cit, \u200Csuck \u200Cit). \u200CY’all \u200Ccan \u200Ckiss \u200Cmy \u200Cass, \u200C‘cause \u200CI’m \u200Cthe \u200Cman.\n\
+\u200CE\u200Cspe\u200Ccial\u200Cly \u200Cyou, \u200CA\u200Cber\u200Cna\u200Cthy \u200CFitz\u200Cger\u200Cald.\n\
+\n\
+\u200C[Verse 2]\n\
+\u200COh \u200CI \u200Cknow; \u200CI \u200Cgot \u200Cno \u200Cqualm \u200Cwith \u200Cmy \u200Cpro\u200Cmi\u200Cses \u200Cto \u200Ckeep.\n\
+\u200CThat \u200Csly \u200Cdough \u200Cguar\u200Can\u200Ctees \u200CI \u200Ccan \u200Ctri\u200Cage \u200Cin \u200Cmy \u200Csleep,\n\
+\u200CWhile \u200Cthe \u200Csheep \u200Ckeep \u200Cpeep\u200Cin’ \u200Cthe \u200Cfreak\u200Cshow.\n\
+\u200CGot \u200Cyour \u200Cback; \u200CI \u200Cknow \u200Cwhat \u200Cside \u200Cmy \u200Cride \u200Cis \u200Cbut\u200Ctered \u200Con.\n\
+\u200CWhat’s \u200Cmore \u200Cwhack \u200Cis \u200Cthe \u200Cgood \u200Cand \u200Ckind \u200Cwho \u200Cblind\u200Cly \u200Cput\u200Cter \u200Con.\n\
+\u200CYou \u200Cknow \u200Cyou \u200Cgot \u200Cto \u200Cknow, \u200Cwhich \u200Cway \u200Cthe \u200Cwinds \u200Care \u200Cblow\u200Cin’…\n\
+\n\
+\u200C[Chorus]\n\
+\n\
+\u200C[Solo Overdub]\n\
+\u200CA\u200Cber\u200Cna\u200Cthy? \u200CMore \u200Clike \u200CSCAB\u200Cer\u200Cna\u200Cthy, \u200Cam\u200Ci\u200Crite? \u200CCause \u200Cyou’re \u200Cscab\u200Cby.\n\
+\u200COh, \u200CI’M \u200Cthe \u200Cass\u200Chole?!\n\
+\u200CNo, \u200Cthat \u200Csounds \u200Cmore \u200Clike \u200CYOUR \u200Cmom!\n\
+\u200CWell \u200CWHO’S \u200CSTUFFED \u200CIN \u200CTHE \u200CLOCK\u200CER \u200CNOW, \u200CA\u200CBER\u200CNA\u200CTHY?!\n\
+\n\
+\u200C[Verse 3]\n\
+\u200CMy \u200Csnow \u200Cjob: \u200Cit \u200Cmade \u200Cyou \u200Cmad, \u200Cmust\u200Ca \u200Chad \u200Csome \u200Csalt \u200Cin \u200Cit.\n\
+\u200CIt’s \u200Cno \u200Cprob \u200Cwhen \u200Cyour \u200Coaths \u200Care \u200Cacts \u200Cand \u200Cyour \u200Cfacts \u200Care \u200Cal\u200Cter\u200Cnate.\n\
+\u200CHey, \u200Cwhat’s \u200Cthis \u200Cnote \u200Cfor \u200Cyou? \u200COh \u200Cyeah, \u200Cit’s \u200Ctel\u200Cling \u200Cyou \u200Cto…\n\
+\n\
+\u200C[Chorus, repeat & fade out]',
+		timing: [0,
+
+21.92, 23.92, 24.36, 24.84, 25.56, 25.68, 25.96, 26.24, 26.56, 26.72, 26.88, 27.16, 27.32, 27.6, 27.76, 28.68, 29.12, 29.56, 30.28, 30.4, 30.68, 31.0, 31.32, 31.48, 31.64, 31.92, 32.08, 32.4, 32.52, 32.8, 33.08, 33.4, 33.68, 34.0, 34.12, 34.28, 34.4, 34.68, 35.72, 36.2, 36.64, 37.56, 37.84, 38.12, 38.4, 38.56, 38.72, 39.0, 39.12, 39.44, 39.56, 40.48, 40.96, 41.4, 42.28, 42.56, 42.84, 43.16, 43.32, 43.48, 43.64, 43.92, 44.2, 44.36, 44.96, 45.2, 45.52, 45.84, 46.12, 46.28, 47.32, 47.6, 48.12, 48.24, 48.44, 48.68, 48.92, 49.92, 50.12, 50.56, 50.72, 51.12, 51.32, 52.64, 52.8, 52.96, 53.12, 53.36, 53.64, 53.8, 54.68, 54.84, 55.28, 55.44, 55.88, 56.08, 56.48, 56.8, 57.08, 57.36, 57.68, 58.0, 58.16, 58.44, 58.56, 59.28, 59.44, 59.6, 59.76, 59.88, 60.32, 60.48, 60.64, 60.8, 61.12, 61.36, 61.52,
+
+62.24, 64.24, 64.64, 65.08, 65.84, 66.0, 66.24, 66.56, 66.84, 67.0, 67.16, 67.44, 67.6, 67.92, 68.08, 68.92, 69.36, 69.8, 70.68, 71.0, 71.28, 71.6, 71.76, 71.88, 72.08, 72.32, 72.6, 72.76, 73.04, 73.36, 73.64, 73.96, 74.24, 74.36, 74.52, 74.68, 74.96, 76.04, 76.48, 76.88, 77.64, 77.8, 78.08, 78.36, 78.64, 79.0, 79.32, 79.44, 79.76, 79.92, 80.76, 81.24, 81.68, 82.28, 82.44, 82.6, 82.84, 83.12, 83.44, 83.72, 84.0, 84.2, 84.48, 84.6, 85.2, 85.48, 85.8, 86.08, 86.36, 86.52, 87.6, 87.88, 88.36, 88.52, 88.68, 88.92, 89.2, 
+
+90.24,
+
+101.00,
+
+104.76, 104.96, 105.16, 105.32, 105.84, 106.08, 106.4, 106.68, 106.96, 107.2, 107.48, 107.64, 107.8, 108.52, 108.72, 108.88, 109.08, 110.76, 110.96, 111.12, 111.28, 111.44, 113.04, 113.28, 113.48, 113.64, 113.84, 114.0, 114.24, 115.92, 116.16, 116.36, 116.52, 116.72, 116.84, 117.0, 117.16, 117.44, 117.64, 117.8, 117.96,
+
+119.04, 121.04, 121.48, 121.92, 122.64, 122.8, 123.04, 123.36, 123.68, 123.84, 124.0, 124.32, 124.44, 124.76, 124.88, 125.76, 126.2, 126.68, 127.28, 127.44, 127.6, 127.84, 128.12, 128.44, 128.56, 128.76, 129.0, 129.16, 129.44, 129.56, 130.24, 130.48, 130.8, 131.12, 131.4, 131.52, 132.56, 132.88, 133.32, 133.48, 133.64, 133.88, 134.2,
+
+135.2]
 	},
 	// Code Red
 	1194742554: {},
