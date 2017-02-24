@@ -129,7 +129,7 @@ BG.Track.prototype.buildPlayer = function() {
 				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
 				track.album.accordion.accordion('option', 'active', idx);
 			}
-			$(this).data('ticks', window.setInterval(BG.Track.playerTick, 10, this));
+			$(this).data('ticks', window.setInterval(BG.Track.playerTick, 50, this));
 		},
 		pause: function(event) {
 			window.clearInterval($(this).data().ticks);
@@ -209,15 +209,15 @@ BG.Track.playerTick = function(player) {
 // 	var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
 // 	var lyrics = track.body.find('.'+BG.Track.css.body.lyr.cont);
 	var time = $(player).data().jPlayer.status.currentTime;
-	BG.Track.updateSlider($(player).data().slider, time);
-	BG.Track.markElapsedLyrics(player, time);
+	if (!$(player).data().slider.data().sliding) {
+		BG.Track.updateSlider($(player).data().slider, time);
+		BG.Track.markElapsedLyrics(player, time);
+	}
 }
 
 BG.Track.updateSlider = function(slider, time) {
-	if (!slider.data('sliding')) {
-		slider.slider('value', time);
-		slider.prev().text($.jPlayer.convertTime(time));
-	}
+	slider.slider('value', time);
+	slider.prev().text($.jPlayer.convertTime(time));
 }
 
 BG.Track.markElapsedLyrics = function(player, time) {
