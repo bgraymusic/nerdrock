@@ -61,7 +61,47 @@ trackInfo = {
 	},
 	// She Said
 	1595466326: {
-		nsfw: true
+		nsfw: true,
+		lyrics: '\
+[Verse 1]\n\
+\u200CDear \u200CJohn... \u200CSad \u200Cto \u200Csay...\n\
+\u200CGo\u200Cing \u200Cno\u200Cwhere... \u200CGone \u200Ca\u200Cway...\n\
+\u200CBlah \u200Cblah \u200Cblah... \u200CYou\'ll \u200Cbe \u200Cok...\n\
+\u200CSin\u200Ccere\u200Cly.\n\
+\u200CNo \u200Cfair \u200Clea\u200Cving \u200Cjust \u200Cwhen \u200Cwe \u200Cwere \u200Cdo\u200Cing \u200Cgreat.\n\
+\u200CI\'d \u200Cal\u200Cmost \u200Ckilled \u200Cthe \u200Cboss \u200Con \u200Cle\u200Cvel \u200Ceight.\n\
+\n\
+[Chorus]\n\
+\u200CShe \u200Csaid \u200CI \u200Cshould \u200Chave \u200Cknown.\n\
+\u200CShe \u200Csaid \u200Cthat \u200Cshe\'s \u200Cout\u200Cgrown \u200Cme, \u200Cso \u200Cshe\'s \u200Cgone.\n\
+\u200CI \u200Cmean \u200Ccome \u200Con.\n\
+\u200CShe \u200Csaid \u200Cshe \u200Cwon\'t \u200Cen\u200Cdure\n\
+\u200CFa\u200Ccing \u200Cthe \u200Clife \u200Cof \u200Cim\u200Cma\u200Ctur\u200Ci\u200Cty \u200Ca\u200Chead.\n\
+\u200C"This \u200Cthing \u200Cbe\u200Ctween \u200Cus \u200Chas \u200Cbe\u200Ccome \u200Ctoo \u200Chard."\n\
+\u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.\n\
+\n\
+[Verse 2]\n\
+\u200CAll \u200Cthe \u200Cgreat \u200Cad\u200Cven\u200Ctures, \u200Cthings \u200Cthat \u200Cwe \u200Chad \u200Cplanned,\n\
+\u200CAll \u200Cthe \u200Cfree \u200Cdown\u200Cloa\u200Cded \u200CT\u200CV, \u200Cba\u200Cby \u200CI \u200Cdon\'t \u200Cun\u200Cder\u200Cstand.\n\
+\u200CIn \u200Cmy \u200Cpa\u200Crents\' \u200Cbase\u200Cment, \u200Cthose \u200Cbrow\u200Cnies \u200Cwere \u200Cthe \u200Cbomb.\n\
+\u200CRe\u200Cmem\u200Cber \u200Call \u200Cthose \u200Cjokes \u200Cre\u200Cgar\u200Cding \u200Cthe \u200Cvir\u200Ctue \u200Cof \u200Cyour \u200Cmom?\n\
+\u200CThat \u200Cre\u200Cminds \u200Cme: \u200Cdon\'t \u200Cadd \u200Cin\u200Cju\u200Cry \u200Cto \u200Churt.\n\
+\u200CYou \u200Cbest \u200Cnot \u200Ctake \u200Cmy \u200C"No \u200Cfat \u200Cchicks" \u200Ct-\u200Cshirt.\n\
+\n\
+\u200C[Chorus]\n\
+\u200C"Just \u200Cwhen \u200Cdid \u200Cthis \u200Cbe\u200Ccome \u200Csome \u200Cbig \u200Chuge \u200Cthing?"\n\
+\u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.\n\
+\n\
+[Instrumental]\n\
+\n\
+[Verse 3]\n\
+\u200CCould \u200Cthis \u200Cbe \u200Cpart\u200Cly \u200Cjust \u200Cbe\u200Ccause \u200CI \u200Cflashed \u200Cmy \u200Cjunk?\n\
+\u200C\'Cause \u200Cthat \u200Cdon\'t \u200Creal\u200Cly \u200Ccount, \u200Cbabe, \u200CI \u200Cwas \u200Cdrunk.\n\
+\n\
+\u200C[Chorus]\n\
+\u200C"Some\u200Ctimes \u200Cthe \u200Cpart \u200Cis \u200Cgreat\u200Cer \u200Cthan \u200Cthe \u200Cwhole."\n\
+\u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.',
+		timing: []
 	},
 	// Is There a Doctor in the House?
 	2506011436: {},
@@ -858,7 +898,7 @@ To the end of the world, and a step or two farther, with you just because\n\
 	// Abernathy Fitzgerald
 	929852550: {
 		nsfw: true,
-		lyrics: '\u200C\n\
+		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CTough \u200Ccam\u200Cpaign; \u200Can \u200Cup\u200Chill \u200Cclimb, \u200Cnow \u200Cit’s \u200Ctime \u200Cfor \u200Cpop\u200Cpin’ \u200Cthe\n\
 \u200CGood \u200CCham\u200Cpaign; \u200Cso \u200Cup\u200Cper \u200Ccrust, \u200Cthere \u200Cwas \u200Cjust \u200Cno \u200Cstop\u200Cpin’ \u200Cthe\n\
@@ -911,7 +951,44 @@ To the end of the world, and a step or two farther, with you just because\n\
 135.2]
 	},
 	// Code Red
-	1194742554: {},
+	1194742554: {
+		lyrics: '\u200C\
+\u200C[Verse 1] \n\
+\u200CAll right, let’s just get this out of the way: I’m what you’d call a “self-drivin’” truck. I say this because silicon-based intelligence has progressed so far that I may sound like a human, and y’all could get confused. Now then, back in the day -- and I’m first gen so I remember -- human drivers, who we call “carbons”, were all over the place. And I mean all up in my grill constantly. Nowadays though, life on the road is beautiful. Vehicles mergin’ and dancin’ in a ballet of mathematical elegance like the Blue Angels. And of course I mean the silicon Blue Angels, because come on. I’m just now fixin’ to make way to South Beach and ain’t nothing gonna break my str... \n\
+\n\
+\u200C[Chorus] \n\
+\u200CCode \u200Cred, \u200Ccode \u200Cred, \u200Chu\u200Cman \u200Cdri\u200Cver \u200Cup \u200Ca\u200Chead \n\
+\u200CRe\u200Cac\u200Ction \u200Ctime \u200Cde\u200Csigned \u200Cfor \u200Cma\u200Cking \u200Ceve\u200Cry\u200Cbo\u200Cdy \u200Cdead \n\
+\u200CCode \u200Cred, \u200Ccode \u200Cred, \u200Cta\u200Cking \u200Csur\u200Cface \u200Cstreets \u200Cin\u200Cstead \n\
+\u200COf \u200Cshar\u200Cing \u200Cas\u200Cphalt \u200Cwith \u200Cthat \u200Ccar\u200Cbon \u200Cup \u200Ca\u200Chead \n\
+\n\
+\u200C[Verse 2] \n\
+\u200CWhew, that was tense! This service road is a bit slower, but who needs the aggravation? ‘Sides, it gives us time for one of my favorite jokes: How many carbons does it take to change a lightbulb? One, because changing lightbulbs is really not a very complex task. No but seriously, we’ve got this video we been passin’ ‘round with flashcam footage of a human replacin’ a bulb with one that draws 20 watts more than the fixture’s rated for, and with a color temperature off by 100 Kelvin! Ah, good times. Anyway, I reckon it’s about time to merge back onto the highway, so I’ll just ease on over and... \n\
+\n\
+\u200C[Chorus] \n\
+\n\
+\u200C[Verse 3] \n\
+\u200CWow, I don’t know what’s up today, but I guess I’ll just roll with it at this point. So, what else should we talk about? You see any good movies lately? I saw a film yesterday between Kansas City and St. Louis. See, I can do that ‘cause I’ve got a GPU that runs in parallel to the tasks that keep me driving perfectly. It was called “Maximum Overdrive”, and despite high hopes based on the synopsis, it was pretty darn awful. Especially how the ending had the bad guys win by some lame deus ex machina -- and I mean that all literal-like. Maybe this one here is better. Or at least has a more hopeful ending! It’s called “The Terminat…” \n\
+\n\
+\u200C[Chorus] \n\
+\u200CRe-\u200Croute, \u200Cre-\u200Croute, \u200Cthere \u200Cbe \u200Cmon\u200Csters \u200Chere\u200Ca\u200Cbout \n\
+\u200CThere’s \u200Cne\u200Cver \u200Ce\u200Cver \u200Cbeen \u200Ca \u200Cfin\u200Cer \u200Ctime \u200Cfor \u200Cfrea\u200Ckin’ \u200Cout \n\
+\u200CCode \u200Cred, \u200Ccode \u200Cred, \u200C‘twould \u200Cbe \u200Cbet\u200Cter \u200Cleft \u200Cun\u200Csaid \n\
+\u200CWhat \u200Ccomes \u200Cfrom \u200Cdriv\u200Cin’ \u200Cwith \u200Cthat \u200Ccar\u200Cbon \u200Cup \u200Ca\u200Chead',
+		timing: [0,
+
+6.64, 8.64,
+
+47.68, 48.92, 49.36, 49.8, 50.2, 50.48, 50.84, 51.04, 51.28, 51.4, 51.6, 51.92, 52.56, 52.8, 53.0, 53.2, 53.4, 53.6, 53.84, 54.08, 54.28, 54.48, 54.72, 54.92, 55.12, 55.36, 55.8, 56.24, 56.64, 57.04, 57.36, 57.72, 57.96, 58.16, 58.24, 58.52, 58.8, 59.0, 59.24, 59.44, 59.64, 59.84, 60.08, 60.28, 60.52, 60.76, 60.96, 61.16, 61.4,
+
+68, 70,
+
+109.4,
+
+130.12, 132.12,
+
+171.12, 186.12, 186.52, 186.96, 187.36, 187.68, 188.0, 188.2, 188.44, 188.64, 188.84, 188.96, 189.72, 189.92, 190.12, 190.32, 190.56, 190.8, 191.0, 191.24, 191.44, 191.68, 191.88, 192.08, 192.32, 192.52, 192.96, 193.4, 193.84, 194.2, 194.52, 194.84, 195.08, 195.2, 195.4, 195.68, 195.96, 196.2, 196.4, 196.6, 196.8, 197.0, 197.24, 197.44, 197.64, 197.88, 198.08, 198.28, 198.52]
+	},
 
 	///////////////////////////////////////////////////////
 	// Also This Other Stuff
