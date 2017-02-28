@@ -1003,6 +1003,53 @@ To the end of the world, and a step or two farther, with you just because\n\
 
 171.12, 186.12, 186.52, 186.96, 187.36, 187.68, 188.0, 188.2, 188.44, 188.64, 188.84, 188.96, 189.72, 189.92, 190.12, 190.32, 190.56, 190.8, 191.0, 191.24, 191.44, 191.68, 191.88, 192.08, 192.32, 192.52, 192.96, 193.4, 193.84, 194.2, 194.52, 194.84, 195.08, 195.2, 195.4, 195.68, 195.96, 196.2, 196.4, 196.6, 196.8, 197.0, 197.24, 197.44, 197.64, 197.88, 198.08, 198.28, 198.52]
 	},
+	// St Wendigo's Day
+	1841312796: {
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CWho \u200Casks \u200Cfor \u200Cmore, \u200Cye \u200Cstrong \u200Cand \u200Cproud? \u200CWho \u200Cseeks \u200Cto \u200Chedge \u200Ca\u200Cgainst \u200Call \u200Codds,\n\
+\u200CAnd \u200Cshrink \u200Ca\u200Cmidst \u200Ca \u200Cgrow\u200Cing \u200Ccrowd \u200Cas \u200Cwe \u200Csit \u200Cdi\u200Cning \u200Cwith \u200Cthe \u200Cgods?\n\
+\u200CIf \u200Cin \u200Cho\u200Cnour \u200Cto \u200Cde\u200Clight \u200Cbe \u200Ca \u200Csin \u200Cthen \u200Clet \u200Cme \u200Csin.\n\
+\u200CSeize \u200Ca \u200Clife, \u200Ctake \u200Ca \u200Cbite, \u200Cand \u200Cfeel \u200Cthe \u200Cjui\u200Cces \u200Cstain \u200Cyour \u200Cchin.\n\
+\u200CLet \u200Ci\u200Cdle \u200Cmen \u200Cbe \u200Cco\u200Cve\u200Ctous \u200Cwhiles \u200Ca\u200Cny \u200Cspeaks \u200Cthat \u200Cfought \u200Cwith \u200Cus\n\
+\n\
+[Chorus]\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Ca \u200Cbat\u200Ctle \u200Ccry \u200Cso \u200Cchant\u200Ca\u200Cble.\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200CBe\u200Ccause \u200Cwe \u200Ccan.\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CAn\u200Cti\u200Cci\u200Cpate \u200Cthe \u200Cflow\u200Cing \u200Cnec\u200Ctar \u200Cof \u200Cour \u200Cnames \u200Cin \u200Cvoi\u200Cces \u200Cawed:\n\
+\u200CGol\u200Clum, \u200CGren\u200Cdel, \u200CBate\u200Cman, \u200CLech\u200Cter, \u200CMr\u200Cs. \u200CLo\u200Cvett, \u200CSwee\u200Cney \u200CTodd.\n\
+\u200CIn \u200Csea\u200Csons \u200Chence \u200Che \u200Cwill \u200Cre\u200Ccall \u200Cwho \u200Cstands \u200Cwith \u200Cthis \u200Cfra\u200Cter\u200Cnal \u200Cband\n\
+\u200CWhat \u200Cfeats \u200Che \u200Cdid \u200Cand \u200Cclaims \u200Cwith\u200Cal \u200Cto \u200Cwhich \u200Che \u200Chath \u200Caf\u200Cfixed \u200Chis \u200Cbrand.\n\
+\u200CThen \u200Cwill \u200Che \u200Cprove \u200Chis \u200Cspoils \u200Ca\u200Cheaped \u200Cand \u200Cthus \u200Cpro\u200Cclaim \u200C“These \u200Ccuts \u200CI \u200Creaped\n\
+\n\
+[Chorus]\n\
+\u200C“On \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Cthe \u200Cday \u200Cour \u200Cflag \u200Cstands \u200Cplant\u200Ca\u200Cble."\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200CBe\u200Ccause \u200Cwe \u200Ccan.\n\
+\n\
+\u200C[Instrumental Break]\n\
+\n\
+\u200C[Chorus]\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Che\u200Cma\u200Ctic \u200Cwine \u200Cde\u200Ccant\u200Ca\u200Cble.\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Call \u200Chea\u200Cven’s \u200Cfa\u200Cvors \u200Cgrant\u200Ca\u200Cble.\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200CBe\u200Ccause \u200Cwe \u200Ccan.',
+		timing: [0,
+
+8.92, 10.92, 11.2, 11.68, 12.2, 13.08, 13.32, 13.88, 14.36, 15.72, 16.04, 16.48, 16.76, 17.28, 17.56, 18.08, 18.6, 19.76, 19.96, 20.52, 20.88, 21.84, 22.16, 22.44, 22.96, 24.04, 24.32, 24.84, 25.36, 25.72, 26.16, 26.68, 27.16, 28.84, 29.2, 29.6, 30.16, 30.92, 31.24, 31.48, 33.16, 33.36, 33.64, 34.2, 34.76, 35.28, 35.8, 37.12, 37.64, 37.92, 39.6, 39.84, 40.12, 41.16, 41.4, 41.92, 42.2, 42.72, 43.28, 43.84, 44.36, 45.76, 46.12, 46.52, 46.84, 47.6, 48.04, 48.36, 48.68, 49.72, 50.0, 50.32, 50.84, 51.36, 51.84, 52.4, 52.92, 
+
+54.0, 54.28, 54.68, 55.2, 55.64, 56.16, 58.32, 58.52, 58.84, 59.36, 59.92, 60.36, 60.88, 61.2, 62.64, 62.84, 63.24, 63.68, 64.16, 64.68, 66.88, 67.12, 67.44, 67.92, 68.48, 69.0, 69.56, 70.36, 71.16, 71.92, 73.08, 73.32, 73.84, 74.36,
+
+79.68, 81.68, 81.92, 82.36, 82.88, 83.72, 83.96, 84.52, 85.08, 85.56, 86.36, 86.72, 87.2, 87.8, 88.28, 88.8, 89.36, 90.72, 91.08, 91.56, 91.92, 92.76, 93.16, 93.6, 94.08, 95.0, 95.44, 95.8, 96.28, 96.8, 97.4, 97.92, 99.04, 99.52, 99.92, 100.36, 101.16, 101.6, 102.08, 102.32, 103.04, 103.32, 103.84, 104.36, 104.84, 105.36, 105.92, 106.48, 107.28, 107.88, 108.4, 108.68, 109.72, 110.0, 110.52, 110.8, 111.88, 112.12, 112.52, 113.0, 113.48, 113.92, 114.44, 115.0, 116.24, 116.68, 117.08, 117.44, 118.28, 118.6, 119.08, 119.4, 120.4, 120.68, 121.12, 121.56, 122.08, 122.56, 123.12, 123.64, 124.72, 125.04, 125.44, 125.88, 126.36, 126.84, 129.0, 129.28, 129.64, 130.08, 130.64, 131.16, 131.68, 131.96, 133.32, 133.6, 133.96, 134.4, 134.88, 135.4, 137.56, 137.84, 138.16, 138.72, 139.24, 139.72, 140.24, 141.08, 141.88, 142.68, 143.76, 144.04, 144.56, 145.16,
+
+147,
+
+167.8, 169.8, 170.04, 170.44, 170.88, 171.32, 171.88, 174.04, 174.28, 174.6, 175.08, 175.64, 176.08, 176.6, 176.92, 178.32, 178.6, 179.0, 179.44, 179.88, 180.44, 182.6, 182.84, 183.16, 183.68, 184.24, 184.76, 185.28, 186.04, 186.84, 187.64, 189.04, 189.32, 189.72, 190.16, 190.64, 191.16, 193.28, 193.56, 193.84, 194.36, 194.92, 195.44, 195.96, 196.28, 197.6, 197.84, 198.28, 198.72, 199.16, 199.72, 201.88, 202.12, 202.4, 202.96, 203.48, 204.0, 204.52, 205.32, 206.2, 206.92, 208.08, 208.32, 208.84, 209.36]
+	},
 
 	///////////////////////////////////////////////////////
 	// Also This Other Stuff
