@@ -25,12 +25,14 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 	$(this.cont).data().discography = this;
 	var discography = this;
 	$(this.albums.reverse()).each(function() {
- 		if ($('.'+BG.Album.css.cont).length) $(musicDiv).append($('<hr/>'));
- 		var album = new BG.Album(discography, this);
- 		discography.bgAlbums.push(album);
- 		var albumDiv = $('<div/>').addClass(BG.Album.css.cont);
- 		$(musicDiv).append(albumDiv);
- 		album.buildDOM(albumDiv);
+		if (this.tracks.length) {
+			if ($('.'+BG.Album.css.cont).length) $(musicDiv).append($('<hr/>'));
+			var album = new BG.Album(discography, this);
+			discography.bgAlbums.push(album);
+			var albumDiv = $('<div/>').addClass(BG.Album.css.cont);
+			$(musicDiv).append(albumDiv);
+			album.buildDOM(albumDiv);
+		}
 	});
 }
 
