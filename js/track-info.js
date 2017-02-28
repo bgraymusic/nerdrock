@@ -62,16 +62,16 @@ trackInfo = {
 	// She Said
 	1595466326: {
 		nsfw: true,
-		lyrics: '\
-[Verse 1]\n\
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
 \u200CDear \u200CJohn... \u200CSad \u200Cto \u200Csay...\n\
 \u200CGo\u200Cing \u200Cno\u200Cwhere... \u200CGone \u200Ca\u200Cway...\n\
-\u200CBlah \u200Cblah \u200Cblah... \u200CYou\'ll \u200Cbe \u200Cok...\n\
+\u200CBlah \u200Cblah \u200Cblah... \u200CYou\'ll \u200Cbe \u200Co\u200Ck...\n\
 \u200CSin\u200Ccere\u200Cly.\n\
 \u200CNo \u200Cfair \u200Clea\u200Cving \u200Cjust \u200Cwhen \u200Cwe \u200Cwere \u200Cdo\u200Cing \u200Cgreat.\n\
 \u200CI\'d \u200Cal\u200Cmost \u200Ckilled \u200Cthe \u200Cboss \u200Con \u200Cle\u200Cvel \u200Ceight.\n\
 \n\
-[Chorus]\n\
+\u200C[Chorus]\n\
 \u200CShe \u200Csaid \u200CI \u200Cshould \u200Chave \u200Cknown.\n\
 \u200CShe \u200Csaid \u200Cthat \u200Cshe\'s \u200Cout\u200Cgrown \u200Cme, \u200Cso \u200Cshe\'s \u200Cgone.\n\
 \u200CI \u200Cmean \u200Ccome \u200Con.\n\
@@ -80,7 +80,7 @@ trackInfo = {
 \u200C"This \u200Cthing \u200Cbe\u200Ctween \u200Cus \u200Chas \u200Cbe\u200Ccome \u200Ctoo \u200Chard."\n\
 \u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.\n\
 \n\
-[Verse 2]\n\
+\u200C[Verse 2]\n\
 \u200CAll \u200Cthe \u200Cgreat \u200Cad\u200Cven\u200Ctures, \u200Cthings \u200Cthat \u200Cwe \u200Chad \u200Cplanned,\n\
 \u200CAll \u200Cthe \u200Cfree \u200Cdown\u200Cloa\u200Cded \u200CT\u200CV, \u200Cba\u200Cby \u200CI \u200Cdon\'t \u200Cun\u200Cder\u200Cstand.\n\
 \u200CIn \u200Cmy \u200Cpa\u200Crents\' \u200Cbase\u200Cment, \u200Cthose \u200Cbrow\u200Cnies \u200Cwere \u200Cthe \u200Cbomb.\n\
@@ -92,16 +92,30 @@ trackInfo = {
 \u200C"Just \u200Cwhen \u200Cdid \u200Cthis \u200Cbe\u200Ccome \u200Csome \u200Cbig \u200Chuge \u200Cthing?"\n\
 \u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.\n\
 \n\
-[Instrumental]\n\
+\u200C[Instrumental]\n\
 \n\
-[Verse 3]\n\
+\u200C[Verse 3]\n\
 \u200CCould \u200Cthis \u200Cbe \u200Cpart\u200Cly \u200Cjust \u200Cbe\u200Ccause \u200CI \u200Cflashed \u200Cmy \u200Cjunk?\n\
 \u200C\'Cause \u200Cthat \u200Cdon\'t \u200Creal\u200Cly \u200Ccount, \u200Cbabe, \u200CI \u200Cwas \u200Cdrunk.\n\
 \n\
 \u200C[Chorus]\n\
 \u200C"Some\u200Ctimes \u200Cthe \u200Cpart \u200Cis \u200Cgreat\u200Cer \u200Cthan \u200Cthe \u200Cwhole."\n\
 \u200CThat\'s \u200Cwhat \u200Cshe \u200Csaid.',
-		timing: []
+		timing: [0,
+
+22.2, 24.2, 24.88, 28.16, 28.6, 28.88, 32.12, 32.44, 32.92, 33.44, 36.08, 36.52, 36.8, 40.0, 40.76, 41.44, 43.52, 44.24, 44.52, 44.96, 49.72, 50.28, 50.92, 55.92, 56.64, 57.88, 58.64, 59.4, 59.6, 59.84, 60.4, 60.64, 61.04, 61.56, 63.6, 63.84, 64.32, 64.8, 65.32, 65.6, 66.04, 66.76, 67.08, 67.32,
+
+69.28, 71.28, 71.76, 72.24, 72.48, 73.0, 73.52, 75.52, 75.76, 76.24, 76.48, 76.96, 77.48, 78.2, 78.68, 79.16, 79.44, 82.2, 82.68, 83.16, 83.4, 87.2, 87.64, 88.12, 88.4, 88.88, 89.32, 90.6, 90.92, 91.28, 91.6, 92.08, 92.36, 93.08, 93.36, 94.08, 94.32, 95.04, 95.32, 99.08, 99.52, 100.08, 100.28, 101.04, 101.52, 102.0, 102.24, 102.72, 103.24, 106.08, 106.36, 106.84, 107.96,
+
+121.36, 123.36, 123.84, 124.08, 124.8, 125.08, 125.56, 127.24, 127.76, 128.28, 128.56, 129.04, 131.24, 131.72, 132.0, 132.72, 133.2, 133.44, 133.68, 134.0, 134.76, 135.0, 135.24, 135.68, 135.96, 136.44, 137.0, 139.2, 139.68, 139.92, 140.4, 140.96, 141.44, 142.64, 143.44, 143.84, 144.16, 144.64, 144.92, 146.88, 147.12, 147.64, 147.88, 148.32, 149.08, 149.6, 149.88, 150.32, 150.8, 151.08, 151.6, 151.88, 152.36, 152.84, 155.08, 155.8, 157.0, 157.76, 158.48, 158.76, 159.28, 159.76, 160.04, 160.52, 160.8, 162.72, 163.04, 163.52, 164.0, 164.48, 164.72, 165.2, 165.76, 166.2, 166.68,
+
+168.48, 198.24, 198.72, 199.24, 199.72, 200.16, 200.44, 200.88, 201.36, 201.84, 202.4, 204.96, 205.48, 205.92, 207.12,
+
+209.12,
+
+220.0, 222.0, 222.48, 223.28, 224.44, 225.2, 226.0, 226.2, 226.48, 226.96, 227.24, 227.68, 228.16, 230.16, 230.44, 230.92, 231.4, 231.88, 232.12, 232.6, 233.4, 233.68, 233.92,
+
+235.88, 265.64, 266.16, 266.6, 266.84, 267.6, 268.12, 268.6, 268.88, 269.36, 269.88, 272.6, 273.0, 273.4, 274.56]
 	},
 	// Is There a Doctor in the House?
 	2506011436: {},
