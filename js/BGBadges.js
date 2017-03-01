@@ -16,6 +16,7 @@ BG.Badges = function() {
 		'1646334178': { id: 'jcc', img: 'img/jcc_boat.svg', title: 'Sea Monkey', aid: 24668382 },
 		'-1309368522': { id: 'patreon', img: 'img/patreon_logo.png', title: 'Patron', aid: 3599490148 },
 		'-1883201621': { id: 'spintunes', img: 'img/spintunes_starburst.gif', title: 'Spin Tuner', aid: 444214854 },
+		'1201146268': { id: 'karaoke', img: 'img/karaoke.png', title: 'Karaoke', aid: 3939645898},
 		'113796': { id: 'sfw', img: 'img/safety.png', title: 'Safe for Work' }
 	};
 	this.badges = [];
