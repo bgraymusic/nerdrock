@@ -904,6 +904,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	// Abernathy Fitzgerald
 	929852550: {
 		nsfw: true,
+		karaoke: 3946036143,
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CTough \u200Ccam\u200Cpaign; \u200Can \u200Cup\u200Chill \u200Cclimb, \u200Cnow \u200Cit’s \u200Ctime \u200Cfor \u200Cpop\u200Cpin’ \u200Cthe\n\
