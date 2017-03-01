@@ -851,6 +851,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	3629665746: {},
 	// Queen of Oz
 	2402938913: {
+		karaoke: 4009869863,
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CBoots \u200Cand \u200Call, \u200Cre\u200Cturn \u200Cof \u200Cthe \u200Cpro\u200Cdi\u200Cgal \u200Cin \u200Cli\u200Cving \u200Cpo\u200Cly\u200Cchrome.\n\
