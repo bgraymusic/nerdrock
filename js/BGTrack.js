@@ -222,23 +222,28 @@ BG.Track.updateSlider = function(slider, time) {
 
 BG.Track.markElapsedLyrics = function(player, time) {
 	if (!$(player).data().lyrics.length) return;
-//	var trackId = BG.Track.getFromElement(lyrics).track_id;
-	var trackId = $(player).data().track.track_id;
-	if (!trackInfo[trackId] || !trackInfo[trackId].lyrics || !trackInfo[trackId].timing)
+	var trackId = BG.Track.getFromElement($(player).data().lyrics[0]).track_id;
+	var info = trackInfo[trackId];
+	if (!info) { for (id in trackInfo) {
+		if (trackInfo[id].karaoke == trackId)
+			info = trackInfo[id];
+		}
+	}
+	if (!info || !info.lyrics || !info.timing)
 		return;
 
 	var elapsedLyrics = $(player).data().elapsedLyrics;
 	var currentLyrics = $(player).data().currentLyrics;
 	var futureLyrics = $(player).data().futureLyrics;
 	var highTime;
-	for (highTime = 0; highTime < trackInfo[trackId].timing.length; ++highTime) {
-		if (time < trackInfo[trackId].timing[highTime]) break;
+	for (highTime = 0; highTime < info.timing.length; ++highTime) {
+		if (time < info.timing[highTime]) break;
 	}
-	var tokens = trackInfo[trackId].lyrics.split('\u200C');
+	var tokens = info.lyrics.split('\u200C');
 	elapsedLyrics.html(tokens.slice(0, highTime).join(''));
 	currentLyrics.html(tokens[highTime]);
 	futureLyrics.html(tokens.slice(highTime + 1).join(''));
-	if (debugLyricTimings) { console.log(trackInfo[trackId].timing[highTime] + ': ' + tokens[highTime]); }
+	if (debugLyricTimings) { console.log(info.timing[highTime] + ': ' + tokens[highTime]); }
 }
 
 BG.Track.registerJQueryUI = function() {

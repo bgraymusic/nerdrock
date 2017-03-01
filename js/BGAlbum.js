@@ -71,7 +71,9 @@ BG.Album.prototype.buildAlbumContents = function(albumContents) {
 BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 	var album = this;
 	$(this.tracks).each(function() {
-		var track = new BG.Track(album, this, trackInfo[this.track_id]);
+		var bgInfo = trackInfo[this.track_id];
+		if (!bgInfo) { for (id in trackInfo) { if (trackInfo[id].karaoke == this.track_id) bgInfo = trackInfo[id]; } }
+		var track = new BG.Track(album, this, bgInfo);
 		album.masterTracks.push(track);
 		album.workingTracks.push(track);
 		if (badges.hasBadge('sfw') && track.nsfw) return true;
