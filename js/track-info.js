@@ -853,61 +853,52 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	2402938913: {
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
-\u200CBoots and all, return of the prodigal in living polychrome.\n\
-\u200CHello you, world weary bestie who I guess we’ve never known.\n\
-\u200CA world gone mad at the sister I never had back from no place like home.\n\
-\u200CSay again how you miss me every now and then, and I’ll go with you\n\
+\u200CBoots \u200Cand \u200Call, \u200Cre\u200Cturn \u200Cof \u200Cthe \u200Cpro\u200Cdi\u200Cgal \u200Cin \u200Cli\u200Cving \u200Cpo\u200Cly\u200Cchrome.\n\
+\u200CHel\u200Clo \u200Cyou, \u200Cworld \u200Cwea\u200Cry \u200Cbes\u200Ctie \u200Cwho \u200CI \u200Cguess \u200Cwe’ve \u200Cne\u200Cver \u200Cknown.\n\
+\u200CA \u200Cworld \u200Cgone \u200Cmad \u200Cat \u200Cthe \u200Csis\u200Cter \u200CI \u200Cne\u200Cver \u200Chad \u200Cback \u200Cfrom \u200Cno \u200Cplace \u200Clike \u200Chome.\n\
+\u200CSay \u200Ca\u200Cgain \u200Chow \u200Cyou \u200Cmiss \u200Cme \u200Ceve\u200Cry \u200Cnow \u200Cand \u200Cthen, \u200Cand \u200CI’ll \u200Cgo \u200Cwith \u200Cyou\n\
 \n\
-\u200C[Chorus]\n\
-To the end of the world, and a little bit farther, maybe just because.\n\
-\u200COver the rainbow to find if I hate you or love you, since a life that was.\n\
-\u200CNothing to see, it’s just me and the Queen of Oz.\n\
+[Chorus]\n\
+\u200CTo \u200Cthe \u200Cend \u200Cof \u200Cthe \u200Cworld, \u200Cand \u200Ca \u200Clit\u200Ctle \u200Cbit \u200Cfar\u200Cther, \u200Cmay\u200Cbe \u200Cjust \u200Cbe\u200Ccause.\n\
+\u200CO\u200Cver \u200Cthe \u200Crain\u200Cbow \u200Cto \u200Cfind \u200Cif \u200CI \u200Chate \u200Cyou \u200Cor \u200Clove \u200Cyou, \u200Csince \u200Ca \u200Clife \u200Cthat \u200Cwas.\n\
+\u200CNo\u200Cthing \u200Cto \u200Csee, \u200Cit’s \u200Cjust \u200Cme \u200Cand \u200Cthe \u200CQueen \u200Cof \u200COz.\n\
 \n\
 \u200C[Verse 2]\n\
-\u200CLong time, no anything. A grief ago I’d have denied the rage.\n\
-\u200CClaimed acceptance as you became adept on a different kind of stage.\n\
-\u200CForgot why I ever needed someone by the time I came of age.\n\
-\u200CCan I bend, finally trusting to allow a friend to carry me\n\
+\u200CLong \u200Ctime, \u200Cno \u200Ca\u200Cny\u200Cthing. \u200CA \u200Cgrief \u200Ca\u200Cgo \u200CI’d \u200Chave \u200Cde\u200Cnied \u200Cthe \u200Crage.\n\
+\u200CClaimed \u200Cac\u200Ccep\u200Ctance \u200Cas \u200Cyou \u200Cbe\u200Ccame \u200Ca\u200Cdept \u200Con \u200Ca \u200Cdif\u200Cferent \u200Ckind \u200Cof \u200Cstage.\n\
+\u200CFor\u200Cgot \u200Cwhy \u200CI \u200Ce\u200Cver \u200Cneed\u200Ced \u200Csome\u200Cone \u200Cby \u200Cthe \u200Ctime \u200CI \u200Ccame \u200Cof \u200Cage.\n\
+\u200CCan \u200CI \u200Cbend, \u200Cfinal\u200Cly \u200Ctrus\u200Cting \u200Cto \u200Cal\u200Clow \u200Ca \u200Cfriend \u200Cto \u200Ccar\u200Cry \u200Cme\n\
 \n\
-\u200C[Chorus]\n\
-To the end of the world, and a little bit farther, just because.\n\
-\u200COver the rainbow to find if I hate you or love you, for a life that was.\n\
-\u200CNothing to see, it’s just me and the Queen of Oz.\n\
-\u200CDon’t look at me, it’s all she who’s the Queen of Oz\u200C\n\
+[Chorus]\n\
+\u200CTo \u200Cthe \u200Cend \u200Cof \u200Cthe \u200Cworld, \u200Cand \u200Ca \u200Clit\u200Ctle \u200Cbit \u200Cfar\u200Cther, \u200Cjust \u200Cbe\u200Ccause.\n\
+\u200CO\u200Cver \u200Cthe \u200Crain\u200Cbow \u200Cto \u200Cfind \u200Cif \u200CI \u200Chate \u200Cyou \u200Cor \u200Clove \u200Cyou, \u200Cfor \u200Ca \u200Clife \u200Cthat \u200Cwas.\n\
+\u200CNo\u200Cthing \u200Cto \u200Csee, \u200Cit’s \u200Cjust \u200Cme \u200Cand \u200Cthe \u200CQueen \u200Cof \u200COz.\n\
+\u200CDon’t \u200Clook \u200Cat \u200Cme, \u200Cit’s \u200Call \u200Cshe \u200Cwho’s \u200Cthe \u200CQueen \u200Cof \u200COz\u200C\n\
 \n\
 \u200C[Verse 3]\n\
-\u200CA walking stick, clicks on a yellow brick, to count us on our way,\n\
-\u200COn the fence with the royal conscience, wherein the thing\'s the play.\n\
-\u200CTo seek why, and maybe to degreenify, or maybe drift astray,\n\
-\u200CAcross the moon, embarking on our balloon and sailing off...\n\
+\u200CA \u200Cwalk\u200Cing \u200Cstick, \u200Cclicks \u200Con \u200Ca \u200Cyel\u200Clow \u200Cbrick, \u200Cto \u200Ccount \u200Cus \u200Con \u200Cour \u200Cway,\n\
+\u200COn \u200Cthe \u200Cfence \u200Cwith \u200Cthe \u200Cro\u200Cyal \u200Ccon\u200Cscience, \u200Cwhere\u200Cin \u200Cthe \u200Cthing\'s \u200Cthe \u200Cplay.\n\
+\u200CTo \u200Cseek \u200Cwhy, \u200Cand \u200Cmay\u200Cbe \u200Cto \u200Cde\u200Cgreen\u200Ci\u200Cfy, \u200Cor \u200Cmay\u200Cbe \u200Cdrift \u200Ca\u200Cstray,\n\
+\u200CA\u200Ccross \u200Cthe \u200Cmoon, \u200Cem\u200Cbark\u200Cing \u200Con \u200Cour \u200Cbal\u200Cloon \u200Cand \u200Csail\u200Cing \u200Coff...\n\
 \n\
-\u200C[Chorus]\n\
-To the end of the world, and a step or two farther, with you just because\n\
-\u200COver the rainbow to find if I hate you or love you, and a life that was\n\
-\u200CNothing to see, it’s just me and the Queen of Oz\n\
+[Chorus]\n\
+\u200CTo \u200Cthe \u200Cend \u200Cof \u200Cthe \u200Cworld, \u200Cand \u200Ca \u200Cstep \u200Cor \u200Ctwo \u200Cfar\u200Cther, \u200Cwith \u200Cyou \u200Cjust \u200Cbe\u200Ccause\n\
+\u200CO\u200Cver \u200Cthe \u200Crain\u200Cbow \u200Cto \u200Cfind \u200Cif \u200CI \u200Chate \u200Cyou \u200Cor \u200Clove \u200Cyou, \u200Cand \u200Ca \u200Clife \u200Cthat \u200Cwas\n\
+\u200CNo\u200Cthing \u200Cto \u200Csee, \u200Cit’s \u200Cjust \u200Cme \u200Cand \u200Cthe \u200CQueen \u200Cof \u200COz\n\
 \n\
-\u200CTo the end of the world and a leap into something else with you just because\n\
-\u200COut of the garden and into the woods of a larger world made of coup d’etats\n\
-\u200CNothing to see, it’s just me and the Queen of Oz\n\
-\u200CLittle old me on a spree with the Queen of Oz\n\
-\u200CEverything free by decree of the Queen of Oz\n\
-\u200CNothing to see…\u200C',
-		timing: [
-0,
-// Verse 1
-20.1, 22.1, 33.1, 42.4, 53.7,
-// Chorus
-60.1, 69.5, 79.1,
-// Verse 2
-87.2, 89.2, 100.0, 109.5, 119.9,
-// Chorus
-126.3, 135.7, 145.3, 155.1, 164.9,
-// Verse 3
-177.8, 179.8, 190.9, 200.4, 210.8,
-// Chorus
-217.1, 226.5, 236.2, 241.5, 250.7, 260.5, 270.2, 280.0, 289.8,
-294.5
-		]
+\u200CTo \u200Cthe \u200Cend \u200Cof \u200Cthe \u200Cworld \u200Cand \u200Ca \u200Cleap \u200Cin\u200Cto \u200Csome\u200Cthing \u200Celse \u200Cwith \u200Cyou \u200Cjust \u200Cbe\u200Ccause\n\
+\u200COut \u200Cof \u200Cthe \u200Cgar\u200Cden \u200Cand \u200Cin\u200Cto \u200Cthe \u200Cwoods \u200Cof \u200Ca \u200Clar\u200Cger \u200Cworld \u200Cmade \u200Cof \u200Ccoup \u200Cd’e\u200Ctats\n\
+\u200CNo\u200Cthing \u200Cto \u200Csee, \u200Cit’s \u200Cjust \u200Cme \u200Cand \u200Cthe \u200CQueen \u200Cof \u200COz\n\
+\u200CLit\u200Ctle \u200Cold \u200Cme \u200Con \u200Ca \u200Cspree \u200Cwith \u200Cthe \u200CQueen \u200Cof \u200COz\n\
+\u200CEv\u200Cery\u200Cthing \u200Cfree \u200Cby \u200Cde\u200Ccree \u200Cof \u200Cthe \u200CQueen \u200Cof \u200COz\n\
+\u200CNo\u200Cthing \u200Cto \u200Csee…',
+		timing: [0,
+
+20.24, 22.24, 22.68, 22.92, 23.36, 23.56, 24.0, 24.24, 24.48, 24.68, 24.92, 25.68, 25.88, 26.16, 26.48, 26.76, 27.08, 33.16, 33.36, 33.84, 34.52, 34.92, 35.16, 35.44, 35.84, 36.12, 36.52, 36.76, 37.2, 37.44, 37.76, 38.08, 42.48, 42.68, 43.16, 43.6, 44.72, 44.96, 45.16, 45.4, 45.64, 45.88, 46.12, 46.36, 47.4, 47.64, 47.96, 48.32, 48.64, 49.0, 53.84, 54.24, 54.48, 55.32, 55.6, 55.8, 56.08, 56.32, 56.52, 56.76, 57.0, 57.24, 58.16, 58.36, 58.72, 59.12, 59.48, 60.12, 60.56, 60.8, 61.32, 61.72, 62.0, 63.04, 63.24, 63.4, 63.68, 63.96, 64.4, 64.88, 66.24, 66.76, 67.04, 67.4, 67.68, 69.48, 69.92, 70.36, 70.56, 71.04, 71.48, 71.64, 72.28, 72.44, 73.04, 73.48, 73.88, 74.12, 74.48, 76.0, 76.6, 76.8, 77.2, 77.44, 79.2, 79.6, 80.04, 80.24, 80.84, 81.24, 81.68, 82.04, 82.4, 82.8, 83.2, 83.4,
+
+87.32, 89.32, 89.72, 90.16, 90.8, 91.04, 91.28, 91.48, 91.72, 92.08, 92.36, 92.76, 93.0, 93.44, 93.72, 94.08, 94.36, 100.16, 100.56, 100.8, 101.2, 101.44, 101.84, 102.08, 102.28, 102.52, 102.8, 103.32, 103.6, 103.8, 104.08, 104.44, 104.76, 105.04, 109.6, 109.84, 110.32, 111.36, 111.56, 111.76, 112.0, 112.24, 112.44, 112.68, 112.92, 113.92, 114.2, 114.56, 114.92, 115.28, 115.52, 120.2, 120.44, 120.84, 121.68, 121.92, 122.12, 122.36, 122.6, 122.84, 123.04, 123.28, 123.52, 124.52, 124.76, 125.04, 125.36, 126.36, 126.8, 127.04, 127.56, 127.92, 128.24, 129.2, 129.4, 129.64, 129.88, 130.2, 130.64, 131.12, 133.24, 133.6, 133.84, 135.68, 136.08, 136.48, 136.72, 137.24, 137.72, 137.92, 138.48, 138.72, 139.28, 139.72, 140.16, 140.4, 140.72, 142.16, 142.8, 143.04, 143.4, 143.68, 145.4, 145.8, 146.2, 146.44, 147.0, 147.36, 147.84, 148.2, 148.6, 148.96, 149.4, 149.68, 155.2, 155.56, 155.92, 156.28, 156.72, 157.12, 157.56, 157.96, 158.56, 158.76, 159.2, 159.48,
+
+177.85, 179.85, 179.92, 180.08, 180.4, 180.76, 181.44, 181.92, 182.16, 182.4, 182.64, 182.88, 183.64, 183.84, 184.16, 184.56, 184.84, 185.16, 191.0, 191.4, 191.64, 192.28, 192.52, 192.72, 192.96, 193.16, 193.52, 194.24, 194.48, 194.88, 195.16, 195.56, 195.84, 200.48, 200.68, 201.16, 202.24, 202.44, 202.64, 202.88, 203.08, 203.28, 203.52, 203.76, 204.84, 205.08, 205.4, 205.72, 206.08, 206.36, 210.8, 211.08, 211.48, 211.72, 212.84, 213.0, 213.24, 213.44, 213.68, 214.12, 214.36, 215.36, 215.6, 215.96, 216.28, 217.24, 217.64, 217.84, 218.4, 218.84, 219.12, 220.08, 220.28, 220.52, 220.84, 221.16, 221.6, 222.16, 223.32, 223.92, 224.16, 224.52, 224.8, 226.56, 226.96, 227.4, 227.6, 228.16, 228.56, 228.76, 229.36, 229.56, 230.2, 230.6, 231.0, 231.24, 231.6, 233.04, 233.64, 233.84, 234.24, 234.48, 236.28, 236.68, 237.08, 237.32, 237.92, 238.32, 238.8, 239.16, 239.52, 239.88, 240.32, 240.56, 241.56, 241.96, 242.2, 242.76, 243.2, 243.4, 244.4, 244.64, 244.8, 245.12, 245.44, 245.76, 246.04, 246.32, 247.64, 248.04, 248.44, 248.84, 249.08, 250.88, 251.28, 251.68, 251.88, 252.44, 252.92, 253.32, 253.68, 254.24, 254.48, 254.88, 255.32, 255.56, 255.92, 256.24, 257.36, 258.0, 258.2, 258.56, 258.8, 260.6, 261.04, 261.44, 261.76, 262.24, 262.64, 263.08, 263.48, 263.84, 264.2, 264.64, 264.92, 270.36, 270.68, 270.96, 271.56, 271.92, 272.36, 272.72, 273.2, 273.64, 273.96, 274.36, 274.64, 280.12, 280.48, 280.72, 281.32, 281.72, 282.12, 282.44, 282.92, 283.32, 283.6, 284.08, 284.36, 289.84, 290.2, 290.6, 290.88]
 	},
 	// Abernathy Fitzgerald
 	929852550: {
@@ -1003,8 +994,9 @@ To the end of the world, and a step or two farther, with you just because\n\
 
 171.12, 186.12, 186.52, 186.96, 187.36, 187.68, 188.0, 188.2, 188.44, 188.64, 188.84, 188.96, 189.72, 189.92, 190.12, 190.32, 190.56, 190.8, 191.0, 191.24, 191.44, 191.68, 191.88, 192.08, 192.32, 192.52, 192.96, 193.4, 193.84, 194.2, 194.52, 194.84, 195.08, 195.2, 195.4, 195.68, 195.96, 196.2, 196.4, 196.6, 196.8, 197.0, 197.24, 197.44, 197.64, 197.88, 198.08, 198.28, 198.52]
 	},
-	// St Wendigo's Day
+	// St. Wendigo's Day
 	1841312796: {
+		karaoke: 573516698,
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CWho \u200Casks \u200Cfor \u200Cmore, \u200Cye \u200Cstrong \u200Cand \u200Cproud? \u200CWho \u200Cseeks \u200Cto \u200Chedge \u200Ca\u200Cgainst \u200Call \u200Codds,\n\
