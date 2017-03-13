@@ -1019,7 +1019,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 \n\
 [Chorus]\n\
 \u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Ca \u200Cbat\u200Ctle \u200Ccry \u200Cso \u200Cchant\u200Ca\u200Cble.\n\
-\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“can’t\u200Ci\u200Cbal”,\n\
 \u200CBe\u200Ccause \u200Cwe \u200Ccan.\n\
 \n\
 \u200C[Verse 2]\n\
@@ -1031,7 +1031,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 \n\
 [Chorus]\n\
 \u200C“On \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Cthe \u200Cday \u200Cour \u200Cflag \u200Cstands \u200Cplant\u200Ca\u200Cble."\n\
-\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“can’t\u200Ci\u200Cbal”,\n\
 \u200CBe\u200Ccause \u200Cwe \u200Ccan.\n\
 \n\
 \u200C[Instrumental Break]\n\
@@ -1040,7 +1040,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 \u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Che\u200Cma\u200Ctic \u200Cwine \u200Cde\u200Ccant\u200Ca\u200Cble.\n\
 \u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
 \u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Call \u200Chea\u200Cven’s \u200Cfa\u200Cvors \u200Cgrant\u200Ca\u200Cble.\n\
-\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“cann’t\u200Ci\u200Cbal”,\n\
+\u200COn \u200CSt. \u200CWen\u200Cdi\u200Cgo’s \u200CDay, \u200Clet \u200Cnone \u200Cof \u200Cus \u200Cbe \u200Cknown \u200Cas \u200C“can’t\u200Ci\u200Cbal”,\n\
 \u200CBe\u200Ccause \u200Cwe \u200Ccan.',
 		timing: [0,
 
