@@ -1,3 +1,12 @@
+albumOrder = [
+	3599490148, // For Patron Eyes Only
+	444214854,  // Operation SpinTunes
+	24668382,   // Flying Monkeys
+	3541981135, // Every Song in the Universe
+	3939645898, // Every Karaoke Track in the Universe
+	1047117555  // Also This Other Stuff
+]
+
 trackInfo = {
 	///////////////////////////////////////////////////////
 	// Every Song in the Universe
@@ -1053,6 +1062,72 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 147,
 
 167.8, 169.8, 170.04, 170.44, 170.88, 171.32, 171.88, 174.04, 174.28, 174.6, 175.08, 175.64, 176.08, 176.6, 176.92, 178.32, 178.6, 179.0, 179.44, 179.88, 180.44, 182.6, 182.84, 183.16, 183.68, 184.24, 184.76, 185.28, 186.04, 186.84, 187.64, 189.04, 189.32, 189.72, 190.16, 190.64, 191.16, 193.28, 193.56, 193.84, 194.36, 194.92, 195.44, 195.96, 196.28, 197.6, 197.84, 198.28, 198.72, 199.16, 199.72, 201.88, 202.12, 202.4, 202.96, 203.48, 204.0, 204.52, 205.32, 206.2, 206.92, 208.08, 208.32, 208.84, 209.36]
+	},
+	// Happy Me
+	3939452242: {
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CMor\u200Cning \u200CMe \u200Cis \u200Ca \u200Cme \u200Cwho \u200Ccan \u200Cbe \u200Cun\u200Cplea\u200Csant.\n\
+\u200CRide \u200Cthe \u200Ctrain, \u200Cget \u200Cto \u200Cwork, \u200Cdon\'t \u200Cen\u200Cgage \u200Cwith \u200Ca\u200Cny\u200Cone \u200C‘til \u200Cthe \u200Cmor\u200Cning’s \u200Cdone.\u200C\n\
+\u200CMor\u200Cning \u200CMe, \u200Cty\u200Cpical\u200Cly, \u200Chas\u200Cn\'t \u200Chad \u200Chis \u200Ccof\u200Cfee.\n\
+\u200CNo \u200CI\'m \u200Cnot \u200Cin\u200Cteres\u200Cted \u200Cin \u200Cyour \u200Cpe\u200Cti\u200Ction \u200Cat \u200Cthis \u200Ctime. \u200CFind \u200Csome \u200Co\u200Cther \u200Cguy \u200Cto \u200Csign.\u200C\n\
+\u200CDon\'t \u200Ctalk \u200Cto \u200CMor\u200Cning \u200CMe.\u200C\n\
+\n\
+\u200CDead\u200Cline \u200CMe \u200Cis \u200Ca \u200Cme \u200Chol\u200Cding \u200Cit \u200Cto\u200Cge\u200Cther\n\
+\u200CLate \u200Cat \u200Cnight, \u200Cin \u200Cthe \u200Cdark, \u200Cjust \u200Ca \u200Ckey\u200Cboard \u200Cand \u200Ca \u200Cscreen, \u200Clocked \u200Cin \u200Cquar\u200Can\u200Ctine.\u200C\n\
+\u200CDead\u200Cline \u200CMe \u200Cused \u200Cto \u200Cbe \u200Cfrom \u200Cthe \u200Cdis\u200Ctant \u200Cfu\u200Cture,\n\
+\u200CFu\u200Cture \u200CMe \u200Chol\u200Cding \u200Cstrong, \u200Cab\u200Csent \u200Ca\u200Cny \u200Cdoubt. \u200CNow \u200Che’s \u200Cfrea\u200Cking \u200Cout.\u200C\n\
+\u200CNo \u200Cone \u200Clikes \u200CDead\u200Cline \u200CMe.\u200C\n\
+\n\
+\u200C[Chorus]\n\
+\u200CMade \u200Cof \u200Call \u200Cthe \u200CMes \u200Cand \u200Cnone \u200Cof \u200Cthem.\u200C\n\
+\u200CThen \u200CI’m \u200Cwith \u200Cyou, \u200Cand \u200Csome\u200Chow \u200Cyou \u200Ctake \u200Cme \u200Cfrom\n\
+\u200CSwarmed \u200Cby \u200Cthe \u200Cca\u200Cco\u200Cpha\u200Cny \u200Cof \u200Cthe \u200Cdrum\n\
+\u200CAnd \u200Cyou \u200Cdo \u200Cyour \u200Cma\u200Cgic \u200Cand \u200CI \u200Cbe\u200Ccome\n\
+\u200CJust \u200Cplain \u200Cold \u200CHap\u200Cpy \u200CMe.\u200C\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CMort\u200Cgage \u200CMe \u200Cis \u200Ca \u200Cme \u200Cbuz\u200Czing \u200Cin \u200Ca \u200Clow \u200Ckey\n\
+\u200CLit\u200Ctle \u200Cbit \u200Cev\u200Cery\u200Cday \u200Clike \u200Ca \u200Ccho\u200Cru\u200Csing \u200Cof \u200Cmoans \u200Cdis\u200Ccus\u200Csing \u200Cstu\u200Cdent \u200Cloans.\u200C\n\
+\u200CMort\u200Cgage \u200CMe \u200Cprof\u200Cfers \u200Cwe \u200Cmay\u200Cbe \u200Cjig\u200Csaw \u200Cit \u200Ca \u200Cbit,\n\
+\u200CBor\u200Crow \u200Cthis, \u200Cpay \u200Cfor \u200Cthat, \u200Ctry \u200Cto \u200Csleep \u200Cwith \u200Cfew\u200Cer \u200Cfears \u200C\'til \u200Cthe \u200Cpay\u200Ccheck \u200Cclears.\u200C\n\
+\u200CGod \u200Chelp \u200CMort\u200Cgage \u200CMe.\u200C\n\
+\n\
+\u200C[Chorus]\n\
+\u200CMade \u200Cof \u200Call \u200Cthe \u200CMes \u200Cand \u200Cnone \u200Cof \u200Cthem.\u200C\n\
+\u200CThen \u200CI’m \u200Cwith \u200Cyou, \u200Cand \u200Csome\u200Chow \u200Cyou \u200Ctake \u200Cme \u200Cfrom\n\
+\u200CSwarmed \u200Cby \u200Cthe \u200Cca\u200Cco\u200Cpha\u200Cny \u200Cof \u200Cthe \u200Cdrum\n\
+\u200CAnd \u200Cyou \u200Cdo \u200Cyour \u200Cma\u200Cgic \u200Cand \u200CI \u200Cbe\u200Ccome\n\
+\u200CJust \u200Cplain \u200Cold \u200CHap\u200Cpy \u200CMe.\u200C\n\
+\n\
+\u200C[Verse 3]\n\
+\u200CPo\u200Cser \u200CMe \u200Cis \u200Ca \u200Cme \u200Csure \u200CI\'m \u200Ckid\u200Cding \u200Cmy\u200Cself.\n\
+\u200CAnd \u200Cit\'s \u200Clike \u200Cwho \u200Cam \u200CI \u200Cthink\u200Cing \u200CI \u200Ccan \u200Cbe \u200Ce\u200Cnough \u200Cto \u200Chan\u200Cdle \u200Call \u200Cthis \u200Cstuff?\u200C\n\
+\u200CPo\u200Cser \u200CMe \u200Clikes \u200Cto \u200Csee \u200Cif \u200Cin \u200Cpsy\u200Cching \u200Cme \u200Cout\n\
+\u200CHe \u200Ccan \u200Cmake \u200Cme \u200Cbe\u200Clieve \u200Cthat \u200Cthere\'s \u200Cno\u200Cwhere \u200Cleft \u200Cto \u200Cgo \u200Cthen \u200Csay, \u200C"I \u200Ctold \u200Cyou \u200Cso."\u200C\n\
+\u200CWhat\'s \u200Cup \u200Cwith \u200CPo\u200Cser \u200CMe?\u200C\n\
+\n\
+\u200C[Chorus]\n\
+\u200CMade \u200Cof \u200Call \u200Cthe \u200CMes \u200Cand \u200Cnone \u200Cof \u200Cthem.\u200C\n\
+\u200CThen \u200CI’m \u200Cwith \u200Cyou, \u200Cand \u200Csome\u200Chow \u200Cyou \u200Ctake \u200Cme \u200Cfrom\n\
+\u200CSwarmed \u200Cby \u200Cthe \u200Cca\u200Cco\u200Cpha\u200Cny \u200Cof \u200Cthe \u200Cdrum\n\
+\u200CAnd \u200Cyou \u200Cdo \u200Cyour \u200Cma\u200Cgic \u200Cand \u200CI \u200Cbe\u200Ccome\n\
+\u200CJust \u200Cplain \u200Cold \u200CHap\u200Cpy \u200CMe.\u200C',
+		timing: [0,
+
+1.72, 3.52, 3.72, 3.92, 4.36, 4.56, 4.8, 5.24, 5.4, 5.6, 5.76, 5.96, 6.16, 6.88, 7.08, 7.32, 7.76, 7.96, 8.16, 8.6, 8.84, 9.04, 9.28, 9.48, 9.64, 9.84, 12.48, 12.68, 12.88, 13.16, 13.48, 14.48, 17.24, 17.44, 17.64, 18.08, 18.28, 18.52, 18.92, 19.16, 19.36, 19.56, 19.76, 20.0, 20.64, 20.84, 21.08, 21.48, 21.68, 21.88, 22.12, 22.32, 22.52, 22.72, 22.96, 23.16, 23.4, 23.64, 25.8, 26.0, 26.24, 26.44, 26.64, 26.84, 27.04, 28.04, 31.56, 32.0, 32.4, 32.8, 33.04, 33.28, 34.28,
+
+37.84, 38.0, 38.2, 38.64, 38.84, 39.08, 39.48, 39.68, 39.92, 40.12, 40.36, 40.56, 41.24, 41.44, 41.64, 42.04, 42.24, 42.52, 42.92, 43.12, 43.36, 43.56, 43.76, 44.04, 44.24, 46.68, 47.04, 47.36, 47.64, 47.92, 48.92, 51.52, 51.72, 51.96, 52.36, 52.56, 52.8, 53.16, 53.36, 53.6, 53.84, 54.04, 54.28, 54.92, 55.12, 55.32, 55.72, 55.96, 56.2, 56.84, 57.2, 57.48, 57.68, 57.92, 60.48, 60.68, 60.92, 61.16, 61.36, 62.36, 65.88, 66.32, 66.68, 67.08, 67.36, 67.6, 68.6,
+
+70.56, 72.56, 72.96, 73.16, 73.8, 74.0, 74.4, 74.84, 75.08, 75.32, 76.32, 78.96, 79.16, 79.56, 80.04, 80.6, 80.84, 81.24, 81.48, 81.68, 82.12, 82.32, 83.0, 83.44, 83.64, 84.04, 84.28, 84.64, 84.88, 85.12, 85.52, 85.76, 86.4, 86.64, 86.88, 87.24, 87.68, 88.12, 88.32, 88.56, 88.96, 89.2, 89.84, 90.24, 90.68, 91.12, 91.32, 91.52, 92.52,
+
+94.08, 96.08, 96.28, 96.52, 96.92, 97.12, 97.36, 97.8, 98.0, 98.2, 98.4, 98.64, 98.88, 99.48, 99.68, 99.92, 100.36, 100.56, 100.76, 101.16, 101.4, 101.64, 101.84, 102.04, 102.28, 102.52, 104.84, 105.04, 105.28, 105.48, 105.72, 105.92, 106.92, 109.84, 110.04, 110.24, 110.68, 110.84, 111.04, 111.48, 111.68, 111.92, 112.12, 112.32, 112.56, 112.8, 113.24, 113.44, 113.64, 114.08, 114.28, 114.52, 114.88, 115.12, 115.36, 115.56, 115.8, 116.0, 116.2, 118.76, 118.96, 119.2, 119.44, 119.84, 120.84, 124.56, 124.96, 125.36, 125.6, 125.88, 126.88,
+
+128.84, 130.84, 131.24, 131.44, 132.0, 132.24, 132.68, 133.12, 133.36, 133.6, 134.6, 137.2, 137.4, 137.8, 138.28, 138.88, 139.12, 139.52, 139.76, 139.96, 140.36, 140.64, 141.2, 141.64, 141.92, 142.32, 142.52, 142.92, 143.16, 143.4, 143.8, 144.04, 144.68, 145.08, 145.24, 145.6, 145.92, 146.36, 146.6, 146.8, 147.28, 147.52, 148.16, 148.6, 149.0, 149.44, 149.64, 149.84, 150.84,
+
+169.52, 171.52, 171.68, 171.92, 172.36, 172.6, 172.8, 173.28, 173.48, 173.68, 173.84, 174.08, 174.28, 174.92, 175.12, 175.36, 175.76, 175.96, 176.16, 176.6, 176.8, 177.0, 177.2, 177.44, 177.72, 177.92, 180.32, 180.52, 180.72, 180.96, 181.16, 181.56, 182.56, 185.2, 185.4, 185.64, 186.08, 186.28, 186.48, 186.92, 187.12, 187.32, 187.56, 187.76, 188.0, 188.6, 188.8, 189.04, 189.48, 189.72, 189.92, 190.32, 190.56, 190.76, 191.0, 191.2, 191.44, 191.64, 194.0, 194.16, 194.4, 194.64, 194.92, 195.28, 196.28, 199.56, 199.96, 200.4, 200.84, 201.04, 201.28, 202.28,
+
+204.24, 206.24, 206.64, 206.88, 207.48, 207.72, 208.12, 208.6, 208.8, 209.04, 210.04, 212.6, 212.84, 213.28, 213.72, 214.28, 214.52, 214.92, 215.16, 215.4, 215.8, 216.04, 216.72, 217.12, 217.36, 217.76, 217.96, 218.32, 218.56, 218.84, 219.24, 219.48, 220.12, 220.32, 220.56, 221.0, 221.4, 221.8, 222.0, 222.24, 222.68, 222.88, 223.56, 223.96, 224.4, 224.8, 225.04, 225.28, 226.28]
 	},
 
 	///////////////////////////////////////////////////////
