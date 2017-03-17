@@ -24,7 +24,14 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 	$(this.cont).empty();
 	$(this.cont).data().discography = this;
 	var discography = this;
-	$(this.albums.reverse()).each(function() {
+//	$(this.albums.reverse()).each(function() {
+	$(this.albums.sort(function(a,b) {
+		for (idx in albumOrder) {
+			if (albumOrder[idx] == a.album_id) return -1;
+			if (albumOrder[idx] == b.album_id) return 1;
+		}
+		return 0;
+	})).each(function() {
 		if (this.tracks.length) {
 			if ($('.'+BG.Album.css.cont).length) $(musicDiv).append($('<hr/>'));
 			var album = new BG.Album(discography, this);
