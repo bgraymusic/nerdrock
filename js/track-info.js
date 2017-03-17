@@ -1,3 +1,7 @@
+bgBandId = '230945364';
+
+secretBandId = '2536692004';
+
 albumOrder = [
 	3599490148, // For Patron Eyes Only
 	444214854,  // Operation SpinTunes
@@ -1065,6 +1069,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	},
 	// Happy Me
 	3939452242: {
+		karaoke: 1175753535,
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CMor\u200Cning \u200CMe \u200Cis \u200Ca \u200Cme \u200Cwho \u200Ccan \u200Cbe \u200Cun\u200Cplea\u200Csant.\n\
