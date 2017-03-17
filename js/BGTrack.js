@@ -32,7 +32,7 @@ BG.Track.css = {
 	}, body: {
 		cont: 'bg-accordion-body',
 		lyr: { cont: 'bg-lyrics', elapsed: 'bg-lyrics-elapsed', now: 'bg-lyrics-now', unelapsed: 'bg-lyrics-unelapsed' },
-		notes: 'bg-track-notes', media: 'bg-track-media', tab: 'vex-tabdiv', score: 'vex-tabdiv'
+		notes: 'bg-track-notes', media: 'bg-track-media', credits: 'bg-track-credits', tab: 'vex-tabdiv', score: 'vex-tabdiv'
 	}
 }
 
@@ -173,6 +173,12 @@ BG.Track.prototype.buildBody = function() {
 	if (this.media) {
 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'media').text('Media')));
 		this.body.append($('<div/>').attr('id', this.track_id + 'media').addClass(BG.Track.css.body.media));
+	}
+
+	if (this.credits) {
+		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'credits').text('Credits')));
+		this.body.append($('<div/>')
+			.attr('id', this.track_id + 'credits').addClass(BG.Track.css.body.credits).html(this.credits));
 	}
 
 /*
