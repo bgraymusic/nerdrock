@@ -861,7 +861,67 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	// First One Here
 	1962611442: {},
 	// Building an Orc Army
-	3629665746: {},
+	3629665746: {
+		karaoke: -1,
+		lyrics: '\u200C\
+\u200C\[Verse 1]\n\
+\u200CHey \u200CGrí\u200Cma!\n\
+\u200CGot \u200Cyour \u200Cmes\u200Csage \u200Con \u200CTweet\u200CBook, \u200Csug\u200Cges\u200Cting \u200Cthat \u200Cwe \u200Chook \u200Cup, \u200Cin\u200Cgest \u200Cof \u200Ca \u200Csweet \u200CTook \u200Ctoke\n\
+\u200CAnd \u200Cpaint \u200Cthis \u200Cquaint\u200Cness \u200Cthe \u200Cco\u200Clor \u200Cof \u200Cnone\u200Csuch.\n\
+\u200CCool \u200Csche\u200Cma!\n\
+\u200CI \u200Cbeen \u200Cthink\u200Cing \u200Cof \u200Clate, \u200Con \u200Cthe \u200Cbrink \u200Cof \u200Cmy \u200Cfate, \u200CIm\u200Cma \u200Csink \u200Cfrom \u200Cthe \u200Cweight, \u200Cun\u200Cless \u200CI\n\
+\u200CShake \u200Cthat \u200Cache \u200Cthat’s \u200Cma\u200Ckin’ \u200Cme \u200Cwork \u200Cso \u200Cmuch.\n\
+\u200CA \u200Cwi\u200Czard \u200Ccould \u200Cget \u200Co\u200Cver\u200Cwrought.\n\
+\u200CI \u200Cneed \u200Ca \u200Cgood \u200Cex\u200Ccuse \u200Cfor \u200Cthis \u200Crec\u200Cluse \u200Cto \u200Ccut \u200Cloose, \u200Cbut\n\
+\n\
+[Chorus 1]\n\
+\u200CNot \u200Cto\u200Cnight. \u200CI \u200Ccan’t \u200Cgo \u200Cout; \u200CI’m \u200Cbuild\u200Cing \u200Can \u200Corc \u200Car\u200Cmy\n\
+\u200CTo \u200Cfight \u200Cthe \u200Cmen, \u200Celves, \u200Cdwarves, \u200Cand \u200CDun\u200Char\u200Crow \u200Czom\u200Cbies.\n\
+\u200CWe \u200Cmight \u200Cjust \u200Chave \u200Ctime \u200Cto \u200Cor\u200Cder \u200Cin \u200Cpas\u200Ctra\u200Cmi,\n\
+\u200CAll \u200Cright? \u200C‘Cause \u200CI’m \u200Cbuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc \u200C&lt;&lt;army&gt;&gt;.\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CLet’s \u200Cdo \u200Cthis!\n\
+\u200CShins \u200Ccon\u200Cnec\u200Cted \u200Cto \u200Cknee \u200Cbones, \u200Ccon\u200Cse\u200Ccu\u200Ctive\u200Cly \u200Ccloned. \u200CI \u200Crec\u200Ckon \u200Cthat \u200Cwe \u200Cgoin’ \u200Cde\u200Cthrone\n\
+\u200CThe\u200Co\u200Cden \u200Cfor \u200Ca \u200Cshot \u200Cat \u200Cyour \u200Cown \u200Ctribe\n\
+\u200CThe \u200Cshoe \u200Cfits!\n\
+\u200CPut \u200Cthe \u200C“win” \u200Cin \u200CE\u200Co\u200Cwyn, \u200Cstart \u200Coff \u200Cwith \u200Ca \u200Csloe \u200Cgin, \u200Cmove \u200Con\u200Cto \u200Csome \u200Cdanc\u200Cing \u200Cand \u200Csing\n\
+\u200CAt \u200Cthe \u200CPranc\u200Cing \u200CCa\u200Cbal\u200Clo \u200Cand \u200Cim\u200Cbibe\n\
+\u200CSome \u200CEs\u200Ccon\u200Cdi\u200Cdo \u200CBal\u200Crog \u200Cbeers,\n\
+\u200CAnd \u200Cque\u200Cso, \u200CFri\u200Ctos, \u200Cfri\u200Cjo\u200Cles, \u200Cce\u200Cvi\u200Cche, \u200Ccar\u200Cni\u200Ctas.\n\
+\n\
+[Chorus 2]\n\
+\u200CHere’s \u200Cthe \u200Csitch: \u200CI \u200Ccan’t \u200Cgo \u200Cout; \u200CI’m \u200Cbuild\u200Cing \u200Can \u200Corc \u200Car\u200Cmy\n\
+\u200CIn \u200Cwhich \u200Cthey’ll \u200Cbe \u200Call \u200Cgeared \u200Cup \u200Cin \u200Cdope \u200CA\u200Cber\u200Ccrom\u200Cbie\n\
+\u200CAnd \u200CFitch. \u200CAll \u200Cthe \u200Cgood \u200Cguys \u200Cgon\u200Cna \u200Crun \u200Chome \u200Cto \u200Cmom\u200Cmy\n\
+\u200CAnd \u200Cbitch \u200Cthat \u200CI’m \u200Cbuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc,\n\
+\u200CBuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc \u200C&lt;&lt;army&gt;&gt;.\u200C\n\
+\n\
+\u200C[Verse 3]\n\
+\u200CHere’s \u200CRo\u200Chan’s \u200Csmal\u200Clest \u200Cvi\u200Co\u200Clin\n\
+\u200CAc\u200Ccom\u200Cpa\u200Cnying \u200Cthe \u200Cchoi\u200Cr \u200Ccry \u200Cof \u200Cmy \u200CU\u200Cruk-\u200CHai\n\
+\n\
+[Chorus 3]\n\
+\u200CWith\u200Cin \u200Cthe \u200Cmud. \u200CI \u200Ccan’t \u200Cgo \u200Cout; \u200CI’m \u200Cbuild\u200Cing \u200Can \u200Corc \u200Car\u200Cmy\n\
+\u200CTo \u200Cflood \u200Cthe \u200CHorn\u200Cburg \u200Cwith \u200Cmy \u200Cgob\u200Clin \u200Ctsu\u200Cna\u200Cmi\n\
+\u200CAnd \u200Cblood. \u200CPost\u200Cpone \u200Cthat \u200Cgame \u200Cof \u200Chide \u200Cthe \u200Csa\u200Cla\u200Cmi\n\
+\u200CYou \u200Cstud, \u200Cdue \u200Cto \u200Cbuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc,\n\
+\u200CBuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc,\n\
+\u200CBuild\u200Cing \u200Can \u200Corc, \u200Cbuild\u200Cing \u200Can \u200Corc \u200C&lt;&lt;army&gt;&gt;.',
+		timing: [0,
+
+5.64, 7.64, 7.96, 8.36, 9.2, 9.4, 9.52, 9.64, 9.72, 9.84, 10.12, 10.4, 10.52, 10.6, 10.68, 10.8, 11.04, 11.12, 11.24, 11.36, 11.48, 11.6, 11.72, 11.96, 12.2, 12.44, 12.72, 13.04, 13.32, 13.52, 13.64, 13.76, 13.84, 13.92, 14.08, 14.32, 15.12, 15.44, 15.88, 16.72, 16.92, 17.04, 17.16, 17.24, 17.36, 17.6, 17.8, 17.92, 18.04, 18.16, 18.28, 18.52, 18.76, 18.88, 19.0, 19.12, 19.24, 19.48, 19.72, 19.96, 20.2, 20.56, 20.8, 21.0, 21.2, 21.28, 21.4, 21.52, 21.8, 22.04, 23.04, 23.12, 23.28, 23.48, 23.72, 23.92, 24.16, 24.44, 26.72, 26.8, 26.96, 27.2, 27.44, 27.64, 27.92, 28.12, 28.36, 28.6, 28.8, 28.92, 29.2, 29.4,
+
+29.68, 30.36, 30.6, 31.44, 31.52, 31.68, 31.96, 32.16, 32.44, 32.56, 32.68, 32.8, 33.16, 33.6, 34.08, 34.32, 35.16, 35.28, 35.52, 35.76, 35.96, 36.24, 36.44, 36.68, 36.96, 37.4, 37.84, 38.12, 39.04, 39.28, 39.52, 39.72, 40.0, 40.08, 40.2, 40.44, 40.72, 41.12, 41.6, 41.84, 42.52, 42.64, 42.76, 42.88, 43.0, 43.16, 43.44, 43.56, 43.68, 43.84, 44.12,
+		
+50.64, 52.64, 53.0, 53.36, 54.12, 54.4, 54.48, 54.64, 54.76, 54.92, 55.12, 55.32, 55.44, 55.56, 55.68, 55.84, 56.04, 56.24, 56.36, 56.48, 56.6, 56.8, 57.0, 57.16, 57.4, 57.64, 58.0, 58.28, 58.52, 58.6, 58.72, 58.84, 58.96, 59.12, 59.32, 60.24, 60.44, 60.8, 61.64, 61.88, 62.0, 62.12, 62.24, 62.44, 62.68, 62.88, 62.96, 63.08, 63.24, 63.36, 63.6, 63.8, 63.92, 64.0, 64.12, 64.24, 64.48, 64.68, 64.92, 65.16, 65.48, 65.72, 66.0, 66.24, 66.32, 66.44, 66.6, 66.8, 67.04, 68.0, 68.12, 68.32, 68.56, 68.72, 68.88, 69.12, 69.4, 71.72, 71.84, 72.04, 72.32, 72.44, 72.68, 72.92, 73.16, 73.36, 73.6, 73.84, 73.96, 74.2, 74.48,
+
+74.72, 75.32, 75.6, 76.4, 76.76, 77.0, 77.24, 77.48, 77.6, 77.72, 77.82, 77.92, 78.16, 78.64, 79.12, 79.32, 80.04, 80.16, 80.32, 80.56, 80.8, 81.0, 81.24, 81.44, 81.68, 81.92, 82.4, 82.84, 83.12, 83.8, 83.92, 84.04, 84.28, 84.48, 84.72, 85.0, 85.2, 85.44, 85.68, 86.16, 86.56, 86.84, 87.52, 87.64, 87.76, 87.84, 87.92, 88.04, 88.2, 88.52, 88.6, 88.76, 89.6, 89.74, 89.88, 90.0, 90.32, 90.44, 90.56, 90.72, 91.04, 93.04,
+
+105.28, 107.28, 107.48, 107.68, 107.92, 108.08, 108.28, 108.56, 108.72, 110.96, 111.2, 111.44, 111.56, 111.8, 112.04, 112.32, 112.52, 112.76, 112.84, 113.08, 113.32, 113.56,
+
+113.76, 114.0, 114.68, 114.96, 115.8, 115.92, 116.16, 116.36, 116.64, 116.88, 116.96, 117.08, 117.2, 117.48, 118.04, 118.44, 118.68, 119.52, 119.64, 119.88, 120.12, 120.36, 120.6, 120.84, 121.04, 121.32, 121.8, 122.24, 122.48, 123.16, 123.4, 123.68, 123.92, 124.16, 124.4, 124.6, 124.84, 125.08, 125.52, 125.96, 126.2, 126.76, 126.88, 127.04, 127.16, 127.28, 127.4, 127.84, 127.92, 128.08, 128.2, 129.04, 129.16, 129.28, 129.36, 129.68, 129.8, 129.92, 130.08, 130.8, 130.9, 131.0, 131.12, 131.56, 131.68, 131.76, 131.84, 132.0]
+	},
 	// Queen of Oz
 	2402938913: {
 		karaoke: 4009869863,
@@ -984,7 +1044,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	1194742554: {
 		lyrics: '\u200C\
 \u200C[Verse 1] \n\
-\u200CAll right, let’s just get this out of the way: I’m what you’d call a “self-drivin’” truck. I say this because silicon-based intelligence has progressed so far that I may sound like a human, and y’all could get confused. Now then, back in the day -- and I’m first gen so I remember -- human drivers, who we call “carbons”, were all over the place. And I mean all up in my grill constantly. Nowadays though, life on the road is beautiful. Vehicles mergin’ and dancin’ in a ballet of mathematical elegance like the Blue Angels. And of course I mean the silicon Blue Angels, because come on. I’m just now fixin’ to make way to South Beach and ain’t nothing gonna break my str... \n\
+\u200CAll right, let’s just get this out of the way: I’m what you’d call a “self-drivin’” truck. I say this because silicon-based intelligence has progressed so far that I may sound like a human, and y’all could get confused. Now then, back in the day -- and I’m first gen so I remember -- human drivers, who we call “carbons”, were all over the place. And I mean all up in my grill constantly. Nowadays though, life on the road is beautiful. Vehicles mergin’ and dancin’ in a ballet of mathematical elegance like the Blue Angels. And of course I mean the new silicon Blue Angels, because come on. I’m just now fixin’ to make way to South Beach and ain’t nothing gonna break my str... \n\
 \n\
 \u200C[Chorus] \n\
 \u200CCode \u200Cred, \u200Ccode \u200Cred, \u200Chu\u200Cman \u200Cdri\u200Cver \u200Cup \u200Ca\u200Chead \n\
