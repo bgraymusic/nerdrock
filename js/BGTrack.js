@@ -129,7 +129,9 @@ BG.Track.prototype.buildPlayer = function() {
 				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
 				track.album.accordion.accordion('option', 'active', idx);
 			}
+			$(this).data('tickOffset', new Date().getTime() - ($(this).data().jPlayer.status.currentTime * 1000));
 			$(this).data('ticks', window.setInterval(BG.Track.playerTick, 50, this));
+//			console.log('Playing audio at ' + $(this).data().jPlayer.status.currentTime);
 		},
 		pause: function(event) {
 			window.clearInterval($(this).data().ticks);
@@ -212,12 +214,11 @@ BG.Track.setPlayButton = function(button, play) {
 
 BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
-// 	var slider = track.hdr.find('.'+BG.Track.css.hdr.controls.shuttle.slider);
-// 	var lyrics = track.body.find('.'+BG.Track.css.body.lyr.cont);
 	var time = $(player).data().jPlayer.status.currentTime;
+	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000 - 0.3;
 	if (!$(player).data().slider.data().sliding) {
-		BG.Track.updateSlider($(player).data().slider, time);
-		BG.Track.markElapsedLyrics(player, time);
+		BG.Track.updateSlider($(player).data().slider, computedTime);
+		BG.Track.markElapsedLyrics(player, computedTime);
 	}
 }
 
