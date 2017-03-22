@@ -129,12 +129,8 @@ BG.Track.prototype.buildPlayer = function() {
 				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
 				track.album.accordion.accordion('option', 'active', idx);
 			}
-			$(this).data('tickOffset', new Date().getTime() - ($(this).data().jPlayer.status.currentTime * 1000));
-			$(this).data('ticks', window.setInterval(BG.Track.playerTick, 50, this));
-//			console.log('Playing audio at ' + $(this).data().jPlayer.status.currentTime);
 		},
 		pause: function(event) {
-			window.clearInterval($(this).data().ticks);
 		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
 	});
@@ -212,12 +208,28 @@ BG.Track.setPlayButton = function(button, play) {
 	}
 }
 
+BG.Track.play = function(player, time) {
+	window.clearInterval(player.data().ticks);
+	BG.Track.setPlayButton();
+	player.jPlayer('pauseOthers');
+	var playAt = time ? time : player.data().jPlayer.status.currentTime;
+	player.jPlayer('play', playAt);
+	player.data('tickOffset', new Date().getTime() - (playAt * 1000));
+	player.data('ticks', window.setInterval(BG.Track.playerTick, 50, player));
+}
+
+BG.Track.pause = function(player, time) {
+	window.clearInterval(player.data().ticks);
+	var pauseAt = time ? time : player.data().jPlayer.status.currentTime;
+	player.jPlayer('pause', pauseAt);
+}
+
 BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
 	var time = $(player).data().jPlayer.status.currentTime;
 	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000 - 0.3;
 	if (!$(player).data().slider.data().sliding) {
-		BG.Track.updateSlider($(player).data().slider, computedTime);
+		BG.Track.updateSlider($(player).data().slider, time);
 		BG.Track.markElapsedLyrics(player, computedTime);
 	}
 }
@@ -231,13 +243,8 @@ BG.Track.markElapsedLyrics = function(player, time) {
 	if (!$(player).data().lyrics.length) return;
 	var trackId = BG.Track.getFromElement($(player).data().lyrics[0]).track_id;
 	var info = trackInfo[trackId];
-	if (!info) { for (id in trackInfo) {
-		if (trackInfo[id].karaoke == trackId)
-			info = trackInfo[id];
-		}
-	}
-	if (!info || !info.lyrics || !info.timing)
-		return;
+	if (!info) { for (id in trackInfo) { if (trackInfo[id].karaoke == trackId) info = trackInfo[id]; }}
+	if (!info || !info.lyrics || !info.timing) return;
 
 	var elapsedLyrics = $(player).data().elapsedLyrics;
 	var currentLyrics = $(player).data().currentLyrics;
@@ -259,10 +266,11 @@ BG.Track.registerJQueryUI = function() {
 		var track = BG.Track.getFromElement(this);
 		var isPlaying = $(this).button('option', 'icons').primary == 'ui-icon-pause';
 		if (!isPlaying) {
-			track.player.jPlayer('pauseOthers');
-			$('.bg-track-play-pause-button').button('option', 'icons', { primary: 'ui-icon-play' });
+//			$('.bg-track-play-pause-button').button('option', 'icons', { primary: 'ui-icon-play' });
+			BG.Track.play(track.player);
+		} else {
+			BG.Track.pause(track.player);
 		}
-		track.player.jPlayer(isPlaying ? 'pause' : 'play');
 		BG.Track.setPlayButton(this, isPlaying);
 	});
 
@@ -277,9 +285,12 @@ BG.Track.registerJQueryUI = function() {
 				BG.Track.markElapsedLyrics(BG.Track.getFromElement(this).player, ui.value);
 			},
 			stop: function(event, ui) {
-				var player = BG.Track.getFromElement(this).player.data().jPlayer;
-				if (player.status.paused) player.pause(ui.value);
-				else player.play(ui.value);
+//				var player = BG.Track.getFromElement(this).player.data().jPlayer;
+// 				if (player.status.paused) player.pause(ui.value);
+// 				else player.play(ui.value);
+				var player = BG.Track.getFromElement(this).player;
+				if (player.data().jPlayer.status.paused) BG.Track.pause(player, ui.value);
+				else BG.Track.play(player, ui.value);
 				$(this).data('sliding', false);
 			},
 			animate: 'fast'
