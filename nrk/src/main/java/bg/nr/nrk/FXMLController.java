@@ -40,7 +40,6 @@ public class FXMLController implements Initializable {
 	private final Collection<Integer> timings = new ArrayList<>();
 	private KeyState keyState = KeyState.UP;
 	private int minGapMs = 400;
-	private final int jsTimeOffset = 400; // Hack around issue where JavaScript draws later than specified
 	private int lastReleasedTime = 0;
 	private final DecimalFormat hundredths = new DecimalFormat(".##");
 	private final Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -131,11 +130,11 @@ public class FXMLController implements Initializable {
 		StringBuilder sb = new StringBuilder();
 		sb.append("[0");
 		timings.stream().forEach((timing) -> {
-			// For some reason, all timings must be 0.5s earlier to fit the music
-			sb.append(", ").append(hundredths.format((timing - jsTimeOffset) / 1000.0));
+			// For some reason, all timings must be earlier to fit the music
+			sb.append(", ").append(hundredths.format((timing) / 1000.0));
 		});
 		if (markReleasesCheckbox.isSelected())
-			sb.append(", ").append(hundredths.format((lastReleasedTime - jsTimeOffset) / 1000.0));
+			sb.append(", ").append(hundredths.format((lastReleasedTime) / 1000.0));
 		sb.append("]");
 		System.out.println("Copying to clipboard: " + sb.toString());
 		StringSelection stringSelection = new StringSelection(sb.toString());

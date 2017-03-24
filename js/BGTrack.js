@@ -34,7 +34,9 @@ BG.Track.css = {
 		lyr: { cont: 'bg-lyrics', elapsed: 'bg-lyrics-elapsed', now: 'bg-lyrics-now', unelapsed: 'bg-lyrics-unelapsed' },
 		notes: 'bg-track-notes', media: 'bg-track-media', credits: 'bg-track-credits', tab: 'vex-tabdiv', score: 'vex-tabdiv'
 	}
-}
+};
+
+BG.Track.tickLength = 50; // milliseconds per tick
 
 BG.Track.getFromElement = function(element) {
 	var hdr = $(element).closest('.'+BG.Track.css.hdr.cont);
@@ -91,6 +93,7 @@ BG.Track.prototype.buildControls = function(controls) {
 BG.Track.prototype.buildPlayer = function() {
 	this.player.jPlayer({
 		ready: function(event) {
+//			console.log('jPlayer ready event');
 			var track = BG.Track.getFromElement($(this).data().controls);
 			$(this).jPlayer('setMedia', { mp3: track.streaming_url });
 			$(this).data('track', track);
@@ -102,6 +105,7 @@ BG.Track.prototype.buildPlayer = function() {
 			$(this).data('futureLyrics', lyrics.find('.'+BG.Track.css.body.lyr.unelapsed));
 		},
 		ended: function(event) {
+//			console.log('jPlayer ended event');
 			window.clearInterval($(this).data().ticks);
 			var track = BG.Track.getFromElement($(this).data().controls);
 			var playButton = track.hdr.find('.'+BG.Track.css.hdr.controls.play);
@@ -119,18 +123,28 @@ BG.Track.prototype.buildPlayer = function() {
 				} else if (idx == track.album.workingTracks.length - 1 && repeat) {
 					targetTrack = track.album.workingTracks[0];
 				}
-				targetTrack.player.data().jPlayer.stop();
-				targetTrack.hdr.find('.'+BG.Track.css.hdr.controls.play).click();
+				if (targetTrack) {
+					targetTrack.player.data().jPlayer.stop();
+					targetTrack.hdr.find('.'+BG.Track.css.hdr.controls.play).click();
+				}
 			}
 		},
 		play: function(event) {
+//			console.log('jPlayer play event');
 			var track = BG.Track.getFromElement($(this).data().controls);
 			if (track.album.cont.find('.'+BG.Album.css.meta.follow).prop('checked')) {
 				var idx = track.album.accordion.find('.bg-accordion-header').index(track.hdr);
 				track.album.accordion.accordion('option', 'active', idx);
 			}
+			$(this).data('ticks', window.setInterval(BG.Track.playerTick, BG.Track.tickLength, this));
 		},
 		pause: function(event) {
+//			console.log('jPlayer pause event');
+			window.clearInterval($(this).data().ticks); // Probably not necessary, but won't hurt
+		},
+		seeked: function(event) {
+			console.log('jPlayer seeked event');
+			$(this).data('tickOffset', new Date().getTime() - ($(this).data().jPlayer.status.currentTime * 1000));
 		},
 		swfPath: 'swf', supplied: 'mp3', preload: 'none'
 	});
@@ -201,33 +215,25 @@ BG.Track.prototype.buildBody = function() {
 BG.Track.setPlayButton = function(button, play) {
 	if (play) $(button).button('option', 'icons', { primary: 'ui-icon-play' });
 	else {
-		$('.'+BG.Track.css.hdr.controls.play).each(function() {
-			$(button).button('option', 'icons', { primary: 'ui-icon-play' });
-		});
+		$('.'+BG.Track.css.hdr.controls.play).each(function() { $(button).button('option', 'icons', { primary: 'ui-icon-play' }); });
 		$(button).button('option', 'icons', { primary: 'ui-icon-pause' });
 	}
 }
 
 BG.Track.play = function(player, time) {
-	window.clearInterval(player.data().ticks);
 	BG.Track.setPlayButton();
 	player.jPlayer('pauseOthers');
-	var playAt = time ? time : player.data().jPlayer.status.currentTime;
-	player.jPlayer('play', playAt);
-	player.data('tickOffset', new Date().getTime() - (playAt * 1000));
-	player.data('ticks', window.setInterval(BG.Track.playerTick, 50, player));
+	player.jPlayer('play', time ? time : player.data().jPlayer.status.currentTime);
 }
 
 BG.Track.pause = function(player, time) {
-	window.clearInterval(player.data().ticks);
-	var pauseAt = time ? time : player.data().jPlayer.status.currentTime;
-	player.jPlayer('pause', pauseAt);
+	player.jPlayer('pause', time ? time : player.data().jPlayer.status.currentTime);
 }
 
 BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
 	var time = $(player).data().jPlayer.status.currentTime;
-	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000 - 0.3;
+	var computedTime = (new Date().getTime() - $(player).data().tickOffset + (BG.Track.tickLength/2)) / 1000;
 	if (!$(player).data().slider.data().sliding) {
 		BG.Track.updateSlider($(player).data().slider, time);
 		BG.Track.markElapsedLyrics(player, computedTime);
