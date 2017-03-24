@@ -223,7 +223,7 @@ BG.Track.setPlayButton = function(button, play) {
 BG.Track.play = function(player, time) {
 	BG.Track.setPlayButton();
 	player.jPlayer('pauseOthers');
-	player.jPlayer('play', time ? time : player.data().jPlayer.status.currentTime);
+	player.jPlayer('play', (time == undefined) ? player.data().jPlayer.status.currentTime : time);
 }
 
 BG.Track.pause = function(player, time) {
@@ -233,10 +233,16 @@ BG.Track.pause = function(player, time) {
 BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
 	var time = $(player).data().jPlayer.status.currentTime;
-	var computedTime = (new Date().getTime() - $(player).data().tickOffset + (BG.Track.tickLength/2)) / 1000;
+//	var computedTime = (new Date().getTime() - $(player).data().tickOffset + (BG.Track.tickLength/2)) / 1000;
+	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000;
+ 	if (computedTime - time > 0.55) {
+ 		console.log('BG.Track.playerTick: diff = ' + (computedTime - time) + '. Correcting...');
+ 		computedTime = time + 0.55;
+ 		$(player).data('tickOffset', new Date().getTime() - (computedTime * 1000));
+ 	}
 	if (!$(player).data().slider.data().sliding) {
 		BG.Track.updateSlider($(player).data().slider, time);
-		BG.Track.markElapsedLyrics(player, computedTime);
+		BG.Track.markElapsedLyrics(player, computedTime + (BG.Track.tickLength / 1000));
 	}
 }
 
@@ -272,7 +278,7 @@ BG.Track.registerJQueryUI = function() {
 		var track = BG.Track.getFromElement(this);
 		var isPlaying = $(this).button('option', 'icons').primary == 'ui-icon-pause';
 		if (!isPlaying) {
-//			$('.bg-track-play-pause-button').button('option', 'icons', { primary: 'ui-icon-play' });
+			$('.bg-track-play-pause-button').button('option', 'icons', { primary: 'ui-icon-play' }); // All other play buttons
 			BG.Track.play(track.player);
 		} else {
 			BG.Track.pause(track.player);
@@ -291,9 +297,6 @@ BG.Track.registerJQueryUI = function() {
 				BG.Track.markElapsedLyrics(BG.Track.getFromElement(this).player, ui.value);
 			},
 			stop: function(event, ui) {
-//				var player = BG.Track.getFromElement(this).player.data().jPlayer;
-// 				if (player.status.paused) player.pause(ui.value);
-// 				else player.play(ui.value);
 				var player = BG.Track.getFromElement(this).player;
 				if (player.data().jPlayer.status.paused) BG.Track.pause(player, ui.value);
 				else BG.Track.play(player, ui.value);
