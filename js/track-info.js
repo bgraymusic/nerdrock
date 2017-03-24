@@ -800,7 +800,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	1962611442: {},
 	// Building an Orc Army
 	3629665746: {
-		karaoke: -1,
+		karaoke: 651281124,
 		lyrics: '\u200C\
 \u200C\[Verse 1]\n\
 \u200CHey \u200CGrí\u200Cma!\n\
