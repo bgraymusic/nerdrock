@@ -17,6 +17,7 @@ trackInfo = {
 
 	// Staff Meeting 2015
 	1057430561: {
+		karaoke: 566828391,
 		nsfw: true,
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
