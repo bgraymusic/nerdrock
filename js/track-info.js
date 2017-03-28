@@ -798,7 +798,59 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	// 47 Tribbles
 	1411794882: {},
 	// First One Here
-	1962611442: {},
+	1962611442: {
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CFer\u200Cdi\u200Cnand, \u200CI\u200Csa\u200Cbel\u200Cla \u200CI \u200Csend \u200Cmy \u200Cthoughts \u200Cand \u200Ctrust \u200Cthey \u200Cfind \u200Cyou \u200Cwell.\n\
+\u200CSkir\u200Cted \u200Ccap\u200Cture, \u200Crigged \u200Ca \u200Csail, \u200Cbro\u200Cken \u200Crud\u200Cder, \u200Cwhat \u200Ca \u200Ctale \u200Cto \u200Ctell.\n\
+\u200CToward \u200Cthe \u200Car\u200Cchi\u200Cpe\u200Cla\u200Cgo, \u200C‘til \u200CRod\u200Cri\u200Cgo \u200Ccalled \u200C“land \u200Cho”.\n\
+\u200CMy \u200Cbad, \u200CI \u200Cmeant \u200CI \u200Ccalled \u200C“land \u200Cho”. \u200CWhere’s \u200Cthat \u200Cbo\u200Cnus, \u200Cbro?\n\
+\n\
+\u200C[Chorus]\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere. \u200CNo \u200Cone \u200Chas \u200Csailed \u200Ca\u200Ccross \u200Cthis \u200Csound \u200Cbe\u200Cfore.\n\
+\u200CNone \u200Ce\u200Cver \u200Cstood \u200Ca\u200Ctop \u200Cthis \u200Cmound \u200Cbe\u200Cfore, \u200Ca\u200Cground \u200Ca \u200Cshore \u200Cso \u200Cnear.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere, \u200Cma\u200Cni\u200Cfes\u200Cta\u200Ction \u200Cof \u200Ca \u200Cgrand \u200Cpo\u200Cgrom,\n\
+\u200CDes\u200Cti\u200Cny \u200Cwat\u200Cching \u200Cas \u200CI \u200Cstand \u200Cu\u200Cpon \u200Ca \u200Cland \u200Cto \u200Ccom\u200Cman\u200Cdeer.\n\
+\n\
+\u200C[Verse 2]\n\
+\u200CKic\u200Ckin’ \u200Cit \u200Cas \u200CGo\u200Cver\u200Cnor, \u200Cpick-\u200Cand-\u200Cchoos\u200Cing \u200Csta\u200Ctu\u200Cto\u200Cry \u200Claw.\n\
+\u200CSe\u200Cvered \u200Cno\u200Cses \u200Cand \u200Cears \u200Cto\u200Cday. \u200CTy\u200Cran\u200Cny? \u200CTo \u200Cthat \u200CI \u200Csay \u200C“p\u200Cshaw”.\n\
+\u200CHere’s \u200Ca \u200Cnew \u200Chit \u200Cfrom \u200Cthe \u200Cquay: \u200Ctrans\u200Cat\u200Clan\u200Ctic \u200Csla\u200Cve\u200Cry.\n\
+\u200CI \u200Ccan \u200Cto\u200Ctal\u200Cly \u200Cfore\u200Csee \u200Call \u200Cthe \u200Cgold \u200Cfor \u200Cme.\n\
+\n\
+\u200C[Chorus]\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere. \u200CNo \u200Cone \u200Chas \u200Csailed \u200Ca\u200Ccross \u200Cthis \u200Csound \u200Cbe\u200Cfore.\n\
+\u200CNone \u200Ce\u200Cver \u200Cstood \u200Ca\u200Ctop \u200Cthis \u200Cmound \u200Cbe\u200Cfore, \u200Ca\u200Cground \u200Ca \u200Cshore \u200Cso \u200Cnear.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere, \u200Cma\u200Cni\u200Cfes\u200Cta\u200Ction \u200Cof \u200Ca \u200Cgrand \u200Cpo\u200Cgrom,\n\
+\u200CDes\u200Cti\u200Cny \u200Cwat\u200Cching \u200Cas \u200CI \u200Cstand \u200Cu\u200Cpon \u200Ca \u200Cland \u200Cto \u200Ccom\u200Cman\u200Cdeer.\n\
+\n\
+\u200C[Bridge]\n\
+\u200CI \u200Cam \u200Cthe \u200Cmu\u200Cther\u200Cflip\u200Cpin’ \u200Cchief \u200Cguy.\n\
+\u200CThe \u200Cplot-\u200Ca-\u200Ccourse-\u200Ca\u200Cround-\u200Cthat-\u200Creef \u200Cguy.\n\
+\u200CFor\u200Cget \u200Cthe \u200Cna\u200Ctives \u200Cand \u200Cthat \u200CLief \u200Cguy.\n\
+\n\
+\u200C[Chorus]\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere. \u200CNo \u200Cone \u200Chas \u200Csailed \u200Ca\u200Ccross \u200Cthis \u200Csound \u200Cbe\u200Cfore.\n\
+\u200CNone \u200Ce\u200Cver \u200Cstood \u200Ca\u200Ctop \u200Cthis \u200Cmound \u200Cbe\u200Cfore, \u200Ca\u200Cground \u200Ca \u200Cshore \u200Cso \u200Cnear.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere, \u200Cma\u200Cni\u200Cfes\u200Cta\u200Ction \u200Cof \u200Ca \u200Cgrand \u200Cpo\u200Cgrom,\n\
+\u200CDes\u200Cti\u200Cny \u200Cwat\u200Cching \u200Cas \u200CI \u200Cstand \u200Cu\u200Cpon \u200Ca \u200Cland \u200Cto \u200Ccom\u200Cman\u200Cdeer.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere.\n\
+\u200CI’m \u200Cthe \u200Cfirst \u200Cone \u200Chere.',
+		timing: [0,
+
+8.32, 10.32, 10.4, 10.52, 10.8, 10.92, 11.04, 11.32, 11.56, 12.32, 12.4, 12.48, 12.8, 13.08, 13.36, 13.72, 14.4, 14.84, 18.32, 18.4, 18.56, 18.84, 19.12, 19.4, 19.6, 20.32, 20.44, 20.56, 20.8, 21.04, 21.24, 21.48, 22.4, 22.8, 25.56, 25.8, 26.12, 26.56, 26.84, 27.24, 27.76, 29.52, 29.72, 30.08, 30.44, 30.84, 31.32, 31.8, 33.2, 33.44, 33.84, 34.08, 34.76, 35.0, 35.48, 35.92, 36.52, 36.88, 37.36, 37.56, 37.84,
+
+38.52, 40.52, 40.76, 41.0, 41.56, 42.08, 44.32, 44.52, 44.8, 45.04, 45.28, 45.52, 45.8, 46.08, 46.6, 46.84, 48.32, 48.48, 48.76, 49.04, 49.28, 49.52, 49.8, 50.08, 50.64, 50.84, 51.8, 52.08, 52.8, 53.04, 53.52, 54.04, 56.52, 56.76, 57.08, 57.56, 58.08, 60.28, 60.52, 60.8, 61.04, 61.36, 61.6, 61.88, 62.12, 62.6, 62.84, 64.32, 64.52, 64.8, 65.04, 65.32, 65.6, 65.84, 66.12, 66.6, 66.8, 67.76, 68.04, 68.8, 69.04, 69.56, 70.04,
+
+72.32, 74.32, 74.44, 74.6, 74.84, 75.12, 75.36, 75.6, 76.32, 76.4, 76.52, 76.8, 77.04, 77.28, 77.56, 78.24, 78.56, 82.28, 82.4, 82.56, 82.8, 82.96, 83.08, 83.32, 83.52, 84.28, 84.4, 84.52, 84.8, 85.04, 85.28, 85.52, 86.52, 86.8, 89.56, 89.8, 90.08, 90.44, 90.84, 91.28, 91.76, 93.52, 93.8, 94.08, 94.44, 94.84, 95.28, 95.64, 97.52, 97.76, 98.04, 98.52, 98.76, 99.28, 99.8, 100.32, 100.68, 101.0, 101.52, 101.76,
+
+102.52, 104.52, 104.76, 105.04, 105.52, 106.08, 108.32, 108.52, 108.76, 109.04, 109.28, 109.56, 109.84, 110.12, 110.56, 110.84, 112.28, 112.52, 112.76, 113.04, 113.28, 113.52, 113.76, 114.08, 114.52, 114.8, 115.76, 116.04, 116.8, 117.08, 117.56, 118.08, 120.52, 120.8, 121.08, 121.56, 122.08, 124.36, 124.56, 124.8, 125.04, 125.32, 125.56, 125.8, 126.08, 126.6, 126.84, 128.32, 128.6, 128.76, 129.04, 129.28, 129.52, 129.8, 130.08, 130.56, 130.8, 131.8, 132.04, 132.8, 133.08, 133.56, 134.04,
+
+136.28, 138.28, 138.52, 138.76, 139.04, 139.28, 139.52, 139.76, 140.04, 140.52, 142.32, 142.44, 142.72, 142.96, 143.32, 143.52, 143.8, 144.04, 144.52, 146.28, 146.52, 146.8, 147.04, 147.28, 147.52, 147.76, 148.16, 148.56,
+
+150.6, 152.6, 152.8, 153.08, 153.6, 154.08, 156.32, 156.56, 156.8, 157.04, 157.28, 157.52, 157.8, 158.12, 158.56, 158.8, 160.32, 160.6, 160.8, 161.04, 161.32, 161.56, 161.76, 162.08, 162.56, 162.8, 163.8, 164.04, 164.8, 165.04, 165.56, 166.08, 168.56, 168.8, 169.04, 169.56, 170.08, 172.32, 172.56, 172.8, 173.08, 173.36, 173.6, 173.84, 174.12, 174.6, 174.88, 176.32, 176.64, 176.76, 177.08, 177.36, 177.6, 177.84, 178.12, 178.56, 178.84, 179.8, 180.04, 180.8, 181.08, 181.56, 182.08, 184.52, 184.72, 185.0, 185.56, 186.08, 188.56, 188.8, 189.08, 189.52, 190.04, 192.52, 192.8, 193.04, 193.52, 194.08]
+	},
 	// Building an Orc Army
 	3629665746: {
 		karaoke: 651281124,
