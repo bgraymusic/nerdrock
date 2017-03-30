@@ -796,7 +796,93 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	// Off the Grid
 	824991007: {},
 	// 47 Tribbles
-	1411794882: {},
+	1411794882: {
+		lyrics: '\u200C\
+\u200C[Verse 1]\n\
+\u200CA \u200Ccast \u200Cand \u200Ccrew \u200Cof \u200C6, \u200Ces\u200Csen\u200Ctial \u200Cto \u200Cthe \u200Cplot, \u200Chead\u200Ced \u200Cout \u200Cto \u200Cjoin \u200Ca \u200Cpar\u200Cty \u200Cthat \u200Cis \u200Cnot\n\
+\u200CA\u200Cbout \u200Cme, \u200Ca\u200Cbout \u200Cme, \u200Ca\u200Cbout \u200Cme\u200C-e\u200C-e\u200C-e\u200C-e\n\
+\u200CIn\u200Cstead \u200CI\'m \u200Cscrap\u200Cing \u200Cgum, \u200C11 \u200Cdecks \u200Cbe\u200Clow, \u200Cmak\u200Cing \u200Cit \u200Co\u200Ck \u200Cfor \u200Cyou \u200Cto \u200Cbold\u200Cly \u200Cgo\n\
+\u200CWith\u200Cout \u200Cme, \u200Cwith\u200Cout \u200Cme, \u200Cwith\u200Cout \u200Cme\u200C-e\u200C-e\u200C-e\u200C-e\n\
+\u200CIt\'s \u200Call \u200Cfun \u200Cand \u200Cgames \u200Cwith \u200C2 \u200CGorn \u200Cand \u200C1 \u200Ccup\n\
+\u200CNo \u200Cone \u200Cthinks \u200Ca\u200Cbout \u200Cthe \u200Cdude \u200Cthat \u200Ccleans \u200Cup\n\
+\n\
+[Chorus]\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Cstar\u200Cboard \u200Cpho\u200Cto\u200Cnic \u200Cspill\u200Cport \u200Cnow\n\
+\u200C3 \u200Cmelt\u200Ced \u200Cred\u200Cshirts \u200Cto \u200Cbe \u200Cre\u200Cstored, \u200Cif \u200Cthey \u200Cfind \u200Cout \u200Chow, \u200Coh\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Caft \u200Cport \u200CBus\u200Csard \u200Ccol\u200Clec\u200Ctor \u200Cnow\n\
+\u200C9 \u200Cstrange \u200Cnew \u200Ctoi\u200Clets \u200Cto \u200Cbe \u200Cex\u200Cplored, \u200Cand \u200Ca \u200CCe\u200Cti \u200Ceel \u200Cthat \u200Csplat\u200Ctered \u200Con \u200Cthe \u200Cbow\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\n\
+[Verse 2]\n\
+\u200CIn \u200Cstar\u200Cdate \u200C0\u200C+, \u200Cit\'s \u200Cea\u200Csy \u200Cto \u200Ccom\u200Cmit, \u200Cwhen \u200Cdrink\u200Cing \u200Con \u200Ca \u200Ccouch, \u200Crep\u200Cli\u200Cca\u200Cting \u200Cshit\n\
+\u200CGets \u200Cbor\u200Cing, \u200Cit\'s \u200Cbor\u200Cing, \u200Cit\'s \u200Cbor\u200Cing\u200C-ing\u200C-ing\u200C-ing\u200C-ing\n\
+\u200CSo \u200Chere \u200CI \u200Cam \u200Cin \u200Cspace, \u200C1\u200C,000,000\u200C,000,000 \u200Cmiles \u200Ca\u200Cloft. \u200CIn\u200Cstead \u200Cof \u200Csin\u200Cgle\u200C-malt, \u200Call \u200CI \u200Cpo\u200Clish \u200Coff\n\
+\u200CIs \u200Cfloor\u200Cing, \u200Cis \u200Cfloor\u200Cing, \u200Cis \u200Cfloor\u200Cing\u200C-ing\u200C-ing\u200C-ing\u200C-ing\n\
+\u200CAnd \u200CI \u200Clie \u200Cin \u200Cbunk \u200Cwith \u200Ca \u200Ccube \u200Cto \u200Cun\u200Cwind. \u200CWhen \u200Cthe \u200C3rd \u200Cshift \u200Ccomes, \u200CI \u200Cwake \u200Cup \u200Cto \u200Cfind, \u200Cyeah\n\
+\n\
+[Chorus]\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Cstar\u200Cboard \u200Cpho\u200Cto\u200Cnic \u200Cspill\u200Cport \u200Cnow\n\
+\u200C3 \u200Cmel\u200Cted \u200Cred\u200Cshirts \u200Cto \u200Cbe \u200Cab\u200Csorbed \u200Cwith \u200Cmy \u200Cbig \u200Cred \u200Ctowel, \u200Coh\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Caft \u200Cport \u200CBus\u200Csard \u200Ccol\u200Clec\u200Ctor \u200Cnow\n\
+\u200C9 \u200Cstrange \u200Cnew \u200Ctoi\u200Clets \u200Cto \u200Cbe \u200Cex\u200Cplored, \u200Cand \u200Ca \u200CCe\u200Cti \u200Ceel \u200Cthat \u200Csplat\u200Ctered \u200Con \u200Cthe \u200Cbow\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\n\
+[Bridge]\n\
+\u200CAnd \u200CI \u200Cdream \u200Cat \u200Cnight, \u200Cor \u200Cis \u200Cit \u200Cday?\n\
+\u200CThat \u200CI\'ll \u200Cbe \u200Cthe \u200Cone \u200Cto \u200Cfight \u200Cand \u200Csave \u200Ca \u200Cworld \u200Cand \u200Cmake \u200Ca \u200Cmess, \u200Cyeah\n\
+\n\
+[Chorus]\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Cstar\u200Cboard \u200Cpho\u200Cto\u200Cnic \u200Cspill\u200Cport \u200Cnow\n\
+\u200C3 \u200Cmel\u200Cted \u200Cred\u200Cshirts \u200Cto \u200Cbe \u200Cig\u200Cnored \u200C\'til \u200Cthey \u200Cdock \u200Cthis \u200Cscow, \u200Coh\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cin \u200Cthe \u200Caft \u200Cport \u200CBus\u200Csard \u200Ccol\u200Clec\u200Ctor \u200Cnow\n\
+\u200C9 \u200Cstrange \u200Cnew \u200Ctoi\u200Clets \u200Cto \u200Cbe \u200Cex\u200Cplored, \u200Cand \u200Ca \u200CCe\u200Cti \u200Ceel \u200Cthat\'s \u200Csplat\u200Ctered \u200Con \u200Cthe \u200Cbow\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\u200COh! \u200COh! \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cto \u200Cthe \u200Cstar\u200Cboard \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)\n\
+\u200C4\u200C7 \u200Ctrib\u200Cbles \u200Cto \u200Cthe \u200Caft \u200Cport \u200C(trib\u200Cbles, \u200Ctrib\u200Cbles, \u200Ctrib\u200Cbles)',
+		timing: [0,
+
+2.48, 4.48, 4.68, 4.92, 5.12, 5.32, 5.48, 6.08, 6.24, 6.44, 6.68, 6.88, 7.08, 7.84, 8.04, 8.24, 8.44, 8.6, 9.2, 9.4, 9.6, 9.76, 9.96, 10.24,
+10.76, 10.96, 11.68, 12.32, 12.52, 13.24, 13.88, 14.08, 14.84, 15.24, 15.6, 16.04, 16.4,
+16.96, 17.16, 17.4, 17.56, 17.76, 17.96, 18.6, 19.16, 19.36, 19.56, 20.32, 20.52, 20.72, 20.92, 21.12, 21.64, 21.88, 22.08, 22.24, 22.48, 22.68,
+23.28, 23.48, 24.04, 24.76, 25.0, 25.72, 26.32, 26.52, 27.28, 27.72, 28.08, 28.48, 28.88,
+30.64, 30.84, 31.2, 32.4, 32.76, 33.72, 33.88, 34.12, 35.32, 35.48, 35.92, 36.88, 37.04, 37.24, 38.4, 38.56, 39.56, 39.76, 39.96, 40.12, 40.56,
+
+42.12, 42.84, 43.64, 43.84, 44.0, 44.2, 44.44, 44.8, 46.44, 46.76, 47.12, 47.56, 47.96, 48.4,
+48.76, 49.16, 49.56, 49.96, 50.32, 50.48, 50.72, 50.88, 51.08, 52.64, 52.88, 53.08, 53.44, 53.8, 54.2,
+54.6, 55.36, 56.08, 56.32, 56.52, 56.72, 56.92, 57.28, 58.84, 59.2, 59.64, 60.04, 60.44, 60.84,
+61.2, 61.56, 61.96, 62.36, 62.76, 62.92, 63.12, 63.32, 63.52, 65.08, 65.28, 65.48, 65.64, 65.84, 66.04, 66.24, 66.44, 66.64, 66.88, 67.08,
+67.84, 69.32, 70.96, 71.2, 71.76, 72.0, 72.52, 72.76,
+74.0, 75.52, 77.2, 77.44, 77.96, 78.2, 78.76, 79.0,
+
+79.4, 79.56, 79.76, 79.92, 80.28, 80.88, 81.08, 81.28, 81.48, 81.64, 81.84, 82.44, 82.64, 82.84, 83.04, 83.24, 83.44, 84.2, 84.4, 84.56, 84.76, 84.96,
+85.56, 85.76, 86.48, 87.12, 87.32, 88.12, 88.72, 88.88, 89.68, 90.04, 90.4, 90.8, 91.2,
+91.8, 91.96, 92.16, 92.36, 92.56, 92.76, 93.36, 93.52, 93.72, 93.92, 94.12, 94.32, 94.9, 95.08, 95.28, 95.52, 95.68, 95.92, 96.68, 96.88, 97.08, 97.28, 97.44,
+98.04, 98.24, 99.0, 99.56, 99.76, 100.6, 101.16, 101.32, 102.08, 102.52, 102.88, 103.24, 103.68,
+105.44, 105.64, 105.84, 107.2, 107.6, 108.52, 108.72, 108.92, 110.12, 110.32, 110.72, 111.72, 111.88, 112.08, 113.44, 113.8, 114.4, 114.56, 114.76, 114.96, 115.4, 116.2,
+
+116.96, 117.64, 118.44, 118.68, 118.84, 119.04, 119.24, 119.64, 121.2, 121.56, 121.96, 122.32, 122.76, 123.16,
+123.52, 123.92, 124.32, 124.68, 125.04, 125.24, 125.44, 125.64, 125.84, 127.44, 127.64, 127.84, 128.2, 128.6, 129.0,
+129.4, 130.16, 130.96, 131.12, 131.32, 131.48, 131.72, 132.08, 133.64, 134.04, 134.44, 134.84, 135.24, 135.68,
+136.0, 136.4, 136.76, 137.16, 137.6, 137.76, 137.96, 138.16, 138.36, 139.92, 140.08, 140.28, 140.48, 140.64, 140.84, 141.08, 141.28, 141.48, 141.68, 141.92,
+142.64, 144.08, 145.76, 145.96, 146.56, 146.8, 147.32, 147.56,
+148.92, 150.4, 151.96, 152.24, 152.76, 153.0, 153.6, 153.8,
+
+154.0, 154.16, 154.4, 154.76, 155.0, 157.32, 157.48, 157.72, 158.0,
+160.24, 160.44, 160.64, 160.96, 161.2, 162.48, 162.64, 163.44, 163.64, 163.84, 164.08, 165.04, 165.24, 165.44, 165.64, 166.72,
+
+168.32, 169.12, 169.92, 170.12, 170.28, 170.48, 170.68, 171.08, 172.68, 173.0, 173.4, 173.8, 174.24, 174.64,
+174.96, 175.36, 175.76, 176.12, 176.48, 176.68, 176.84, 177.04, 177.24, 178.92, 179.08, 179.32, 179.68, 180.08, 180.44,
+180.84, 181.6, 182.4, 182.56, 182.72, 182.88, 183.12, 183.48, 185.12, 185.48, 185.84, 186.24, 186.68, 187.04,
+187.44, 187.8, 188.2, 188.6, 189.04, 189.2, 189.36, 189.56, 189.76, 191.36, 191.52, 191.72, 191.92, 192.08, 192.28, 192.48, 192.64, 192.84, 193.04, 193.28,
+194.08, 195.6, 197.16, 197.4, 197.96, 198.2, 198.76, 199.04,
+200.32, 201.84, 203.44, 203.68, 204.2, 204.44, 205.0, 205.2,
+205.76, 206.48, 207.28, 207.44, 207.64, 207.84, 208.08, 208.48, 209.64, 209.92, 210.44, 210.72, 211.2, 211.48,
+212.0, 212.76, 213.52, 213.72, 213.88, 214.08, 214.32, 214.68, 215.84, 216.12, 216.64, 216.88, 217.48, 217.76]
+	},
 	// First One Here
 	1962611442: {
 		lyrics: '\u200C\
