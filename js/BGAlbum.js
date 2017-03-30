@@ -116,7 +116,13 @@ BG.Album.registerJQueryUI = function() {
 			ui.newPanel.find('.'+BG.Track.css.body.media+':empty').each(function() {
 				$(this).html(BG.Track.getFromElement(this).media);
 			});
-		}, activate: function(event, ui) { saveState(); }
+		}, beforeActivate(event, ui) {
+			return $($(this).data().lmd).closest('.ui-slider').length == 0;
+		}, activate: function(event, ui) {
+			saveState();
+		}
+	}).mousedown(function(event) {
+		$(this).closest('.ui-accordion').data('lmd', event.target);
 	});
 
 	BG.Track.registerJQueryUI();
