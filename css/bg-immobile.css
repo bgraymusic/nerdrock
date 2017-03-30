@@ -17,6 +17,7 @@
 .bg-left { float: left; }
 .bg-right { float: right; }
 .ui-effects-transfer { border: 2px dotted gray; }
+.ui-button { outline: none }
 
 #bg-header { font-size: 2.5em; padding: 0.25em; letter-spacing: 0.1em; }
 #bg-header div.bg-right { margin-right: 0.1em; float: right; }
@@ -60,7 +61,7 @@
 	font-family: inherit; font-weight: inherit; font-size: inherit; letter-spacing: inherit;
 }
 #bg-add-badge-dialog button {
-	margin-left: -0.1em; border-radius: 0.25em; outline-style: none;
+	margin-left: -0.1em; border-radius: 0.25em; outline: none;
 	font-family: inherit; font-weight: inherit; font-size: inherit; letter-spacing: inherit;
 }
 #bg-add-badge-dialog span {
