@@ -232,17 +232,14 @@ BG.Track.pause = function(player, time) {
 BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
 	var time = $(player).data().jPlayer.status.currentTime;
-//	var computedTime = (new Date().getTime() - $(player).data().tickOffset + (BG.Track.tickLength/2)) / 1000;
 	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000;
  	if (computedTime - time > 0.55) {
  		console.log('BG.Track.playerTick: diff = ' + (computedTime - time) + '. Correcting...');
  		computedTime = time + 0.55;
  		$(player).data('tickOffset', new Date().getTime() - (computedTime * 1000));
  	}
-// 	computedTime = computedTime + (BG.Track.tickLength / 1000);
 	if (!$(player).data().slider.data().sliding) {
 		BG.Track.updateSlider($(player).data().slider, time);
-//		BG.Track.markElapsedLyrics(player, computedTime + (BG.Track.tickLength / 1000));
 		BG.Track.markElapsedLyrics(player, computedTime + 0.1);
 	}
 }
