@@ -239,10 +239,11 @@ BG.Track.playerTick = function(player) {
  		computedTime = time + 0.55;
  		$(player).data('tickOffset', new Date().getTime() - (computedTime * 1000));
  	}
- 	computedTime = computedTime + (BG.Track.tickLength / 2);
+// 	computedTime = computedTime + (BG.Track.tickLength / 1000);
 	if (!$(player).data().slider.data().sliding) {
 		BG.Track.updateSlider($(player).data().slider, time);
-		BG.Track.markElapsedLyrics(player, computedTime + (BG.Track.tickLength / 1000));
+//		BG.Track.markElapsedLyrics(player, computedTime + (BG.Track.tickLength / 1000));
+		BG.Track.markElapsedLyrics(player, computedTime + 0.1);
 	}
 }
 
