@@ -1,7 +1,6 @@
 var blogroot = 'https://briangraymusic.wordpress.com';
 var bc = new Bandcamp();
 var discography = new BG.Discography();
-var badges = new BG.Badges();
 var nag;
 var debugLyricTimings = false;
 
@@ -20,27 +19,22 @@ $(function() {
 			$('#bg-contents').css('top', 80 + 'px');
 		}
 	});
-	badges.bootstrap();
+	BG.Badges.getInstance().bootstrap();
 	if (bc.getBandcampData(onDataComplete, bgBandId)) { $('.bg-err').removeClass('bg-hide'); }
 });
 
 function onDataComplete(bcData) {
-	discography.addAlbums(bcData);
-	if (badges.hasBadges()) bc.getBandcampData(onSecretDataComplete, secretBandId);
-	else bgInit();
+	discography.addAlbums(bcData, true);
+	bc.getBandcampData(onSecretDataComplete, secretBandId);
 }
 
 function onSecretDataComplete(bcData) {
-	var secretAlbums = [];
-	$(badges.badges).each(function() {
-		var badgeId = this;
-		$(bcData).each(function() {
-			var album = this;
-			if (album["album_id"] == badges.spec[badgeId].aid)
-				secretAlbums.push(album);
-		});
+	$(bcData).each(function() {
+		var album = this; var draw = false;
+		$(BG.Badges.getInstance().badges).each(function() { if (album["album_id"] == BG.Badges.SPEC[this].aid) draw = true; });
+		discography.addAlbum(album, draw);
 	});
-	discography.addAlbums(secretAlbums);
+
 	bgInit();
 }
 
@@ -58,11 +52,6 @@ function bgInit() {
 function registerGlobalJQueryUI() {
 	$(document).tooltip();
 	$('#bg-prefs-button').button({ icons: { primary: 'ui-icon-gear' }, text: false });
-// 	$('#bg-add-badge-value').button();
-// 	$('#bg-add-badge-submit').button().click(function(event) {
-// 		event.stopPropagation();
-// 		badges.addNewBadge($('#bg-add-badge-value').val());
-// 	});
 	$('.bg-top-level-tabs').tabs({ activate: function(event, ui) { saveState(); } });
 	$('#bg-github').repo({ user: 'bgraymusic', name: 'nerdrock' });
 	$(window).bind('popstate', function(event) {
@@ -111,7 +100,7 @@ function navigate(params) {
 				if (BG.Track.mashTitle(this.title) == BG.Track.mashTitle(params['song'])) { track = this; return false; }
 			});
 		});
-		if (track.nsfw && badges.hasBadge('sfw')) {
+		if (track.nsfw && BG.Badges.getInstance().hasBadge('sfw')) {
 			$('#bg-nsfw-alert').dialog('open');
 		}
 

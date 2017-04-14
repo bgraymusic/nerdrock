@@ -11,6 +11,8 @@ albumOrder = [
 	1047117555  // Also This Other Stuff
 ]
 
+maxComputedTimeOffset = 0.55;
+
 trackInfo = {
 	///////////////////////////////////////////////////////
 	// Every Song in the Universe
@@ -19,6 +21,7 @@ trackInfo = {
 	1057430561: {
 		karaoke: 566828391,
 		nsfw: true,
+		jcc: [ { label: 'Brian\'s Show 2015 (missing the beginning)', ytId: 'UGEcli6qEuw' } ],
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CWel\u200Ccome, \u200Cfolks! \u200CA\u200Cno\u200Cther \u200Cwon\u200Cder\u200Cful \u200Cyear \u200Cfor \u200Cthe \u200Ccom\u200Cpa\u200Cny.\n\
@@ -76,6 +79,7 @@ trackInfo = {
 	// She Said
 	1595466326: {
 		nsfw: true,
+		jcc: [ { label: 'Brian & Zoe\'s Show 2016', ytId: 'NdNSGGkYVH8' } ],
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CDear \u200CJohn... \u200CSad \u200Cto \u200Csay...\n\
@@ -135,6 +139,10 @@ trackInfo = {
 	2506011436: {},
 	// Pi Day
 	2923511621: {
+		jcc: [
+			{ label: 'Brian & Zoe\'s Show 2016', ytId: 'aLN5TeBGVRM?start=43' },
+			{ label: 'Brian\'s Show 2015', ytId: 'laVnh07JbqY' }
+		],
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CI \u200Cwake \u200Cup \u200Cear\u200Cly \u200Cin \u200Ca \u200Ctran\u200Cscen\u200Cden\u200Ctal \u200Cscene.\u200C\n\
@@ -197,10 +205,13 @@ trackInfo = {
 		about: '\
 Some holidays just get the short end of the stick. Why is it that days based on mathematical constants (you know who you are) lack the public awareness of days marking religious or historical significance? It\'s just not rational.\n\n\
 Thanks to <a href="http://www.weirdal.com/" target="_blank">Weird Al</a> and his "<a href="http://www.youtube.com/watch?v=t039p6xqutU" target="_blank">Christmas at Ground Zero</a>" for the idea to give it a holiday sound by using sleigh bells. I was thinking about using the baritone sax as well, but decided it didn\'t work in this case.\n\n\
-EDIT: New version for π Day 2013! I rethought the sax and decided it works after all. Added a uke, accordion, and moving left hand on the piano, and kicked up the energy. Hope you like it. '
+EDIT: New version for π Day 2013! I rethought the sax and decided it works after all. Added a uke, accordion, and moving left hand on the piano, and kicked up the energy. Hope you like it. ',
+		media: [ { label: '', ytId: '' } ]
 	},
 	// Not Even Close
-	2596419917: {},
+	2596419917: {
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: 'WMY-f3iuElw' } ],
+	},
 	// Friction Bill
 	1503760657: {},
 	// Blow Up
@@ -262,6 +273,7 @@ The simple act of letting go,\n\
 	},
 	// Hard to Get
 	4021031572: {
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: '5zxdIUBwbWs' } ],
 		lyrics: '\
 [Verse 1]\n\
 So today\'s the day I finally bridge the strait of Charybdis and Scylla,\n\
@@ -393,6 +405,7 @@ To burn me to the core.\n\
 	},
 	// Just a Dream
 	62149037: {
+		jcc: [ { label: 'Brian & Zoe\'s Show 2016', ytId: 'JH9KDrZultM' } ],
 		lyrics: '\
 [Verse 1]\n\
 Last night saw the Ghost of Grown-Up Future come to me.\n\
@@ -503,7 +516,8 @@ That\'s it, enough, wake up, it\'s just a dream.',
 
 212.4,242.4],
 		about: '<div>George: I\'ve nothing to say </div><div>Dot: You have many things </div><div>George: Well, nothing that\'s not been said </div><div>Dot: Said by you though? </div><div><br /></div><div>Ok, so the basic concept isn\'t entirely novel, but then it\'s a love song. How many love songs out there are truly original? This is my take on a platonic man-love song. Some stalking, a bit of how we objectify celebrities, and a whole bunch of poking fun at the whole "bromance" thing, like we need a name for guys who are good friends. A lot of the other bromantic songs seem to bang on the gay aspect pretty directly, and I wasn\'t really with that, as either hinting at or denying a gay angle isn\'t what this song is about. It seemed appropriate to attempt a kind of drive-by lampshading and then let it go. Of course, that happens at the beginning of the chorus, so I hit the subjunctive 3 times. Too much? </div><div><br /></div><div>The rhyme scheme is interesting in how it came about. I\'m very much against the idea that a word rhymes with itself. Most of that is because it doesn\'t. And yet, I had "me" and "me" in the first verse in an AAXA BBXBB pattern. No problem, I\'ll just redefine the rhyme scheme to use AAXB CCXBB. Now the first and second "me"s are not rhyming with each other. One is an A, one is a B, and it\'s just a coincidence they\'re both in the same rhyming family. So there. I compensated by going the rest of the song (that is, choruses and bridge) without rhyming at all, a practice with which I\'m becoming increasingly comfortable. </div><div><br /></div><div>The music has some obvious influences: Elton John, Billy Joel, Ben Folds, Alicia Keys...basically anyone who uses a lot of piano in popular music. Also felt some Sondheim happening, but then I can\'t really play anything with a bunch of Imaj7 and IVmaj7 without hearing "Pretty Women". Bonus shout out to No More Kings\' "About Schroeder" for the III7 to IV resolution. My instinct was to go to vi (treating the III7 as a V7/vi), but I liked the sound so I stole it. </div><div><br /></div><div>Ouch. That "different than" really is big fat in there, isn\'t it? Bad Brian. Your an idiot, and you should of known better.',
-		media: '<iframe width="560" height="315" src="https://www.youtube.com/embed/TUCqRdqYg7M" frameborder="0" allowfullscreen></iframe>'
+//		media: '<iframe width="560" height="315" src="https://www.youtube.com/embed/TUCqRdqYg7M" frameborder="0" allowfullscreen></iframe>',
+		jcc: [ { label: 'Open mic 2015', ytId: 'TUCqRdqYg7M' } ]
 	},
 	// Before You Go
 	537269823: {
@@ -569,6 +583,7 @@ A star shining high leads us there.\n\
 	},
 	// Descartes and I
 	360808460: {
+		jcc: [ { label: 'Brian & Zoe\'s Show 2016', ytId: 'jRxsXVYQ-kM' } ],
 		lyrics: '\
 [Verse 1]\n\
 If a clone turns out to be smarter than the original, do you still call it a clone?\n\
@@ -754,6 +769,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	},
 	// The Child I Left Behind
 	2729308028: {
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: 'wcyeGTUk9Zc' } ],
 		about: 'An interesting adventure in songwriting. From the beginning I had the idea of doing this one as a single melody line and nothing else. So what does that affect? Well by definition the presentation is simple. Let\'s ride that simplicity throughout the process: 2 melodic patterns, each with only 4 lines of lyrics. Basic chord progressions. Masculine rhyme throughout (except lines 1 &amp; 3 of the bridge sections). Not sure if the ABACxBC/ABxCABC rhyme scheme stands out in its complexity and maybe I should have simplified that too.<div><br /></div><div>Also simple, and hopefully relatable, is the concept. As I witness my daughter absorbed in imagination, I can remember how that felt when I was younger, but I just can\'t seem to immerse myself in the same way anymore. Sure, there\'s role playing and creative activities such as... well, writing songs. But visiting for a couple hours at a time. I\'m not living there anymore. It\'s not really so sad as the song makes it seem, but sometimes you just feel like committing to an emotion.</div><div><br /></div><div>Finally, the melody. Essentially the entire song is communicated via lyrics and melody, so I had to compose with a different mindset. Lots of scales to establish the harmonic setting. When a trickier chord like the Fmaj7 in the bridge happens, no better way than to arpeggiate it. And other than that Bb midway through the bridges, the things I could do to make them stand out were a shift in register (down), and energy in the performance (up). Can you tell that I use a D7 to lead back into the verse?</div><div><br /></div><div>I\'m really digging the concept of an expander. Others of my songs have had enough going on instrumentally that a little noise in the vocals didn\'t matter much. But with ONLY vocals, it matters a lot. Once I got that hiss out, the whole song opened up and feels like it\'s in a large hall. I think I\'ll carry this technique forward into more songs. Another thing I learned by isolating my voice is that it sounds smoother when I roll off the top end. Even in songs that need the highs in the form of cymbals, brass, etc. could probably benefit from less of that in the lead vocals. I\'ll play with this in the future too.</div><div><br /></div><div>Extra Credit: Who wants to take some manner of guess as to how many hours I listened to Mandy Patinkin while learning to sing? Hint: your guess is low.'
 	},
 	// St. Agnes
@@ -793,11 +809,13 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	},
 	// All You Can Eat
 	266721102: {
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: 'hYDSiC-PHX4' } ],
 		about: '<br /><div style="display:block;text-align:left"><a href="https://3.bp.blogspot.com/-v3dGTS6h3hw/U_AYpRL0qvI/AAAAAAAACgU/u5U4z1liKCg/s1600/Lincolnville_Beach.jpg" target="_blank" imageanchor="1" rel="nofollow"><img border="0" width="90%" src="https://3.bp.blogspot.com/-v3dGTS6h3hw/U_AYpRL0qvI/AAAAAAAACgU/u5U4z1liKCg/s1600/Lincolnville_Beach.jpg" width="400" /></a></div><br /><div>What does the above photo make you think of? Wrong. The correct answer is sharks eating people. Why is that the correct answer? Because Jaws has been playing every time I\'ve turned on the TV for the past month.</div><div><br /></div><div>Going for a nostalgic feel here, like a song you\'d play and sing around a campfire about some adolescent adventure involving a crush. Took a lot of inspiration from James Taylor, Harry Chapin, Jonathan Coulton, Kenny Loggins, etc. Even Weird Al\'s <a href="https://www.youtube.com/watch?v=MtqvMCP8GNE" target="_blank">Good Old Days</a>.</div><div><br /></div><div>Logic Pro has been practicing, and is getting better at me playing guitar! That flex time stuff really goes a long way to correcting my timing problems, especially when I have three guitar parts overlapping each other and the attacks need to line up. And I\'m loving the sound of my <a href="http://www.seagullguitars.com/seagull_artist_mosaic_folk.html" target="_blank" rel="nofollow">Seagull Artist Mosaic Folk</a>. I\'ll just go ahead and give them free publicity in front of the 47 people who will ever read this page. For a smaller guy like me the folk size and shorter Gibsonesque scale fit perfectly (and match my electric, which is convenient), and it has a surprising amount of projection. I recorded DI and applied effects inside the box to brighten it up. I had planned on strumming with a quarter but the ITB effects worked nicely and allowed me to strum with just my fingers.'
 	},
 	// Just You and Me
 	2302238082: {
-		nsfw: true
+		nsfw: true,
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: 'YNcWmQx1KBE' } ]
 	},
 	// I'll Do It Myself
 	1032192358: {},
@@ -805,6 +823,10 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	824991007: {},
 	// 47 Tribbles
 	1411794882: {
+		jcc: [
+			{ label: 'Brian & Zoe\'s Show 2016 (plus bonus skit!)', ytId: 'BuVJaEiMLJI' },
+			{ label: 'Brian\'s Show 2015', ytId: 'kRtmFeFGVgk' }
+		],
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CA \u200Ccast \u200Cand \u200Ccrew \u200Cof \u200C6, \u200Ces\u200Csen\u200Ctial \u200Cto \u200Cthe \u200Cplot, \u200Chead\u200Ced \u200Cout \u200Cto \u200Cjoin \u200Ca \u200Cpar\u200Cty \u200Cthat \u200Cis \u200Cnot\n\
@@ -893,6 +915,7 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	},
 	// First One Here
 	1962611442: {
+		jcc: [ { label: 'Brian & Zoe\'s Show 2016', ytId: '_FwL4y-_INk' } ],
 		lyrics: '\u200C\
 \u200C[Verse 1]\n\
 \u200CFer\u200Cdi\u200Cnand, \u200CI\u200Csa\u200Cbel\u200Cla \u200CI \u200Csend \u200Cmy \u200Cthoughts \u200Cand \u200Ctrust \u200Cthey \u200Cfind \u200Cyou \u200Cwell.\n\
@@ -1005,7 +1028,8 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 
 105.68,107.68,107.88,108.08,108.32,108.48,108.68,108.96,109.12,111.36,111.6,111.84,111.96,112.2,112.44,112.72,112.92,113.16,113.24,113.48,113.72,113.96,
 
-114.16,114.4,115.08,115.36,116.2,116.32,116.56,116.76,117.04,117.28,117.36,117.48,117.6,117.88,118.44,118.84,119.08,119.92,120.04,120.28,120.52,120.76,121,121.24,121.44,121.72,122.2,122.64,122.88,123.56,123.8,124.08,124.32,124.56,124.8,125,125.24,125.48,125.92,126.36,126.6,127.16,127.28,127.44,127.56,127.68,127.8,128.24,128.32,128.48,128.6,129.44,129.56,129.68,129.76,130.08,130.2,130.32,130.48,131.2,131.3,131.4,131.52,131.96,132.08,132.16,132.24,132.4]
+114.16,114.4,115.08,115.36,116.2,116.32,116.56,116.76,117.04,117.28,117.36,117.48,117.6,117.88,118.44,118.84,119.08,119.92,120.04,120.28,120.52,120.76,121,121.24,121.44,121.72,122.2,122.64,122.88,123.56,123.8,124.08,124.32,124.56,124.8,125,125.24,125.48,125.92,126.36,126.6,127.16,127.28,127.44,127.56,127.68,127.8,128.24,128.32,128.48,128.6,129.44,129.56,129.68,129.76,130.08,130.2,130.32,130.48,131.2,131.3,131.4,131.52,131.96,132.08,132.16,132.24,132.4],
+	jcc: [ { label: 'Open mic 2016', ytId: 'V0xFbzjgrEA?start=128' } ]
 	},
 	// Queen of Oz
 	2402938913: {
@@ -1289,6 +1313,10 @@ notes :8 Fn/2 C/3 :q A/3 :h (B/1.F#/2) |\n\
 	// Staff Meeting (original)
 	488898176: {
 		nsfw: true
+	},
+	// When You Get There
+	3272657705: {
+		jcc: [ { label: 'Brian\'s Show 2015', ytId: 'niii3n3L-Ig' } ],
 	},
 	// Clubbin' Tonight
 	510863922: {

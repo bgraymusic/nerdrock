@@ -18,21 +18,19 @@ BG.Track = function(album, bcInfo, bgInfo) {
 // Classes applied to elements for styling
 BG.Track.css = {
 	hdr: {
-		cont: 'bg-accordion-header', name: 'bg-track-name', name_text: 'bg-track-name-text', player: 'bg-track-player',
+		cont: 'bg-accordion-header', name: 'bg-track-name', name_text: 'bg-track-name-text', jcc_img: 'bg-track-name-jcc-img', player: 'bg-track-player',
 		controls: {
 			cont: 'bg-track-controls', play: 'bg-track-play-pause-button',
 			shuttle: {
-				cont: 'bg-track-shuttle', table: 'bg-track-shuttle-table',
-				value: 'bg-track-shuttle-value', slider: 'bg-track-shuttle-slider', max: 'bg-track-shuttle-max'
+				cont: 'bg-track-shuttle', table: 'bg-track-shuttle-table', value: 'bg-track-shuttle-value', slider: 'bg-track-shuttle-slider', max: 'bg-track-shuttle-max'
 			}, vol: {
-				cont: 'bg-track-volume', table: 'bg-track-volume-table',
-				min: 'bg-track-volume-min', slider: 'bg-track-volume-slider', max: 'bg-track-volume-max'
+				cont: 'bg-track-volume', table: 'bg-track-volume-table', min: 'bg-track-volume-min', slider: 'bg-track-volume-slider', max: 'bg-track-volume-max'
 			}, buy: 'bg-track-buy-button'
 		}
 	}, body: {
 		cont: 'bg-accordion-body',
 		lyr: { cont: 'bg-lyrics', elapsed: 'bg-lyrics-elapsed', now: 'bg-lyrics-now', unelapsed: 'bg-lyrics-unelapsed' },
-		notes: 'bg-track-notes', media: 'bg-track-media', credits: 'bg-track-credits', tab: 'vex-tabdiv', score: 'vex-tabdiv'
+		notes: 'bg-track-notes', media: 'bg-track-media', jcc: 'bg-track-jcc', credits: 'bg-track-credits', tab: 'vex-tabdiv', score: 'vex-tabdiv'
 	}
 };
 
@@ -61,13 +59,16 @@ BG.Track.prototype.buildHeader = function() {
 	var controls = $('<div/>').addClass(BG.Track.css.hdr.controls.cont);
 	this.hdr.append(controls);
 	this.buildControls(controls);
-	this.hdr.append($('<div/>').addClass(BG.Track.css.hdr.name).append(
-		$('<span/>').addClass(BG.Track.css.hdr.name_text).text(this.title)
-	));
+
+	var name = $('<div/>').addClass(BG.Track.css.hdr.name);
+	name.append($('<span/>').addClass(BG.Track.css.hdr.name_text).text(this.title));
+	if (this.jcc && BG.Badges.getInstance().hasBadge('jcc'))
+		name.append($('<img/>').addClass(BG.Track.css.hdr.jcc_img).attr('src', BG.Badges.getBadgeSpec('jcc').img));
+	this.hdr.append(name);
 }
 
 BG.Track.mashTitle = function(title) {
-	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_'`~()]/g,"").replace(/\s+/g, "");
+	return title.toLowerCase().replace(/[\.,-\/#!$%\^&\*\?;:{}=\-_'`~()]/g,'').replace(/\s+/g, '');
 }
 
 BG.Track.prototype.buildControls = function(controls) {
@@ -181,9 +182,25 @@ BG.Track.prototype.buildBody = function() {
 			.attr('id', this.track_id + 'notes').addClass(BG.Track.css.body.notes).html(this.about));
 	}
 
-	if (this.media) {
-		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'media').text('Media')));
-		this.body.append($('<div/>').attr('id', this.track_id + 'media').addClass(BG.Track.css.body.media));
+// 	if (this.media) {
+// 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'media').text('Media')));
+// 		var media = $('<div/>').attr('id', this.track_id + 'media').addClass(BG.Track.css.body.media);
+// 		$(this.media).each(function() {
+// 			media.append($('<p/>').text(this.label)).append($('<iframe/>').attr('width', 560).attr('height', 315)
+// 				.attr('src', 'https://www.youtube.com/embed/' + this.ytId));
+// 		});
+// 		this.body.append(media);
+// 	}
+
+	if (this.jcc && BG.Badges.getInstance().hasBadge('jcc')) {
+		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'jcc').text('SeaMonkeys')));
+		var jcc = $('<div/>').attr('id', this.track_id + 'jcc').addClass(BG.Track.css.body.jcc);
+		$(this.jcc).each(function() {
+			if (this.ytId)
+				jcc.append($('<fieldset/>').append($('<legend/>').text(this.label))
+				   .append($('<iframe/>').attr('src', 'https://www.youtube.com/embed/' + this.ytId)));
+		});
+		this.body.append(jcc);
 	}
 
 	if (this.credits) {
@@ -192,23 +209,21 @@ BG.Track.prototype.buildBody = function() {
 			.attr('id', this.track_id + 'credits').addClass(BG.Track.css.body.credits).html(this.credits));
 	}
 
-/*
-	if (this.tab) {
-		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'tab').text('Tablature')));
-		this.body.append(
-			$('<div/>').attr('id', this.track_id + 'tab').addClass(BG.Track.css.body.tab).attr('scale', '2')
-				.attr('width', '600').html(this.tab)
-		);
-	}
-
-	if (this.score) {
-		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'score').text('Score')));
-		this.body.append(
-			$('<div/>').attr('id', this.track_id + 'score').addClass(BG.Track.css.body.score).attr('scale', '2')
-				.attr('width', '600').html(this.score)
-		);
-	}
-*/
+// 	if (this.tab) {
+// 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'tab').text('Tablature')));
+// 		this.body.append(
+// 			$('<div/>').attr('id', this.track_id + 'tab').addClass(BG.Track.css.body.tab).attr('scale', '2')
+// 				.attr('width', '600').html(this.tab)
+// 		);
+// 	}
+// 
+// 	if (this.score) {
+// 		tabs.append($('<li/>').append($('<a/>').attr('href', '#' + this.track_id + 'score').text('Score')));
+// 		this.body.append(
+// 			$('<div/>').attr('id', this.track_id + 'score').addClass(BG.Track.css.body.score).attr('scale', '2')
+// 				.attr('width', '600').html(this.score)
+// 		);
+// 	}
 }
 
 BG.Track.setPlayButton = function(button, play) {
@@ -233,9 +248,9 @@ BG.Track.playerTick = function(player) {
 	var track = BG.Track.getFromElement($(player).data().controls);
 	var time = $(player).data().jPlayer.status.currentTime;
 	var computedTime = (new Date().getTime() - $(player).data().tickOffset) / 1000;
- 	if (computedTime - time > 0.55) {
+ 	if (computedTime - time > maxComputedTimeOffset) {
  		console.log('BG.Track.playerTick: diff = ' + (computedTime - time) + '. Correcting...');
- 		computedTime = time + 0.55;
+ 		computedTime = time + maxComputedTimeOffset;
  		$(player).data('tickOffset', new Date().getTime() - (computedTime * 1000));
  	}
 	if (!$(player).data().slider.data().sliding) {
@@ -260,9 +275,7 @@ BG.Track.markElapsedLyrics = function(player, time) {
 	var currentLyrics = $(player).data().currentLyrics;
 	var futureLyrics = $(player).data().futureLyrics;
 	var highTime;
-	for (highTime = 0; highTime < info.timing.length; ++highTime) {
-		if (time < info.timing[highTime]) break;
-	}
+	for (highTime = 0; highTime < info.timing.length; ++highTime) { if (time < info.timing[highTime]) break; }
 	var tokens = info.lyrics.split('\u200C');
 	elapsedLyrics.html(tokens.slice(0, highTime).join(''));
 	currentLyrics.html(tokens[highTime]);
@@ -297,9 +310,7 @@ BG.Track.registerJQueryUI = function() {
 				$(this).data('sliding', false);
 			},
 			animate: 'fast'
-		}).mousedown(function(event) {
-			$(this).closest('.ui-accordion').data('lmd', event.target);
-		});
+		}).mousedown(function(event) { $(this).closest('.ui-accordion').data('lmd', event.target); });
 	});
 
 	$('.bg-track-volume-slider').slider({
@@ -313,6 +324,4 @@ BG.Track.registerJQueryUI = function() {
 	});
 
 	$('.bg-accordion-body').tabs({ activate: function(event, ui) { saveState(); } });
-
-//	try { Vex.Flow.TabDiv.start(); } catch(e) { console.log('Error starting up VexFlow.'); }
 }

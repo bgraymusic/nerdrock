@@ -76,7 +76,7 @@ BG.Album.prototype.buildAlbumAccordion = function(albumAccordion) {
 		var track = new BG.Track(album, this, bgInfo);
 		album.masterTracks.push(track);
 		album.workingTracks.push(track);
-		if (badges.hasBadge('sfw') && track.nsfw) return true;
+		if (BG.Badges.getInstance().hasBadge('sfw') && track.nsfw) return true;
 		var header = $('<div/>').addClass(BG.Track.css.hdr.cont);
 		var body = $('<div/>').addClass(BG.Track.css.body.cont);
 		albumAccordion.append(header);

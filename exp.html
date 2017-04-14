@@ -10,29 +10,30 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script>
-$(function() {
-	$('#accordion').accordion({
-		collapsible: true,
-		beforeActivate: function(event, ui) {
-			return $($(this).data().lmd).closest('.ui-slider').length == 0;
-		}
-	}).mousedown(function(event) {
-		$(this).closest('.ui-accordion').data('lmd', event.target);
-	});
-
-	$('#slider').slider().mousedown(function(event) {
-		$(this).closest('.ui-accordion').data('lmd', event.target);
-	}).click(function(event) {
-		event.stopPropagation();
-	});
-
-	$('#button').button().click(function(event) {
-		event.stopPropagation();
-	});
-});
+// $(function() {
+// 	$('#accordion').accordion({
+// 		collapsible: true,
+// 		beforeActivate: function(event, ui) {
+// 			return $($(this).data().lmd).closest('.ui-slider').length == 0;
+// 		}
+// 	}).mousedown(function(event) {
+// 		$(this).closest('.ui-accordion').data('lmd', event.target);
+// 	});
+// 
+// 	$('#slider').slider().mousedown(function(event) {
+// 		$(this).closest('.ui-accordion').data('lmd', event.target);
+// 	}).click(function(event) {
+// 		event.stopPropagation();
+// 	});
+// 
+// 	$('#button').button().click(function(event) {
+// 		event.stopPropagation();
+// 	});
+// });
 		</script>
 	</head>
 	<body>
+<!-- 
 		<div id="accordion">
 			<h3 id="header">
 				<div id="slider"></div>
@@ -40,5 +41,10 @@ $(function() {
 			</h3>
 			<div id="content">Content</div>
 		</div>
+ -->
+		<fieldset>
+			<legend>Open Mic 2015</legend>
+			<iframe src="https://www.youtube.com/embed/TUCqRdqYg7M" />
+		</fieldset>
 	</body>
 </html>

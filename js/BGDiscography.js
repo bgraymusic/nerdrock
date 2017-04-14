@@ -1,8 +1,8 @@
 var BG = BG || {};
 
 BG.Discography = function() {
-	this.albums = [];
-	this.bgAlbums = [];
+	this.allAlbums = [];
+	this.drawAlbums = [];
 
 	// Important HTML DOM elements
 	this.cont = undefined;
@@ -13,7 +13,7 @@ BG.Discography = function() {
 // Classes applied to elements for styling
 BG.Discography.css = { cont: 'bg-music' }
 
-BG.Discography.getFromElement = function(element) {
+BG.Discography.getInstance = function(element) {
 	var discography = $('#'+BG.Discography.css.cont);
 	if (discography.length) return discography.data().discography;
 	else return null;
@@ -24,8 +24,7 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 	$(this.cont).empty();
 	$(this.cont).data().discography = this;
 	var discography = this;
-//	$(this.albums.reverse()).each(function() {
-	$(this.albums.sort(function(a,b) {
+	$(this.drawAlbums.sort(function(a,b) {
 		for (idx in albumOrder) {
 			if (albumOrder[idx] == a.album_id) return -1;
 			if (albumOrder[idx] == b.album_id) return 1;
@@ -35,7 +34,6 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 		if (this.tracks.length) {
 			if ($('.'+BG.Album.css.cont).length) $(musicDiv).append($('<hr/>'));
 			var album = new BG.Album(discography, this);
-			discography.bgAlbums.push(album);
 			var albumDiv = $('<div/>').addClass(BG.Album.css.cont);
 			$(musicDiv).append(albumDiv);
 			album.buildDOM(albumDiv);
@@ -43,23 +41,17 @@ BG.Discography.prototype.buildDOM = function(musicDiv) {
 	});
 }
 
-BG.Discography.prototype.addAlbumDOM = function(albumData) {
- 	var album = new BG.Album(discography, albumData);
-	this.bgAlbums.push(album);
- 	var albumDiv = $('<div/>').addClass(BG.Album.css.cont);
- 	$(this.cont).prepend(albumDiv);
-	album.buildDOM(albumDiv);
-}
-
 BG.Discography.registerJQueryUI = function() {
 	BG.Album.registerJQueryUI();
 }
 
-BG.Discography.prototype.addAlbums = function(bcInfo) {
-	var albums = this.albums;
-	$(bcInfo).each(function() { albums.push(this); });
+BG.Discography.prototype.addAlbums = function(bcInfo, draw) {
+	var discography = this;
+	$(bcInfo).each(function() { discography.allAlbums.push(this); });
+	if (draw) $(bcInfo).each(function() { discography.drawAlbums.push(this); });
 }
 
-BG.Discography.prototype.addAlbum = function(album) {
-	this.albums.push(album);
+BG.Discography.prototype.addAlbum = function(album, draw) {
+	this.allAlbums.push(album);
+	if (draw) this.drawAlbums.push(album);
 }
